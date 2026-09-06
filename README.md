@@ -39,15 +39,15 @@ git push -u origin main
 ## 3. Formspree 폼 연결
 
 1. [formspree.io](https://formspree.io) 에서 계정을 만들고 새 폼(Form)을 생성해 **Form ID**를 확인합니다.
-2. `app.js` 상단의 `CONFIG.FORM_ID` 값을 실제 Form ID로 교체합니다.
+2. 현재 `app.js`의 `CONFIG.FORM_ID`와 `index.html`의 `<form action>`은 실제 Form ID(`xkjnvdjr`)로 연결되어 있습니다. 다른 폼으로 교체하려면 두 곳을 함께 바꿔주세요.
    ```js
    var CONFIG = {
-     FORM_ID: "YOUR_FORM_ID", // 여기를 실제 값으로 교체
+     FORM_ID: "xkjnvdjr", // 다른 폼으로 바꾸려면 이 값을 교체
      ...
    };
    ```
-3. `index.html`의 `<form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" ...>` 의 `action` 값도 동일한 Form ID로 함께 바꿔주세요 (JS가 꺼져 있는 환경에서도 정상 동작하도록 하는 fallback입니다).
-4. Formspree 대시보드에서 폼 인증 이메일을 확인하고 활성화합니다.
+   `index.html`의 `<form id="contact-form" action="https://formspree.io/f/xkjnvdjr" ...>` 의 `action` 값도 동일하게 맞춰주세요 (JS가 꺼져 있는 환경에서도 정상 동작하도록 하는 fallback입니다).
+3. Formspree 대시보드에서 폼 인증 이메일을 확인하고 활성화합니다.
 
 ## 4. thanks.html 리다이렉트 확인
 
@@ -55,8 +55,8 @@ git push -u origin main
 
 ## 5. 바꿔야 하는 값 체크리스트
 
-- [ ] `app.js` → `CONFIG.FORM_ID` : Formspree 실제 폼 ID로 교체
-- [ ] `index.html` → `<form>` 태그의 `action="https://formspree.io/f/YOUR_FORM_ID"` 교체
+- [x] `app.js` → `CONFIG.FORM_ID` : `xkjnvdjr`로 연결 완료
+- [x] `index.html` → `<form>` 태그의 `action` : `xkjnvdjr`로 연결 완료
 - [ ] `app.js` → `CONFIG.CONTACT_EMAIL` : 실제 문의 이메일 주소로 교체 (기본값 `hello@certodrive.com`)
 - [ ] `app.js` → `CONFIG.KAKAO_URL` : 실제 카카오톡 채널/오픈채팅 링크로 교체 (기본값 `#kakao` placeholder)
 - [ ] `robots.txt` → `Sitemap` 줄의 도메인을 실제 배포 도메인으로 교체 (사이트맵 미제공 시 이 줄 삭제 가능)

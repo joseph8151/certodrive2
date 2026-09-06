@@ -4,7 +4,7 @@
 
 /* ---- 1. CONFIG: 배포 시 이 값만 바꾸면 됩니다 ---- */
 var CONFIG = {
-  FORM_ID: "YOUR_FORM_ID", // Formspree 폼 ID (https://formspree.io/f/여기값)
+  FORM_ID: "xkjnvdjr", // Formspree 폼 ID (https://formspree.io/f/여기값)
   CONTACT_EMAIL: "hello@certodrive.com",
   KAKAO_URL: "#kakao" // 실제 카카오톡 채널/오픈채팅 링크로 교체
 };
