@@ -26,11 +26,11 @@
 
     <nav class="nav-menu" id="nav-menu" aria-label="주요 메뉴">
       <a href="#usecases" data-i18n="nav.usecases">이용 사례</a>
-      <a href="#vehicles" data-i18n="nav.vehicles">차량 안내</a>
+      <a href="#vehicles" data-i18n="nav.vehicles">차량</a>
       <a href="#process" data-i18n="nav.process">이용 과정</a>
       <a href="#business" data-i18n="nav.business">기업·기관</a>
+      <a href="#regions" data-i18n="nav.regions">지역</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
-      <a href="#contact" data-i18n="nav.contact">문의</a>
     </nav>
 
     <div class="header-actions">
@@ -38,6 +38,7 @@
         <button type="button" id="lang-ko" aria-pressed="true">KR</button>
         <button type="button" id="lang-en" aria-pressed="false">EN</button>
       </div>
+      <a class="header-kakao-link nav-cta-desktop" href="#kakao" data-kakao-link data-i18n="hero.ctaSecondary">카카오톡 상담</a>
       <a class="btn btn-outline-paper nav-cta-desktop" href="#contact" data-i18n="nav.cta">문의하기</a>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
         <span></span>
@@ -56,17 +57,17 @@
     <div class="checker-strip checker-strip--vertical" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-inner">
-        <span class="hero-eyebrow" data-i18n="hero.eyebrow">글로벌 드라이버·차량 매칭 서비스</span>
+        <span class="hero-eyebrow" data-i18n="hero.eyebrow">한국어 가능 드라이버 예약 중개</span>
         <h1 class="hero-title">
-          <span data-i18n="hero.headlineMain">한국어가 되는 차와 드라이버를,</span>
+          <span data-i18n="hero.headlineMain">한국어 되는 차,</span>
           <span class="accent" data-i18n="hero.headlineAccent">필요한 도시에서.</span>
         </h1>
-        <p class="hero-sub" data-i18n="hero.sub">출장, 연수, 교육 방문, 가족 일정까지. 체르토 드라이브가 차량과 기사를 연결합니다.</p>
+        <p class="hero-sub" data-i18n="hero.sub">출장, 연수, 가족 여행까지 — 필요한 도시에서 한국어 가능 기사와 차량을 연결합니다. 문의 후 조건을 확인하고 진행하는 예약 중개 서비스입니다.</p>
         <div class="hero-actions">
           <a class="btn btn-taxi" href="#contact" data-i18n="hero.ctaPrimary">이용 문의하기</a>
           <a class="btn btn-taxi-outline" href="#kakao" data-kakao-link data-i18n="hero.ctaSecondary">카카오톡 상담</a>
         </div>
-        <p class="hero-note" data-i18n="hero.note">즉시 배차 앱이 아닌, 조건 확인 후 진행하는 예약 중개 서비스입니다.</p>
+        <p class="hero-note" data-i18n="hero.note">시애틀, LA, 뉴욕 등 주요 한인 도시를 중심으로 매칭합니다.</p>
       </div>
     </div>
     <div class="checker-strip" aria-hidden="true"></div>
@@ -78,29 +79,50 @@
       <div class="section-head">
         <span class="eyebrow">01</span>
         <h2 class="section-title" data-i18n="usecases.title">이런 일정에 씁니다</h2>
-        <p class="section-subtitle" data-i18n="usecases.subtitle">개인부터 기관까지, 목적에 맞춰 차량과 드라이버를 매칭합니다.</p>
+        <p class="section-subtitle" data-i18n="usecases.subtitle">개인부터 기관까지, 목적에 맞춰 차량과 드라이버를 연결합니다.</p>
       </div>
       <div class="feature-list">
         <div class="feature-item">
           <span class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
           </span>
-          <h3 data-i18n="usecases.card1.title">개인·가족 여행</h3>
-          <p data-i18n="usecases.card1.desc">공항 픽업부터 다구간 일정까지, 한국어 소통이 편한 드라이버와 함께합니다.</p>
+          <h3 data-i18n="usecases.card1.title">공항 픽업</h3>
+          <p data-i18n="usecases.card1.desc">도착 시간에 맞춰 공항에서 목적지까지 이동합니다. 항공편 지연 시에도 일정을 조율해 대기합니다.</p>
         </div>
         <div class="feature-item">
           <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </span>
-          <h3 data-i18n="usecases.card2.title">기업 출장·바이어 의전</h3>
-          <p data-i18n="usecases.card2.desc">출장, 바이어 방문, 컨퍼런스 일정에 맞춰 차량과 기사를 배치합니다.</p>
+          <h3 data-i18n="usecases.card2.title">전용 기사 (하루~수주)</h3>
+          <p data-i18n="usecases.card2.desc">하루 일정부터 수주간 상주까지 전용 기사를 배정합니다. 이동이 많은 일정에 적합합니다.</p>
         </div>
         <div class="feature-item">
           <span class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9l8-4 8 4v10"/><path d="M9 19v-6h6v6"/></svg>
           </span>
-          <h3 data-i18n="usecases.card3.title">교육청·학교·연수단</h3>
-          <p data-i18n="usecases.card3.desc">예: 시애틀 교육청 직원 5명, 1주일 SUV·미니밴 이동, 한국어 드라이버 매칭.</p>
+          <h3 data-i18n="usecases.card3.title">교육청·학교 방문</h3>
+          <p data-i18n="usecases.card3.desc">연수단, 자매학교 방문 등 교육 목적 일정을 지원합니다. 인원과 일정에 맞춰 SUV·미니밴을 배정합니다.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3"/></svg>
+          </span>
+          <h3 data-i18n="usecases.card4.title">기업 출장·의전</h3>
+          <p data-i18n="usecases.card4.desc">바이어 방문, 컨퍼런스 일정에 맞춰 차량을 배치합니다. 공항 픽업부터 미팅 동행까지 대응합니다.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11"/><path d="M9 21v-7h6v7"/></svg>
+          </span>
+          <h3 data-i18n="usecases.card5.title">가족 여행</h3>
+          <p data-i18n="usecases.card5.desc">다구간 일정도 한국어로 편하게 소통하며 이동합니다. 짐이 많은 가족 단위에는 SUV를 권장합니다.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h13v14"/><path d="M6 22a2 2 0 1 1 0-4h14v4H8"/></svg>
+          </span>
+          <h3 data-i18n="usecases.card6.title">학회·연수</h3>
+          <p data-i18n="usecases.card6.desc">학회, 워크숍 등 단체 이동 일정을 지원합니다. 참가 인원에 맞춰 차량 대수를 조정합니다.</p>
         </div>
       </div>
     </div>
@@ -120,31 +142,31 @@
             <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M8 30l4-12h32l6 12M18 18l3-7h14l4 7"/><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
           </span>
           <h3 data-i18n="vehicles.sedan.name">세단</h3>
-          <p data-i18n="vehicles.sedan.desc">1~3인, 시내 이동과 공항 픽업에 적합합니다.</p>
+          <p data-i18n="vehicles.sedan.desc">공항 픽업, 시내 이동 등 짧은 구간에 적합합니다. 1~3인 기준입니다.</p>
         </div>
         <div class="feature-item">
           <span class="feature-icon">
             <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M6 30l3-14h10l4-6h18l6 8 3 12M14 16h30" /><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
           </span>
           <h3 data-i18n="vehicles.suv.name">SUV</h3>
-          <p data-i18n="vehicles.suv.desc">가족 단위, 짐이 많은 일정에 적합합니다.</p>
+          <p data-i18n="vehicles.suv.desc">짐이 많거나 가족 단위 이동에 적합합니다. 1~4인 기준입니다.</p>
         </div>
         <div class="feature-item">
           <span class="feature-icon">
             <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M5 30V16a4 4 0 0 1 4-4h38a6 6 0 0 1 6 6v12M15 12v18" /><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
           </span>
           <h3 data-i18n="vehicles.minivan.name">미니밴</h3>
-          <p data-i18n="vehicles.minivan.desc">4~7인, 그룹 이동과 연수단에 적합합니다.</p>
+          <p data-i18n="vehicles.minivan.desc">그룹 이동, 연수단 일정에 적합합니다. 4~7인 기준입니다.</p>
         </div>
         <div class="feature-item">
           <span class="feature-icon">
             <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 30h60M3 30V14a3 3 0 0 1 3-3h44a8 8 0 0 1 8 8v11" /><circle cx="15" cy="32" r="4"/><circle cx="47" cy="32" r="4"/></svg>
           </span>
           <h3 data-i18n="vehicles.van.name">밴</h3>
-          <p data-i18n="vehicles.van.desc">8인 이상 단체, 장거리 일정에 적합합니다.</p>
+          <p data-i18n="vehicles.van.desc">인원이 많은 단체, 장거리 일정에 적합합니다. 8인 이상 기준입니다.</p>
         </div>
       </div>
-      <p class="note-box" data-i18n="vehicles.disclaimer">체르토 드라이브는 차량을 직접 보유하지 않으며, 현지 파트너 드라이버의 차량을 기준으로 매칭합니다.</p>
+      <p class="note-box" data-i18n="vehicles.disclaimer">요청 기준으로 현지에서 매칭하며, 동일 모델을 보장하지 않습니다.</p>
     </div>
   </section>
 
@@ -160,22 +182,22 @@
         <div class="timeline-step">
           <span class="timeline-num">01</span>
           <h3 data-i18n="process.step1.title">문의</h3>
-          <p data-i18n="process.step1.desc">웹 폼, 이메일, 카카오톡으로 일정과 인원, 필요 차량을 알려주세요.</p>
+          <p data-i18n="process.step1.desc">웹 폼, 이메일, 카카오톡으로 일정과 인원을 알려주세요. 필요한 차량과 한국어 드라이버 여부도 함께 남겨주세요.</p>
         </div>
         <div class="timeline-step">
           <span class="timeline-num">02</span>
           <h3 data-i18n="process.step2.title">조건 확인</h3>
-          <p data-i18n="process.step2.desc">도시, 일정, 인원에 맞는 매칭 가능 여부와 견적을 확인합니다.</p>
+          <p data-i18n="process.step2.desc">도시와 일정에 맞는 매칭 가능 여부를 확인합니다. 보통 1영업일 내로 회신드립니다.</p>
         </div>
         <div class="timeline-step">
           <span class="timeline-num">03</span>
-          <h3 data-i18n="process.step3.title">매칭</h3>
-          <p data-i18n="process.step3.desc">현지 한인 드라이버와 차량을 조율하여 매칭합니다.</p>
+          <h3 data-i18n="process.step3.title">매칭·견적</h3>
+          <p data-i18n="process.step3.desc">현지 드라이버와 차량을 조율하고 견적을 안내합니다. 조건 변경 시 다시 확인 후 회신드립니다.</p>
         </div>
         <div class="timeline-step">
           <span class="timeline-num">04</span>
-          <h3 data-i18n="process.step4.title">확정</h3>
-          <p data-i18n="process.step4.desc">일정과 비용을 확정하고 이용 안내를 전달합니다.</p>
+          <h3 data-i18n="process.step4.title">확정·운행</h3>
+          <p data-i18n="process.step4.desc">일정과 비용을 확정하고 운행 안내를 전달합니다. 운행은 매칭된 현지 파트너 드라이버가 진행합니다.</p>
         </div>
       </div>
     </div>
@@ -187,7 +209,11 @@
       <div class="section-head">
         <span class="eyebrow">04</span>
         <h2 class="section-title" data-i18n="business.title">기업·기관 서비스</h2>
-        <p class="section-subtitle" data-i18n="business.subtitle">출장, 바이어 의전, 연수 프로그램을 위한 맞춤 대응.</p>
+      </div>
+      <div class="biz-intro">
+        <p data-i18n="business.bodyLine1">출장, 바이어 의전, 연수 프로그램의 차량과 기사를 지원합니다.</p>
+        <p data-i18n="business.bodyLine2">담당자 한 명이 문의부터 확정까지 응대합니다.</p>
+        <p data-i18n="business.bodyLine3">단체 인원과 다일정 이동도 함께 조율합니다.</p>
       </div>
       <ul class="biz-list">
         <li class="biz-item">
@@ -200,13 +226,20 @@
         </li>
         <li class="biz-item">
           <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span data-i18n="business.item3">담당자 1:1 커뮤니케이션 창구</span>
+          <span data-i18n="business.item3">담당자와 한국어로 소통 가능</span>
         </li>
         <li class="biz-item">
           <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span data-i18n="business.item4">주요 한인 도시 우선 매칭, 그 외 지역은 일정 확인 후 회신</span>
+          <span data-i18n="business.item4">인원에 맞춰 여러 대의 차량 배정</span>
         </li>
       </ul>
+      <div class="biz-not-provided">
+        <h4 data-i18n="business.notProvidedTitle">제공하지 않는 것</h4>
+        <ul>
+          <li data-i18n="business.notProvided1">실시간 기사 배정 앱 — 즉시 기사를 배정하는 앱 서비스는 제공하지 않습니다.</li>
+          <li data-i18n="business.notProvided2">미확인 지역 확정 예약 — 매칭 가능 여부를 확인하지 않은 지역의 예약은 바로 확정하지 않습니다.</li>
+        </ul>
+      </div>
       <div class="business-cta">
         <a class="btn btn-outline-paper" href="#contact" data-i18n="business.cta">기업·기관 문의하기</a>
       </div>
@@ -220,6 +253,7 @@
         <span class="eyebrow">05</span>
         <h2 class="section-title" data-i18n="cases.title">이용 사례</h2>
         <p class="section-subtitle" data-i18n="cases.subtitle">실제 진행 방식을 보여드리는 예시입니다.</p>
+        <p class="cases-disclaimer" data-i18n="cases.disclaimer">아래는 이해를 돕기 위한 가상 사례입니다.</p>
       </div>
       <div class="case-rows">
         <div class="case-row">
@@ -229,7 +263,14 @@
           </div>
           <div class="case-row-right">
             <h3 data-i18n="cases.case1.title">시애틀 교육청 연수단</h3>
-            <p data-i18n="cases.case1.desc">직원 5명, 1주일 일정, SUV·미니밴 혼합 배치, 한국어 드라이버 매칭.</p>
+            <p class="case-meta">
+              <span data-i18n="cases.case1.city">시애틀</span> ·
+              <span data-i18n="cases.case1.duration">1주일</span> ·
+              <span data-i18n="cases.case1.passengers">5명</span> ·
+              <span data-i18n="cases.case1.vehicle">SUV 또는 미니밴</span>
+            </p>
+            <p class="case-line"><strong data-i18n="cases.labelRequest">요청</strong><span data-i18n="cases.case1.request">교육청 직원 연수 방문, 한국어 드라이버 요청</span></p>
+            <p class="case-line"><strong data-i18n="cases.labelAction">체르토가 한 일</strong><span data-i18n="cases.case1.action">일정에 맞춰 SUV·미니밴을 조율하고 한국어 드라이버를 매칭했습니다.</span></p>
           </div>
         </div>
         <div class="case-row">
@@ -239,7 +280,14 @@
           </div>
           <div class="case-row-right">
             <h3 data-i18n="cases.case2.title">바이어 미팅 출장</h3>
-            <p data-i18n="cases.case2.desc">바이어 3명, 3일 일정, 세단 2대, 공항 픽업 및 미팅 일정 동행.</p>
+            <p class="case-meta">
+              <span data-i18n="cases.case2.city">로스앤젤레스</span> ·
+              <span data-i18n="cases.case2.duration">3일</span> ·
+              <span data-i18n="cases.case2.passengers">3명</span> ·
+              <span data-i18n="cases.case2.vehicle">세단 2대</span>
+            </p>
+            <p class="case-line"><strong data-i18n="cases.labelRequest">요청</strong><span data-i18n="cases.case2.request">공항 픽업과 미팅 일정 동행</span></p>
+            <p class="case-line"><strong data-i18n="cases.labelAction">체르토가 한 일</strong><span data-i18n="cases.case2.action">공항 픽업부터 미팅 이동까지 동선에 맞춰 차량을 배치했습니다.</span></p>
           </div>
         </div>
         <div class="case-row">
@@ -249,10 +297,30 @@
           </div>
           <div class="case-row-right">
             <h3 data-i18n="cases.case3.title">가족 단위 여행</h3>
-            <p data-i18n="cases.case3.desc">가족 4명, 5일 일정, 미니밴 1대, 한국어 소통 가능 드라이버.</p>
+            <p class="case-meta">
+              <span data-i18n="cases.case3.city">밴쿠버</span> ·
+              <span data-i18n="cases.case3.duration">주말 2박</span> ·
+              <span data-i18n="cases.case3.passengers">4명</span> ·
+              <span data-i18n="cases.case3.vehicle">미니밴</span>
+            </p>
+            <p class="case-line"><strong data-i18n="cases.labelRequest">요청</strong><span data-i18n="cases.case3.request">가족 여행, 한국어 기사 요청</span></p>
+            <p class="case-line"><strong data-i18n="cases.labelAction">체르토가 한 일</strong><span data-i18n="cases.case3.action">가족 일정에 맞춰 미니밴과 한국어 드라이버를 매칭했습니다.</span></p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- REGIONS -->
+  <section id="regions" class="section--paper section--tight">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">06</span>
+        <h2 class="section-title" data-i18n="regions.title">지역</h2>
+        <p class="section-subtitle" data-i18n="regions.subtitle">한인 커뮤니티가 있는 도시를 우선으로 매칭하며, 그 외 지역은 문의 후 확인해 회신드립니다.</p>
+      </div>
+      <p class="regions-cities" data-i18n="regions.cities">시애틀 · LA · 뉴욕 · 밴쿠버 · 토론토 · 시드니 · 런던</p>
+      <p class="regions-note" data-i18n="regions.note">목록에 없는 도시도 문의하시면 가능 여부를 확인해 회신드립니다.</p>
     </div>
   </section>
 
@@ -260,29 +328,41 @@
   <section id="faq" class="section--paper section--tight">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">06</span>
+        <span class="eyebrow">07</span>
         <h2 class="section-title" data-i18n="faq.title">자주 묻는 질문</h2>
       </div>
       <div class="faq-list">
         <details class="faq-item">
-          <summary data-i18n="faq.q1">즉시 배차가 가능한가요?</summary>
-          <p data-i18n="faq.a1">아닙니다. 체르토 드라이브는 즉시 배차 앱이 아니라, 문의 후 조건을 확인하고 매칭을 진행하는 예약 중개 서비스입니다.</p>
+          <summary data-i18n="faq.q1">차량을 직접 가지고 있나요?</summary>
+          <p data-i18n="faq.a1">아닙니다. 차량은 보유하지 않으며, 현지 파트너 드라이버와 연결합니다.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="faq.q2">차량을 직접 보유하고 있나요?</summary>
-          <p data-i18n="faq.a2">아닙니다. 저희는 차량을 보유하지 않으며, 현지 파트너 드라이버와 차량을 연결하는 중개 서비스입니다.</p>
+          <summary data-i18n="faq.q2">원하는 날짜에 무조건 가능한가요?</summary>
+          <p data-i18n="faq.a2">아닙니다. 문의 후 해당 날짜의 매칭 가능 여부를 확인하고 회신드립니다.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="faq.q3">어느 지역에서 이용할 수 있나요?</summary>
-          <p data-i18n="faq.a3">주요 한인 커뮤니티가 있는 도시를 중심으로 우선 매칭하며, 그 외 지역은 문의 후 일정을 확인하고 회신드립니다.</p>
+          <summary data-i18n="faq.q3">요금은 어떻게 나오나요?</summary>
+          <p data-i18n="faq.a3">도시, 일정, 차량, 인원을 바탕으로 견적을 산정해 안내합니다.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="faq.q4">견적은 어떻게 확인하나요?</summary>
-          <p data-i18n="faq.a4">문의 폼 또는 이메일, 카카오톡으로 일정과 인원을 남겨주시면 확인 후 회신드립니다.</p>
+          <summary data-i18n="faq.q4">한국어 기사만 가능한가요?</summary>
+          <p data-i18n="faq.a4">한국어가 필요하지 않으면 다른 드라이버도 매칭 가능하며, 문의 시 선택할 수 있습니다.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="faq.q5">한국어 드라이버만 매칭 가능한가요?</summary>
-          <p data-i18n="faq.a5">한국어 소통이 꼭 필요하지 않으신 경우에도 매칭이 가능하며, 문의 시 선택하실 수 있습니다.</p>
+          <summary data-i18n="faq.q5">기업 계산서 가능한가요?</summary>
+          <p data-i18n="faq.a5">가능합니다. 세금계산서와 견적서를 발행합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q6">카카오톡으로만 문의해도 되나요?</summary>
+          <p data-i18n="faq.a6">가능합니다. 웹 폼, 이메일, 카카오톡 중 편한 방법으로 문의하시면 됩니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q7">취소는요?</summary>
+          <p data-i18n="faq.a7">취소 및 변경 규정은 예약 확정 안내 시 함께 고지됩니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q8">기사와 직접 거래하면 안 되나요?</summary>
+          <p data-i18n="faq.a8">매칭된 드라이버와의 조율과 확정은 체르토 드라이브를 통해 진행해 주셔야 합니다.</p>
         </details>
       </div>
     </div>
@@ -292,10 +372,11 @@
   <section id="contact" class="section--ink">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">07</span>
+        <span class="eyebrow">08</span>
         <h2 class="section-title" data-i18n="contact.title">문의하기</h2>
-        <p class="section-subtitle" data-i18n="contact.subtitle">아래 정보를 남겨주시면 확인 후 24~48시간 내 회신드립니다.</p>
+        <p class="section-subtitle" data-i18n="contact.subtitle">아래 정보를 남겨주시면 확인 후 회신드립니다.</p>
       </div>
+      <p class="contact-form-note" data-i18n="contact.formNote">보통 1영업일 내 회신드립니다.</p>
 
       <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" accept-charset="UTF-8" novalidate>
         <input type="hidden" name="_subject" value="[체르토 드라이브] 신규 문의">
@@ -304,53 +385,73 @@
 
         <div class="form-grid">
           <div class="form-group">
+            <label for="client_type" data-i18n="contact.label.clientType">구분</label>
+            <select id="client_type" name="client_type" required>
+              <option value="" data-i18n="contact.option.select">선택해주세요</option>
+              <option value="individual" data-i18n="contact.option.individual">개인</option>
+              <option value="corporate" data-i18n="contact.option.corporate">기업</option>
+              <option value="institution" data-i18n="contact.option.institution">기관</option>
+            </select>
+            <span class="field-help" data-i18n="contact.help.clientType">문의 성격에 맞게 선택해 주세요.</span>
+            <span class="error-msg" data-error-for="client_type" role="alert"></span>
+          </div>
+
+          <div class="form-group">
             <label for="name" data-i18n="contact.label.name">이름</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required data-i18n-placeholder="contact.placeholder.name" placeholder="홍길동">
+            <span class="field-help" data-i18n="contact.help.name">담당자 실명을 입력해 주세요.</span>
             <span class="error-msg" data-error-for="name" role="alert"></span>
           </div>
 
           <div class="form-group">
             <label for="organization" data-i18n="contact.label.organization">소속 (기관/회사명)<span class="opt" data-i18n="contact.optional">(선택)</span></label>
             <input type="text" id="organization" name="organization" data-i18n-placeholder="contact.placeholder.organization" placeholder="예: OO교육청, OO주식회사">
+            <span class="field-help" data-i18n="contact.help.organization">기업·기관 문의 시 입력해 주세요.</span>
           </div>
 
           <div class="form-group">
             <label for="email" data-i18n="contact.label.email">이메일</label>
             <input type="email" id="email" name="email" required>
+            <span class="field-help" data-i18n="contact.help.email">회신받으실 이메일 주소를 입력해 주세요.</span>
             <span class="error-msg" data-error-for="email" role="alert"></span>
           </div>
 
           <div class="form-group">
             <label for="kakao" data-i18n="contact.label.kakao">카카오톡 ID<span class="opt" data-i18n="contact.optional">(선택)</span></label>
             <input type="text" id="kakao" name="kakao" data-i18n-placeholder="contact.placeholder.kakao" placeholder="카카오톡 ID (선택)">
+            <span class="field-help" data-i18n="contact.help.kakao">카카오톡으로 소통을 원하시면 입력해 주세요.</span>
           </div>
 
           <div class="form-group">
-            <label for="city" data-i18n="contact.label.city">이용 도시</label>
-            <input type="text" id="city" name="city" required data-i18n-placeholder="contact.placeholder.city" placeholder="예: 시애틀, 서울, 방콕">
+            <label for="city" data-i18n="contact.label.city">국가·도시</label>
+            <input type="text" id="city" name="city" required data-i18n-placeholder="contact.placeholder.city" placeholder="예: 미국 시애틀">
+            <span class="field-help" data-i18n="contact.help.city">이용하실 국가와 도시를 함께 적어주세요.</span>
             <span class="error-msg" data-error-for="city" role="alert"></span>
           </div>
 
           <div class="form-group">
             <label for="passengers" data-i18n="contact.label.passengers">인원</label>
-            <input type="number" id="passengers" name="passengers" min="1" step="1" required>
+            <input type="number" id="passengers" name="passengers" min="1" step="1" required data-i18n-placeholder="contact.placeholder.passengers" placeholder="숫자만 입력">
+            <span class="field-help" data-i18n="contact.help.passengers">탑승 예정 인원 수를 입력해 주세요.</span>
             <span class="error-msg" data-error-for="passengers" role="alert"></span>
           </div>
 
           <div class="form-group">
             <label for="start_date" data-i18n="contact.label.startDate">시작일</label>
             <input type="date" id="start_date" name="start_date" required>
+            <span class="field-help" data-i18n="contact.help.dates">실제 이용 일정을 기준으로 입력해 주세요.</span>
             <span class="error-msg" data-error-for="start_date" role="alert"></span>
           </div>
 
           <div class="form-group">
             <label for="end_date" data-i18n="contact.label.endDate">종료일</label>
             <input type="date" id="end_date" name="end_date" required>
+            <span class="field-help" data-i18n="contact.help.dates">실제 이용 일정을 기준으로 입력해 주세요.</span>
             <span class="error-msg" data-error-for="end_date" role="alert"></span>
           </div>
 
           <div class="form-group">
-            <label for="vehicle" data-i18n="contact.label.vehicle">희망 차량</label>
+            <label for="vehicle" data-i18n="contact.label.vehicle">희망 차량<span class="opt" data-i18n="contact.optional">(선택)</span></label>
             <select id="vehicle" name="vehicle">
               <option value="" data-i18n="contact.option.select">선택해주세요</option>
               <option value="sedan" data-i18n="contact.option.sedan">세단</option>
@@ -359,42 +460,55 @@
               <option value="van" data-i18n="contact.option.van">밴</option>
               <option value="unknown" data-i18n="contact.option.unknown">모름</option>
             </select>
+            <span class="field-help" data-i18n="contact.help.vehicle">세단/SUV/미니밴/밴/모름 중 선택해 주세요.</span>
           </div>
 
           <div class="form-group">
-            <label for="korean_driver" data-i18n="contact.label.koreanDriver">한국어 드라이버</label>
+            <label for="korean_driver" data-i18n="contact.label.koreanDriver">한국어 드라이버<span class="opt" data-i18n="contact.optional">(선택)</span></label>
             <select id="korean_driver" name="korean_driver">
               <option value="required" data-i18n="contact.option.driverRequired">필요</option>
+              <option value="preferred" data-i18n="contact.option.driverPreferred">가능하면</option>
               <option value="either" data-i18n="contact.option.driverEither">상관없음</option>
-              <option value="not_needed" data-i18n="contact.option.driverNotNeeded">불필요</option>
             </select>
+            <span class="field-help" data-i18n="contact.help.koreanDriver">필요/가능하면/상관없음 중 선택해 주세요.</span>
           </div>
 
           <div class="form-group">
-            <label for="client_type" data-i18n="contact.label.clientType">문의 유형</label>
-            <select id="client_type" name="client_type" required>
+            <label for="purpose" data-i18n="contact.label.purpose">용도<span class="opt" data-i18n="contact.optional">(선택)</span></label>
+            <select id="purpose" name="purpose">
               <option value="" data-i18n="contact.option.select">선택해주세요</option>
-              <option value="individual" data-i18n="contact.option.individual">개인</option>
-              <option value="corporate" data-i18n="contact.option.corporate">기업</option>
-              <option value="institution" data-i18n="contact.option.institution">교육기관·학교</option>
+              <option value="airport_pickup" data-i18n="contact.option.purposeAirport">공항픽업</option>
+              <option value="dedicated_driver" data-i18n="contact.option.purposeDriver">전용기사</option>
+              <option value="business_trip" data-i18n="contact.option.purposeBusiness">출장</option>
+              <option value="school_visit" data-i18n="contact.option.purposeSchool">교육방문</option>
+              <option value="family_trip" data-i18n="contact.option.purposeFamily">가족여행</option>
               <option value="other" data-i18n="contact.option.other">기타</option>
             </select>
-            <span class="error-msg" data-error-for="client_type" role="alert"></span>
+            <span class="field-help" data-i18n="contact.help.purpose">방문 목적에 맞게 선택해 주세요.</span>
           </div>
 
           <div class="form-group">
             <label for="pickup" data-i18n="contact.label.pickup">픽업 장소<span class="opt" data-i18n="contact.optional">(선택)</span></label>
             <input type="text" id="pickup" name="pickup" data-i18n-placeholder="contact.placeholder.pickup" placeholder="예: 공항, 호텔명">
+            <span class="field-help" data-i18n="contact.help.pickup">픽업 받으실 장소를 적어주세요.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="route" data-i18n="contact.label.route">주요 동선<span class="opt" data-i18n="contact.optional">(선택)</span></label>
+            <input type="text" id="route" name="route" data-i18n-placeholder="contact.placeholder.route" placeholder="예: 공항 → 호텔 → 회의장">
+            <span class="field-help" data-i18n="contact.help.route">주요 이동 경로를 순서대로 적어주세요.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="budget" data-i18n="contact.label.budget">예산 범위<span class="opt" data-i18n="contact.optional">(선택)</span></label>
+            <input type="text" id="budget" name="budget" data-i18n-placeholder="contact.placeholder.budget" placeholder="예: 협의 가능">
+            <span class="field-help" data-i18n="contact.help.budget">대략적인 예산이 있다면 적어주세요.</span>
           </div>
 
           <div class="form-group full">
-            <label for="purpose" data-i18n="contact.label.purpose">방문 목적<span class="opt" data-i18n="contact.optional">(선택)</span></label>
-            <input type="text" id="purpose" name="purpose" data-i18n-placeholder="contact.placeholder.purpose" placeholder="예: 연수 방문, 바이어 미팅, 가족 여행 등">
-          </div>
-
-          <div class="form-group full">
-            <label for="notes" data-i18n="contact.label.notes">추가 요청사항<span class="opt" data-i18n="contact.optional">(선택)</span></label>
-            <textarea id="notes" name="notes" data-i18n-placeholder="contact.placeholder.notes" placeholder="차량, 일정과 관련해 알려주실 내용이 있다면 적어주세요."></textarea>
+            <label for="notes" data-i18n="contact.label.notes">상세 요청<span class="opt" data-i18n="contact.optional">(선택)</span></label>
+            <textarea id="notes" name="notes" data-i18n-placeholder="contact.placeholder.notes" placeholder="전달하고 싶은 내용을 자유롭게 적어주세요."></textarea>
+            <span class="field-help" data-i18n="contact.help.notes">차량, 일정과 관련한 추가 사항을 적어주세요.</span>
           </div>
         </div>
 
@@ -418,28 +532,34 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-word">CERTO</span>
         </a>
-        <p class="footer-about" data-i18n="footer.about">체르토 드라이브는 한국어 가능 드라이버와 SUV·미니밴 등 차량을 연결하는 예약 중개 서비스입니다.</p>
+        <p class="footer-about" data-i18n="footer.about">체르토 드라이브는 한국어 가능 드라이버와 차량을 연결하는 예약 중개 서비스입니다.</p>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.linksTitle">바로가기</h4>
         <ul>
           <li><a href="#usecases" data-i18n="nav.usecases">이용 사례</a></li>
-          <li><a href="#vehicles" data-i18n="nav.vehicles">차량 안내</a></li>
+          <li><a href="#vehicles" data-i18n="nav.vehicles">차량</a></li>
           <li><a href="#process" data-i18n="nav.process">이용 과정</a></li>
+          <li><a href="#regions" data-i18n="nav.regions">지역</a></li>
           <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">문의</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.contactTitle">연락처</h4>
         <ul>
           <li><a href="mailto:hello@certodrive.com" data-email-link data-email-text>hello@certodrive.com</a></li>
-          <li><a href="#kakao" data-kakao-link>카카오톡 상담</a></li>
+          <li><a href="#kakao" data-kakao-link data-i18n="hero.ctaSecondary">카카오톡 상담</a></li>
         </ul>
       </div>
     </div>
+    <div class="footer-legal">
+      <p data-i18n="footer.legal1">체르토 드라이브는 중개 서비스입니다.</p>
+      <p data-i18n="footer.legal2">실제 운행은 현지 파트너 드라이버가 진행합니다.</p>
+      <p data-i18n="footer.legal3">문의 시점의 가능 여부는 확정이 아니며, 조건 확인 후 확정됩니다.</p>
+    </div>
     <div class="footer-bottom">
       <span>&copy; <span id="year">2026</span> Certo Drive. <span data-i18n="footer.rights">모든 권리 보유</span></span>
-      <span data-i18n="footer.disclaimer">체르토 드라이브는 차량을 직접 보유하지 않으며, 현지 파트너 드라이버와의 매칭을 중개합니다.</span>
     </div>
   </div>
 </footer>
