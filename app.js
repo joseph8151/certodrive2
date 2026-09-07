@@ -6,7 +6,9 @@
 var CONFIG = {
   FORM_ID: "xkjnvdjr", // Formspree 폼 ID (https://formspree.io/f/여기값)
   CONTACT_EMAIL: "hello@certodrive.com",
-  KAKAO_URL: "#kakao" // 실제 카카오톡 채널/오픈채팅 링크로 교체
+  KAKAO_URL: "https://pf.kakao.com/_QwxdxhX",
+  PHONE_DISPLAY: "010-7748-4644",
+  PHONE_TEL: "+821077484644"
 };
 
 /* ---- 2. 다국어 사전 (KR 기본 / EN 전환) ---- */
@@ -333,6 +335,13 @@ function initKakaoLinks() {
     emailLinks[j].setAttribute("href", "mailto:" + CONFIG.CONTACT_EMAIL);
     if (emailLinks[j].hasAttribute("data-email-text")) {
       emailLinks[j].textContent = CONFIG.CONTACT_EMAIL;
+    }
+  }
+  var phoneLinks = document.querySelectorAll('[data-phone-link]');
+  for (var k = 0; k < phoneLinks.length; k++) {
+    phoneLinks[k].setAttribute("href", "tel:" + CONFIG.PHONE_TEL);
+    if (phoneLinks[k].hasAttribute("data-phone-text")) {
+      phoneLinks[k].textContent = CONFIG.PHONE_DISPLAY;
     }
   }
 }
