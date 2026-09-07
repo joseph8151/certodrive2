@@ -675,6 +675,7 @@ section { padding: 72px 0; }
   gap: 6px;
 }
 .footer-legal p { font-size: 0.78rem; color: rgba(var(--paper-rgb), 0.5); }
+.footer-legal .footer-biz { color: rgba(var(--paper-rgb), 0.4); margin-top: 4px; }
 
 .footer-bottom {
   border-top: 1px solid rgba(var(--paper-rgb), 0.14);
