@@ -232,7 +232,7 @@ var I18N = {
   "faq.q12": { ko: "통역사와 차량을 함께 예약할 수 있나요?", en: "Can I book a vehicle together with an interpreter?" },
   "faq.a12": { ko: "문의할 수 있으며, 통역 제공 여부는 지역과 일정에 따라 예약 전 확인이 필요합니다.", en: "Yes, you can inquire; interpreter availability by region and schedule should be confirmed before booking." },
   "faq.q13": { ko: "예약 변경 및 취소 규정은 어떻게 되나요?", en: "What are the change and cancellation terms?" },
-  "faq.a13": { ko: "변경·취소 규정은 예약 확정 안내 시 함께 고지됩니다.", en: "Change and cancellation terms are provided together with your booking confirmation." },
+  "faq.a13": { ko: "확정(드라이버·차량 조율) 전에는 취소가 가능합니다. 확정 이후에는 환불이 불가하며, 세부 변경 규정은 예약 확정 안내 시 함께 고지됩니다.", en: "Cancellation is possible before confirmation. Once a driver and vehicle are confirmed, the booking is non-refundable; detailed change terms are provided together with your booking confirmation." },
   "faq.q14": { ko: "통행료·주차비 등의 추가 비용은 어떻게 되나요?", en: "What about extra costs like tolls or parking?" },
   "faq.a14": { ko: "톨비·주차비 등 현지 실비는 별도일 수 있으며, 견적 시 안내합니다.", en: "Local costs such as tolls and parking may be separate and are noted in your quote." },
 
@@ -301,6 +301,7 @@ var I18N = {
   "contact.option.purposeFamily": { ko: "가족여행", en: "Family Travel" },
   "contact.submit": { ko: "문의 보내기", en: "Send Inquiry" },
   "contact.privacyNote": { ko: "제출하신 정보는 문의 응대 목적으로만 사용됩니다.", en: "Information submitted is used only to respond to your inquiry." },
+  "contact.refundNote": { ko: "확정(드라이버·차량 조율) 전에는 취소가 가능하며, 확정 이후에는 환불이 불가합니다.", en: "Cancellation is possible before confirmation. Once a driver and vehicle are confirmed, the booking is non-refundable." },
 
   "error.required": { ko: "필수 항목입니다.", en: "This field is required." },
   "error.email": { ko: "올바른 이메일 주소를 입력해주세요.", en: "Please enter a valid email address." },

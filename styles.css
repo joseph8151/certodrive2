@@ -773,6 +773,13 @@ section { padding: 72px 0; }
 
 .form-footer { margin-top: 22px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
 .privacy-note { font-size: 0.78rem; color: var(--mute); }
+.refund-note {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  border-left: 2px solid var(--taxi-deep);
+  padding-left: 10px;
+}
 
 /* ---- Footer ---- */
 .site-footer { background: var(--ink); color: rgba(var(--paper-rgb), 0.85); padding: 56px 0 26px; }
