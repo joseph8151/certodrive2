@@ -340,10 +340,32 @@ section { padding: 72px 0; }
   margin-bottom: 6px;
 }
 .svc-card p { color: var(--mute); font-size: 0.9rem; margin-bottom: 0; }
-.svc-more { display: none; }
-.svc-card summary { list-style: none; cursor: default; }
+.svc-card summary { list-style: none; cursor: pointer; display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
 .svc-card summary::-webkit-details-marker { display: none; }
-.svc-detail { display: none; }
+.svc-card summary .svc-summary-text { flex: 1; }
+.svc-more {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  color: var(--mute);
+  line-height: 1.4;
+}
+.svc-more::before { content: "+"; }
+.svc-card[open] .svc-more::before { content: "\2212"; }
+.svc-detail {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.svc-detail li {
+  font-size: 0.86rem;
+  color: var(--mute);
+  padding-left: 14px;
+  position: relative;
+}
+.svc-detail li::before { content: "–"; position: absolute; left: 0; color: var(--line); }
 
 .svc-card--resv .svc-icon { display: none; }
 .svc-group-label {
@@ -357,6 +379,28 @@ section { padding: 72px 0; }
 }
 .svc-group-label:not(:first-child) { margin-top: 48px; }
 .svc-group-subtitle { font-size: 0.86rem; color: var(--mute); margin: -8px 0 14px; }
+
+/* ---- Recommended-for list ---- */
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 32px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+@media (max-width: 640px) { .recommend-grid { grid-template-columns: 1fr; } }
+.recommend-grid li {
+  font-size: 0.92rem;
+  color: var(--text);
+  padding-left: 14px;
+  position: relative;
+}
+.recommend-grid li::before { content: "–"; position: absolute; left: 0; color: var(--mute); }
+
+/* ---- Why Certo Drive ---- */
+.whyus-grid { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 900px) { .whyus-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .whyus-grid { grid-template-columns: 1fr; } }
 
 /* ---- Chooser: vehicle vs. reservation ---- */
 .chooser-grid {
@@ -519,14 +563,15 @@ section { padding: 72px 0; }
 /* ---- Vehicle cards ---- */
 .vehicle-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
   margin-bottom: 26px;
 }
-@media (max-width: 900px) { .vehicle-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .vehicle-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1040px) { .vehicle-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .vehicle-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .vehicle-grid { grid-template-columns: 1fr; } }
 
 .vehicle-card {
   background: var(--white);
