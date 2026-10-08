@@ -13,129 +13,86 @@ var CONFIG = {
 
 /* ---- 2. 다국어 사전 (KR 기본 / EN 전환) ---- */
 var I18N = {
-  "meta.title": { ko: "체르토 드라이브 | 전 세계 한국어 드라이버 예약", en: "Certo Drive | Book a Korean-Speaking Driver Worldwide" },
-  "meta.description": { ko: "공항픽업, 시간제 차량, 출장, 장거리 이동까지. 해외에서도 한국어로 간편하게 차량과 드라이버를 예약하는 글로벌 모빌리티 서비스, 체르토 드라이브.", en: "Airport pickups, hourly charter, business travel, and long-distance transfers — book a Korean-speaking driver and vehicle abroad with Certo Drive." },
+  "meta.title": { ko: "체르토 드라이브 | 해외 이동, 현지 기사와 차량 연결", en: "Certo Drive | Local Drivers & Vehicles, Wherever You Travel" },
+  "meta.description": { ko: "공항 픽업부터 기업 출장, 바이어 의전, 교육기관 연수, 가족 일정까지. 해외 주요 도시에서 한국어로 상담하고 현지 기사와 차량을 연결하는 체르토 드라이브.", en: "From airport pickups to business trips, client visits, school delegations, and family travel — Certo Drive connects you with local drivers and vehicles abroad, in Korean." },
 
   "nav.services": { ko: "서비스", en: "Services" },
   "nav.vehicles": { ko: "차량", en: "Vehicles" },
   "nav.process": { ko: "이용 과정", en: "How It Works" },
   "nav.business": { ko: "기업·기관", en: "For Organizations" },
-  "nav.regions": { ko: "지역", en: "Regions" },
+  "nav.cities": { ko: "도시", en: "Cities" },
   "nav.faq": { ko: "FAQ", en: "FAQ" },
   "nav.contact": { ko: "문의", en: "Contact" },
-  "nav.cta": { ko: "문의하기", en: "Contact Us" },
-
-  "hero.eyebrow": { ko: "글로벌 한국어 드라이버 예약 중개", en: "Global Korean-Speaking Driver Booking" },
-  "hero.headlineMain": { ko: "전 세계", en: "Book a Korean-Speaking Driver" },
-  "hero.headlineAccent": { ko: "한국어 드라이버 예약", en: "Anywhere in the World" },
-  "hero.sub": { ko: "공항픽업부터 비즈니스 출장, 프라이빗 투어, 장거리 이동까지. 해외에서도 편안하게 한국어로 차량을 예약하세요.", en: "From airport pickups to business trips, private tours, and long-distance travel — book a car in Korean, wherever you are." },
-  "hero.ctaPrimary": { ko: "빠른 견적 받기", en: "Get a Quick Quote" },
-  "hero.ctaSecondary": { ko: "서비스 보기", en: "See Our Services" },
-  "hero.note": { ko: "시애틀, LA, 뉴욕 등 주요 한인 도시를 중심으로 매칭합니다.", en: "Matching is prioritized in cities such as Seattle, LA, and New York." },
+  "nav.cta": { ko: "빠른 견적 요청", en: "Get a Quick Quote" },
 
   "kakao.chat": { ko: "카카오톡 상담", en: "Chat on KakaoTalk" },
 
-  "picker.label": { ko: "필요한 서비스를 선택하세요", en: "Choose the service you need" },
-  "picker.airport": { ko: "공항픽업", en: "Airport Pickup" },
-  "picker.hourly": { ko: "시간제 차량", en: "Hourly Charter" },
-  "picker.private": { ko: "프라이빗 투어", en: "Private Tour" },
-  "picker.longdistance": { ko: "도시 간 이동", en: "City-to-City" },
-  "picker.corporate": { ko: "비즈니스 출장", en: "Business Travel" },
-  "picker.group": { ko: "단체 차량", en: "Group Vehicles" },
+  "hero.eyebrow": { ko: "글로벌 모빌리티 파트너", en: "Global Mobility Partner" },
+  "hero.headlineMain": { ko: "해외 이동이 필요한 순간,", en: "The moment you need to move abroad," },
+  "hero.headlineAccent": { ko: "현지 기사와 차량을 연결합니다.", en: "we connect you with a local driver and vehicle." },
+  "hero.sub": { ko: "공항 픽업부터 기업 출장, 바이어 의전, 교육기관 연수, 가족 일정까지. 필요한 도시와 일정에 맞춰 차량과 드라이버를 확인해 드립니다.", en: "From airport pickups to business trips, client visits, school delegations, and family travel. We check vehicles and drivers for the city and schedule you need." },
+  "hero.tags": { ko: "한국어 상담 · 해외 주요 도시 · 기업/기관 일정 대응", en: "Korean-language support · Major cities abroad · Corporate & institutional scheduling" },
+  "hero.ctaPrimary": { ko: "빠른 견적 요청", en: "Get a Quick Quote" },
+  "hero.note": { ko: "보통 1영업일 이내 회신", en: "We usually reply within 1 business day" },
 
-  "services.title": { ko: "체르토 드라이브 서비스", en: "Certo Drive Services" },
-  "services.subtitle": { ko: "단순 해외 한인택시 예약이 아닌, 필요한 순간에 필요한 차량을 연결하는 서비스입니다.", en: "Not just an overseas taxi booking — we connect the right vehicle to the moment you need it." },
+  "trust.item1": { ko: "해외 주요 도시 대응", en: "Coverage in major cities abroad" },
+  "trust.item2": { ko: "한국어 상담", en: "Korean-language support" },
+  "trust.item3": { ko: "기업·기관 견적 가능", en: "Quotes for businesses & institutions" },
+  "trust.item4": { ko: "다일정 차량 조율", en: "Multi-schedule vehicle coordination" },
+  "trust.item5": { ko: "SUV · 미니밴 · 밴", en: "SUV · Minivan · Van" },
 
-  "services.svc1.name": { ko: "공항 픽업 & 샌딩", en: "Airport Pickup & Drop-off" },
-  "services.svc1.desc": { ko: "낯선 해외 공항에 도착한 순간부터 편안하게 이동하세요. 공항에서 호텔, 숙소, 회사, 행사장 등 원하는 목적지까지 차량 예약을 도와드립니다.", en: "From the moment you land at an unfamiliar airport, travel with ease. We help arrange a vehicle from the airport to your hotel, home, office, or venue." },
-  "services.svc1.bullet1": { ko: "공항 도착 픽업", en: "Airport arrival pickup" },
-  "services.svc1.bullet2": { ko: "호텔 → 공항 샌딩", en: "Hotel-to-airport drop-off" },
-  "services.svc1.bullet3": { ko: "심야·이른 아침 이동 문의", en: "Late-night & early-morning requests" },
-  "services.svc1.bullet4": { ko: "가족 및 단체 이동, 짐 많은 고객 차량 상담", en: "Family/group transport, guidance for heavy luggage" },
-  "services.svc1.cta": { ko: "공항픽업 견적 받기", en: "Get an Airport Pickup Quote" },
+  "services.eyebrow": { ko: "SERVICES", en: "SERVICES" },
+  "services.title": { ko: "어떤 이동이 필요하신가요?", en: "What Kind of Trip Do You Need?" },
+  "services.subtitle": { ko: "목적에 맞는 서비스를 선택하면 자세한 내용을 확인할 수 있습니다.", en: "Choose the service that fits your purpose to see more details." },
+  "svc.more": { ko: "자세히 보기", en: "Learn more" },
 
-  "services.svc2.name": { ko: "한국어 드라이버 시간제 예약", en: "Hourly Charter with a Korean-Speaking Driver" },
-  "services.svc2.desc": { ko: "여러 장소를 이동해야 한다면 시간제 차량 서비스를 이용할 수 있습니다. 출장, 쇼핑, 관광, 미팅 등 일정에 맞춰 차량과 드라이버 예약을 도와드립니다.", en: "If you need to visit multiple places, hourly charter is available. We help arrange a vehicle and driver around business, shopping, sightseeing, or meetings." },
-  "services.svc2.bullet1": { ko: "4시간 · 8시간 · 종일 · 맞춤 일정", en: "4-hour, 8-hour, full-day, or custom schedule" },
-  "services.svc2.bullet2": { ko: "여러 목적지 이동, 일정 중 차량 대기", en: "Multiple destinations, vehicle waits during your schedule" },
-  "services.svc2.bullet3": { ko: "호텔 출발 및 복귀", en: "Round trip from your hotel" },
-  "services.svc2.bullet4": { ko: "출장 및 여행 모두 이용 가능", en: "For both business and leisure" },
-  "services.svc2.cta": { ko: "시간제 차량 문의", en: "Inquire About Hourly Charter" },
+  "svc.airport.name": { ko: "공항 픽업", en: "Airport Pickup" },
+  "svc.airport.desc": { ko: "도착 시간에 맞춰 공항에서 목적지까지 편안하게 이동합니다.", en: "A comfortable ride from the airport to your destination, timed to your arrival." },
+  "svc.airport.d1": { ko: "항공편 지연에 맞춰 일정 조율", en: "Schedules adjusted for flight delays" },
+  "svc.airport.d2": { ko: "호텔·숙소·행사장까지 목적지 이동", en: "Transfers to your hotel, residence, or venue" },
+  "svc.airport.d3": { ko: "짐이 많은 경우 SUV 상담 가능", en: "SUV available on request for heavy luggage" },
 
-  "services.svc3.name": { ko: "도시 간 장거리 이동", en: "City-to-City Long-Distance Transfers" },
-  "services.svc3.desc": { ko: "기차나 항공편 대신 호텔에서 호텔까지 편안하게 이동하고 싶은 고객을 위한 서비스입니다.", en: "For travelers who'd rather go hotel-to-hotel by car than by train or plane." },
-  "services.svc3.bullet1": { ko: "예: 뉴욕 → 워싱턴 D.C., LA → 샌디에이고", en: "e.g. New York → Washington D.C., LA → San Diego" },
-  "services.svc3.bullet2": { ko: "예: 밀라노 → 베네치아, 로마 → 피렌체", en: "e.g. Milan → Venice, Rome → Florence" },
-  "services.svc3.bullet3": { ko: "예: 파리 → 브뤼셀, 도쿄 → 후지산 지역", en: "e.g. Paris → Brussels, Tokyo → Mt. Fuji area" },
-  "services.svc3.bullet4": { ko: "위 노선은 예시이며, 이와 같은 도시 간 이동을 문의할 수 있습니다.", en: "These are examples — you're welcome to inquire about similar routes." },
-  "services.svc3.cta": { ko: "장거리 이동 견적 받기", en: "Get a Long-Distance Quote" },
+  "svc.business.name": { ko: "기업 출장", en: "Corporate Travel" },
+  "svc.business.desc": { ko: "공항부터 미팅, 숙소까지 출장 일정 전체 동선을 조율합니다.", en: "We coordinate your entire trip, from airport to meetings to hotel." },
+  "svc.business.d1": { ko: "여러 도시 연속 출장도 문의 가능", en: "Multi-city trips can also be arranged" },
+  "svc.business.d2": { ko: "세금계산서·견적서 발행", en: "Invoices and quotes issued" },
+  "svc.business.d3": { ko: "임직원 다수 동시 차량 배정", en: "Multiple vehicles for multiple staff" },
 
-  "services.svc4.name": { ko: "기업 출장 & 임원 수행", en: "Corporate Travel & Executive Escort" },
-  "services.svc4.badge": { ko: "프리미엄", en: "Premium" },
-  "services.svc4.desc": { ko: "해외 출장 중 중요한 미팅과 이동에 집중할 수 있도록 차량 예약을 지원합니다.", en: "So you can focus on meetings, not logistics, during business trips abroad." },
-  "services.svc4.bullet1": { ko: "공항 → 호텔 → 회사, 비즈니스 미팅 이동", en: "Airport → hotel → office, meeting transport" },
-  "services.svc4.bullet2": { ko: "임원 수행 차량, 해외 지사 방문", en: "Executive escort vehicles, overseas office visits" },
-  "services.svc4.bullet3": { ko: "출장 기간 전담 차량 문의", en: "Dedicated vehicle for the full trip" },
-  "services.svc4.bullet4": { ko: "여러 임직원 동시 배정, 기업 행사 이동", en: "Multiple staff at once, corporate event transport" },
-  "services.svc4.note": { ko: "기업·기관·출장팀을 위한 맞춤 차량 일정도 상담할 수 있습니다.", en: "Custom vehicle schedules for companies, institutions, and travel teams are also available." },
-  "services.svc4.cta": { ko: "기업 차량 상담", en: "Talk to Us About Corporate Vehicles" },
+  "svc.escort.name": { ko: "바이어 의전", en: "Client & Buyer Escort" },
+  "svc.escort.desc": { ko: "바이어 방문, 전시회, 컨퍼런스 일정에 맞춰 차량을 배치합니다.", en: "Vehicles arranged around buyer visits, trade shows, and conferences." },
+  "svc.escort.d1": { ko: "공항 픽업부터 미팅 동행까지", en: "From airport pickup to meeting support" },
+  "svc.escort.d2": { ko: "통역 연계 가능 여부는 예약 전 확인", en: "Interpreter availability confirmed before booking" },
+  "svc.escort.d3": { ko: "전시장·식사 장소 등 다구간 이동", en: "Multi-stop transport to venues and dining" },
 
-  "services.svc5.name": { ko: "전시회 & 비즈니스 차량", en: "Trade Show & Business Event Vehicles" },
-  "services.svc5.desc": { ko: "해외 박람회, 전시회, 컨퍼런스, 바이어 미팅 등 복잡한 출장 일정에도 차량 이동을 한 번에 준비할 수 있습니다.", en: "Even a packed schedule of trade shows, conferences, and buyer meetings can run on one coordinated vehicle plan." },
-  "services.svc5.bullet1": { ko: "호텔 → 전시장", en: "Hotel → venue" },
-  "services.svc5.bullet2": { ko: "전시장 → 바이어 미팅", en: "Venue → buyer meeting" },
-  "services.svc5.bullet3": { ko: "미팅 → 식사 장소", en: "Meeting → dining" },
-  "services.svc5.bullet4": { ko: "행사 종료 후 호텔 이동", en: "Return to hotel after the event" },
-  "services.svc5.cta": { ko: "출장 일정 상담", en: "Plan Your Trip Itinerary" },
+  "svc.dedicated.name": { ko: "전용 기사", en: "Dedicated Driver" },
+  "svc.dedicated.desc": { ko: "하루 여러 곳을 이동하거나 여러 날 동안 전용으로 이용합니다.", en: "A dedicated driver for multiple stops in a day, or for several days." },
+  "svc.dedicated.d1": { ko: "4시간·8시간·종일·맞춤 일정", en: "4-hour, 8-hour, full-day, or custom schedules" },
+  "svc.dedicated.d2": { ko: "하루 여러 미팅·장소 이동", en: "Multiple meetings or stops in one day" },
+  "svc.dedicated.d3": { ko: "출장과 여행 모두 이용 가능", en: "For both business and leisure" },
 
-  "services.svc6.name": { ko: "차량 + 한국어 통역 패키지", en: "Driver + Interpreter Package" },
-  "services.svc6.desc": { ko: "차량 이동과 한국어 통역이 모두 필요한 해외 출장 고객을 위한 맞춤 서비스입니다.", en: "A combined service for travelers who need both a vehicle and Korean interpretation abroad." },
-  "services.svc6.bullet1": { ko: "공항픽업, 전용 차량", en: "Airport pickup, dedicated vehicle" },
-  "services.svc6.bullet2": { ko: "현지 비즈니스 이동, 바이어 미팅", en: "Local business transport, buyer meetings" },
-  "services.svc6.bullet3": { ko: "한국어 통역, 전시회 방문", en: "Korean interpretation, trade show visits" },
-  "services.svc6.bullet4": { ko: "호텔 샌딩", en: "Hotel drop-off" },
-  "services.svc6.note": { ko: "통역 서비스는 지역 및 일정에 따라 제공 가능 여부를 예약 전 확인해야 합니다.", en: "Interpreter availability depends on region and schedule — please confirm before booking." },
-  "services.svc6.cta": { ko: "차량 + 통역 상담", en: "Ask About Driver + Interpreter" },
+  "svc.edu.name": { ko: "교육·연수", en: "Education & Training Visits" },
+  "svc.edu.desc": { ko: "교육청, 학교, 연수단의 단체 이동을 지원합니다.", en: "Group transport for school districts, schools, and training delegations." },
+  "svc.edu.d1": { ko: "연수단, 자매학교 방문 등 지원", en: "Supports delegations and sister-school visits" },
+  "svc.edu.d2": { ko: "인원에 맞춰 SUV·미니밴 배정", en: "SUV or minivan assigned to group size" },
+  "svc.edu.d3": { ko: "참가 인원 기준 견적 안내", en: "Quotes based on participant count" },
 
-  "services.svc7.name": { ko: "가족 & 단체 미니밴", en: "Family & Group Minivan" },
-  "services.svc7.desc": { ko: "아이와 함께하는 가족여행이나 여러 명이 함께 이동하는 여행이라면 인원과 짐에 맞는 차량을 상담할 수 있습니다.", en: "For family trips with kids or group travel, we help match a vehicle to your group size and luggage." },
-  "services.svc7.bullet1": { ko: "가족여행, 부모님 해외여행", en: "Family trips, parents traveling abroad" },
-  "services.svc7.bullet2": { ko: "유아 동반 여행, 캐리어가 많은 여행", en: "Traveling with infants, heavy luggage" },
-  "services.svc7.bullet3": { ko: "4~7인 그룹, 소규모 단체", en: "Groups of 4–7, small groups" },
-  "services.svc7.bullet4": { ko: "한국에 있는 가족이 해외 부모님의 차량을 대신 예약할 수도 있습니다.", en: "Family members in Korea can also book a vehicle on behalf of parents traveling abroad." },
-  "services.svc7.cta": { ko: "가족 차량 상담", en: "Ask About Family Vehicles" },
+  "svc.family.name": { ko: "가족·단체 이동", en: "Family & Group Travel" },
+  "svc.family.desc": { ko: "가족 여행이나 소규모 단체 이동에 맞는 차량을 상담합니다.", en: "We help match a vehicle to family trips or small-group travel." },
+  "svc.family.d1": { ko: "유아 동반, 캐리어 많은 여행 상담", en: "Guidance for traveling with infants or heavy luggage" },
+  "svc.family.d2": { ko: "한국에 있는 가족이 대신 예약 가능", en: "Family in Korea can book on your behalf" },
+  "svc.family.d3": { ko: "4인 이상 그룹은 미니밴 상담", en: "Minivan recommended for groups of 4+" },
 
-  "services.svc8.name": { ko: "프라이빗 투어 & 자유 일정 차량", en: "Private Tour & Flexible Itinerary" },
-  "services.svc8.desc": { ko: "정해진 단체투어 대신 원하는 일정으로 도시를 여행하고 싶은 고객을 위한 차량 예약 서비스입니다.", en: "For travelers who'd rather explore a city on their own schedule than join a fixed group tour." },
-  "services.svc8.bullet1": { ko: "호텔 픽업, 관광지 이동", en: "Hotel pickup, sightseeing transport" },
-  "services.svc8.bullet2": { ko: "쇼핑, 레스토랑", en: "Shopping, restaurants" },
-  "services.svc8.bullet3": { ko: "근교 도시, 호텔 복귀", en: "Nearby cities, return to hotel" },
-  "services.svc8.cta": { ko: "프라이빗 투어 상담", en: "Ask About Private Tours" },
-
-  "vehicles.title": { ko: "어떤 차량이 필요하세요?", en: "Which Vehicle Do You Need?" },
-  "vehicles.subtitle": { ko: "일정과 인원에 맞는 차량 유형을 안내해 드립니다.", en: "We help you choose the right vehicle for your group and schedule." },
-  "vehicles.sedan.name": { ko: "세단", en: "Sedan" },
-  "vehicles.sedan.desc": { ko: "1~3인 이동에 적합", en: "Suited to 1–3 passengers" },
-  "vehicles.suv.name": { ko: "SUV", en: "SUV" },
-  "vehicles.suv.desc": { ko: "넉넉한 공간이 필요한 여행 및 출장", en: "Extra space for travel or business trips" },
-  "vehicles.minivan.name": { ko: "미니밴", en: "Minivan" },
-  "vehicles.minivan.desc": { ko: "가족 및 소규모 단체", en: "Families and small groups" },
-  "vehicles.premium.name": { ko: "프리미엄 차량", en: "Premium Vehicle" },
-  "vehicles.premium.desc": { ko: "VIP 및 비즈니스 고객", en: "VIP and business travelers" },
-  "vehicles.van.name": { ko: "밴 / 버스", en: "Van / Bus" },
-  "vehicles.van.desc": { ko: "기업·행사·단체 이동", en: "Corporate, event, and group transport" },
-  "vehicles.disclaimer": { ko: "요청 기준으로 현지에서 매칭하며, 동일 모델·색상을 보장하지 않습니다.", en: "Vehicles are matched locally based on your request; the exact model or color is not guaranteed." },
-  "vehicles.availabilityNote": { ko: "지역 및 일정에 따라 이용 가능한 차량 종류가 다를 수 있습니다.", en: "Available vehicle types may vary by region and schedule." },
-
-  "recommended.title": { ko: "이런 분들에게 추천합니다", en: "Recommended For" },
-  "recommended.item1": { ko: "해외 공항에서 한국어 가능한 이동 서비스를 찾는 분", en: "Looking for Korean-speaking transport at an airport abroad" },
-  "recommended.item2": { ko: "출장 중 여러 장소를 이동해야 하는 분", en: "Traveling to multiple locations during a business trip" },
-  "recommended.item3": { ko: "부모님 해외여행 차량을 대신 예약하려는 분", en: "Booking a vehicle on behalf of parents traveling abroad" },
-  "recommended.item4": { ko: "아이와 함께 이동하는 가족", en: "Families traveling with children" },
-  "recommended.item5": { ko: "캐리어가 많아 일반 택시 이용이 불편한 분", en: "Travelers with too much luggage for a regular taxi" },
-  "recommended.item6": { ko: "전시회·박람회 출장 차량이 필요한 기업", en: "Companies needing vehicles for trade shows" },
-  "recommended.item7": { ko: "기사와 함께 하루 동안 자유롭게 이동하고 싶은 분", en: "Anyone wanting a free-roaming day with a driver" },
-  "recommended.item8": { ko: "도시 간 장거리 이동이 필요한 분", en: "Anyone needing city-to-city long-distance transport" },
+  "itinerary.eyebrow": { ko: "QUICK START", en: "QUICK START" },
+  "itinerary.title": { ko: "어떤 일정이신가요?", en: "What's Your Itinerary?" },
+  "itinerary.subtitle": { ko: "해당하는 일정을 선택하면 문의 폼이 자동으로 채워집니다.", en: "Pick the one that fits and the inquiry form fills in automatically." },
+  "itinerary.opt1": { ko: "공항에서 호텔까지만 이동", en: "Just airport to hotel" },
+  "itinerary.opt2": { ko: "하루 여러 미팅 이동", en: "Multiple meetings in one day" },
+  "itinerary.opt3": { ko: "해외 바이어 방문", en: "Visiting a buyer abroad" },
+  "itinerary.opt4": { ko: "교육청·학교 연수", en: "School district / school visit" },
+  "itinerary.opt5": { ko: "전시회·컨퍼런스", en: "Trade show / conference" },
+  "itinerary.opt6": { ko: "여러 도시 연속 출장", en: "Multi-city business trip" },
+  "itinerary.opt7": { ko: "가족 여행", en: "Family trip" },
+  "itinerary.opt8": { ko: "골프·행사 일정", en: "Golf / event schedule" },
 
   "process.title": { ko: "이용 과정", en: "How It Works" },
   "process.subtitle": { ko: "간단한 다섯 단계로 진행됩니다.", en: "Five simple steps, from request to pickup." },
@@ -150,10 +107,11 @@ var I18N = {
   "process.step5.title": { ko: "현지에서 드라이버 미팅", en: "Meet Your Driver on Location" },
   "process.step5.desc": { ko: "안내받은 시간과 장소에서 드라이버를 만납니다.", en: "Meet your driver at the confirmed time and place." },
 
-  "business.title": { ko: "기업·기관 서비스", en: "For Businesses & Institutions" },
-  "business.bodyLine1": { ko: "출장, 바이어 의전, 연수 프로그램의 차량과 기사를 지원합니다.", en: "We support vehicles and drivers for business trips, client visits, and training programs." },
+  "business.eyebrow": { ko: "FOR ORGANIZATIONS", en: "FOR ORGANIZATIONS" },
+  "business.title": { ko: "기업과 기관의 해외 이동도 한 번에 조율합니다.", en: "We Coordinate Corporate & Institutional Travel Abroad, End to End." },
+  "business.bodyLine1": { ko: "해외 출장, 외국인 바이어 방문, 교육청 및 학교 연수, 컨퍼런스, 공장 방문, 전시회까지 지원합니다.", en: "Supporting business trips, buyer visits, school district and school training, conferences, factory visits, and trade shows." },
   "business.bodyLine2": { ko: "담당자 한 명이 문의부터 확정까지 응대합니다.", en: "A single point of contact handles your request from inquiry to confirmation." },
-  "business.bodyLine3": { ko: "단체 인원과 다일정 이동도 함께 조율합니다.", en: "Group travel and multi-schedule coordination are handled together." },
+  "business.bodyLine3": { ko: "다일정 출장과 여러 대 차량 배차도 함께 조율합니다.", en: "Multi-schedule trips and multi-vehicle dispatch are coordinated together." },
   "business.item1": { ko: "세금계산서 및 견적서 발행", en: "Invoices and quotes are issued" },
   "business.item2": { ko: "다인원·다일정 동시 조율", en: "Multiple travelers and schedules are coordinated together" },
   "business.item3": { ko: "담당자와 한국어로 소통 가능", en: "You can communicate with your contact in Korean" },
@@ -162,6 +120,13 @@ var I18N = {
   "business.notProvided1": { ko: "실시간 기사 배정 앱 — 즉시 기사를 배정하는 앱 서비스는 제공하지 않습니다.", en: "Real-time driver-assignment app — we do not provide an app for instant, on-demand driver assignment." },
   "business.notProvided2": { ko: "미확인 지역 확정 예약 — 매칭 가능 여부를 확인하지 않은 지역의 예약은 바로 확정하지 않습니다.", en: "Confirmed bookings in unverified regions — we do not confirm bookings where availability has not been checked." },
   "business.cta": { ko: "기업·기관 문의하기", en: "Contact Us for Organizations" },
+  "business.scheduleLabel": { ko: "샘플 일정표", en: "Sample Itinerary" },
+  "business.schedule1": { ko: "공항 픽업", en: "Airport pickup" },
+  "business.schedule2": { ko: "호텔", en: "Hotel" },
+  "business.schedule3": { ko: "기업 미팅", en: "Business meeting" },
+  "business.schedule4": { ko: "공장 방문", en: "Factory visit" },
+  "business.schedule5": { ko: "디너 미팅", en: "Dinner meeting" },
+  "business.scheduleCaption": { ko: "한 일정 안에서 여러 구간을 조율할 수 있습니다.", en: "Multiple stops can be coordinated within a single itinerary." },
 
   "banner.corporate.title": { ko: "Business Travel with Certo Drive", en: "Business Travel with Certo Drive" },
   "banner.corporate.copy": { ko: "해외 출장 차량부터 공항픽업, 전시회, 임원 수행, 통역 연계까지. 기업의 해외 이동을 한 번에 상담하세요.", en: "From business trip vehicles and airport pickups to trade shows, executive escorts, and interpreter coordination — plan your company's travel abroad in one place." },
@@ -171,6 +136,51 @@ var I18N = {
   "banner.quote.copy": { ko: "공항픽업 한 번부터 며칠간의 출장 일정까지 Certo Drive가 필요한 차량을 연결해드립니다.", en: "From a single airport pickup to a multi-day business trip, Certo Drive connects you with the vehicle you need." },
   "banner.quote.cta": { ko: "빠른 견적 요청", en: "Request a Quick Quote" },
 
+  "vehicles.eyebrow": { ko: "VEHICLES", en: "VEHICLES" },
+  "vehicles.title": { ko: "어떤 차량이 필요하세요?", en: "Which Vehicle Do You Need?" },
+  "vehicles.subtitle": { ko: "인원과 짐에 맞는 차량 유형을 안내해 드립니다.", en: "We help you choose the right vehicle for your group and luggage." },
+  "vehicles.factPax": { ko: "추천 인원", en: "Recommended for" },
+  "vehicles.factUse": { ko: "추천 용도", en: "Best for" },
+  "vehicles.factLuggage": { ko: "짐 기준", en: "Luggage" },
+  "vehicles.sedan.name": { ko: "세단", en: "Sedan" },
+  "vehicles.sedan.pax": { ko: "1~3명", en: "1–3 people" },
+  "vehicles.sedan.use": { ko: "공항 픽업, 시내 이동", en: "Airport pickup, city transfers" },
+  "vehicles.sedan.luggage": { ko: "캐리어 1~2개", en: "1–2 suitcases" },
+  "vehicles.suv.name": { ko: "SUV", en: "SUV" },
+  "vehicles.suv.pax": { ko: "1~4명", en: "1–4 people" },
+  "vehicles.suv.use": { ko: "출장, 짐이 많은 이동", en: "Business trips, heavier luggage" },
+  "vehicles.suv.luggage": { ko: "캐리어 2~3개 또는 골프백", en: "2–3 suitcases or golf bags" },
+  "vehicles.minivan.name": { ko: "미니밴", en: "Minivan" },
+  "vehicles.minivan.pax": { ko: "4~7명", en: "4–7 people" },
+  "vehicles.minivan.use": { ko: "가족, 그룹 이동", en: "Families, group travel" },
+  "vehicles.minivan.luggage": { ko: "캐리어 3~5개", en: "3–5 suitcases" },
+  "vehicles.van.name": { ko: "밴", en: "Van" },
+  "vehicles.van.pax": { ko: "8명 이상", en: "8+ people" },
+  "vehicles.van.use": { ko: "단체, 행사 이동", en: "Groups, event transport" },
+  "vehicles.van.luggage": { ko: "대형 수하물 다수", en: "Multiple large items" },
+  "vehicles.disclaimer": { ko: "실제 차량 모델은 지역에 따라 달라질 수 있으며, 동일 모델을 보장하지 않습니다.", en: "The actual vehicle model may vary by region and is not guaranteed to be identical." },
+
+  "recommender.title": { ko: "차량 추천", en: "Vehicle Recommender" },
+  "recommender.paxLabel": { ko: "인원", en: "Passengers" },
+  "recommender.pax1": { ko: "1~3명", en: "1–3" },
+  "recommender.pax2": { ko: "4~5명", en: "4–5" },
+  "recommender.pax3": { ko: "6~7명", en: "6–7" },
+  "recommender.pax4": { ko: "8명+", en: "8+" },
+  "recommender.luggageLabel": { ko: "짐", en: "Luggage" },
+  "recommender.luggage1": { ko: "적음", en: "Light" },
+  "recommender.luggage2": { ko: "보통", en: "Normal" },
+  "recommender.luggage3": { ko: "많음", en: "Heavy" },
+  "recommender.luggage4": { ko: "골프백/대형짐", en: "Golf bags / large items" },
+  "recommender.resultLabel": { ko: "추천 차량", en: "Recommended Vehicle" },
+  "recommender.resultNote": { ko: "정확한 차량은 지역 및 짐 크기를 확인한 뒤 안내드립니다.", en: "The exact vehicle is confirmed after checking your region and luggage size." },
+  "recommender.sedan": { ko: "세단", en: "Sedan" },
+  "recommender.suv": { ko: "SUV", en: "SUV" },
+  "recommender.suvOrMinivan": { ko: "SUV 또는 미니밴", en: "SUV or Minivan" },
+  "recommender.minivan": { ko: "미니밴", en: "Minivan" },
+  "recommender.van": { ko: "밴", en: "Van" },
+  "recommender.prompt": { ko: "인원과 짐을 선택해 주세요.", en: "Select your passengers and luggage." },
+
+  "cases.eyebrow": { ko: "EXAMPLE CASES", en: "EXAMPLE CASES" },
   "cases.title": { ko: "이용 사례", en: "Example Cases" },
   "cases.subtitle": { ko: "실제 진행 방식을 보여드리는 예시입니다.", en: "Examples showing how a typical engagement is arranged." },
   "cases.disclaimer": { ko: "아래는 이해를 돕기 위한 가상 사례입니다.", en: "The following are illustrative examples, not actual client records." },
@@ -201,11 +211,19 @@ var I18N = {
   "cases.case3.request": { ko: "가족 여행, 한국어 기사 요청", en: "A family trip requesting a Korean-speaking driver" },
   "cases.case3.action": { ko: "가족 일정에 맞춰 미니밴과 한국어 드라이버를 매칭했습니다.", en: "Certo Drive matched a minivan and a Korean-speaking driver to the family's itinerary." },
 
-  "regions.title": { ko: "지역", en: "Regions" },
-  "regions.subtitle": { ko: "한인 커뮤니티가 있는 도시를 우선으로 매칭하며, 그 외 지역은 문의 후 확인해 회신드립니다.", en: "We prioritize matching in cities with established Korean communities; other regions are confirmed after review." },
-  "regions.cities": { ko: "시애틀 · LA · 뉴욕 · 밴쿠버 · 토론토 · 시드니 · 런던", en: "Seattle · LA · New York · Vancouver · Toronto · Sydney · London" },
-  "regions.note": { ko: "목록에 없는 도시도 문의하시면 가능 여부를 확인해 회신드립니다.", en: "Even if your city isn't listed, contact us and we'll confirm availability." },
+  "cities.eyebrow": { ko: "CITIES", en: "CITIES" },
+  "cities.title": { ko: "이용 가능한 도시를 확인해보세요", en: "Check Available Cities" },
+  "cities.subtitle": { ko: "지역과 일정에 따라 가능 여부를 확인한 뒤 안내드립니다.", en: "Availability is confirmed by region and schedule before we respond." },
+  "cities.placeholder": { ko: "도시 또는 공항명을 입력하세요", en: "Enter a city or airport name" },
+  "cities.example": { ko: "예: Frankfurt, Berlin, JFK, Dubai", en: "e.g. Frankfurt, Berlin, JFK, Dubai" },
+  "cities.region.us": { ko: "미국", en: "United States" },
+  "cities.region.ca": { ko: "캐나다", en: "Canada" },
+  "cities.region.eu": { ko: "유럽", en: "Europe" },
+  "cities.region.asia": { ko: "아시아", en: "Asia" },
+  "cities.region.au": { ko: "호주", en: "Australia" },
+  "cities.noMatch": { ko: "검색 결과가 없습니다. 목록에 없는 도시도 문의해 주시면 가능 여부를 확인해 드립니다.", en: "No matches found. Even if your city isn't listed, contact us and we'll confirm availability." },
 
+  "faq.eyebrow": { ko: "FAQ", en: "FAQ" },
   "faq.title": { ko: "자주 묻는 질문", en: "Frequently Asked Questions" },
   "faq.q1": { ko: "한국어 가능한 기사인가요?", en: "Is the driver Korean-speaking?" },
   "faq.a1": { ko: "네, 한국어 가능 드라이버를 우선 매칭합니다. 지역에 따라 예약 전 확인이 필요합니다.", en: "Yes — we prioritize Korean-speaking drivers. Availability by region should be confirmed before booking." },
@@ -236,6 +254,7 @@ var I18N = {
   "faq.q14": { ko: "통행료·주차비 등의 추가 비용은 어떻게 되나요?", en: "What about extra costs like tolls or parking?" },
   "faq.a14": { ko: "톨비·주차비 등 현지 실비는 별도일 수 있으며, 견적 시 안내합니다.", en: "Local costs such as tolls and parking may be separate and are noted in your quote." },
 
+  "contact.eyebrow": { ko: "CONTACT", en: "CONTACT" },
   "contact.title": { ko: "문의하기", en: "Contact Us" },
   "contact.subtitle": { ko: "아래 정보를 남겨주시면 확인 후 회신드립니다.", en: "Leave your details below and we'll get back to you." },
   "contact.formNote": { ko: "보통 1영업일 내 회신드립니다.", en: "We usually respond within 1 business day." },
@@ -273,7 +292,7 @@ var I18N = {
   "contact.help.city": { ko: "이용하실 국가와 도시를 함께 적어주세요.", en: "Include both the country and city." },
   "contact.help.dates": { ko: "실제 이용 일정을 기준으로 입력해 주세요.", en: "Enter the actual dates you plan to use the service." },
   "contact.help.passengers": { ko: "탑승 예정 인원 수를 입력해 주세요.", en: "Enter the number of passengers." },
-  "contact.help.vehicle": { ko: "세단/SUV/미니밴/프리미엄/밴 중 선택해 주세요.", en: "Choose from sedan, SUV, minivan, premium, or van." },
+  "contact.help.vehicle": { ko: "세단/SUV/미니밴/밴 중 선택해 주세요.", en: "Choose from sedan, SUV, minivan, or van." },
   "contact.help.koreanDriver": { ko: "필요/가능하면/상관없음 중 선택해 주세요.", en: "Choose required, if possible, or no preference." },
   "contact.help.purpose": { ko: "방문 목적에 맞게 선택해 주세요.", en: "Choose the option that matches your purpose." },
   "contact.help.pickup": { ko: "픽업 받으실 장소를 적어주세요.", en: "Enter the location where you'd like to be picked up." },
@@ -284,8 +303,7 @@ var I18N = {
   "contact.option.sedan": { ko: "세단", en: "Sedan" },
   "contact.option.suv": { ko: "SUV", en: "SUV" },
   "contact.option.minivan": { ko: "미니밴", en: "Minivan" },
-  "contact.option.premium": { ko: "프리미엄 차량", en: "Premium Vehicle" },
-  "contact.option.van": { ko: "밴 / 버스", en: "Van / Bus" },
+  "contact.option.van": { ko: "밴", en: "Van" },
   "contact.option.unknown": { ko: "모름", en: "Not sure" },
   "contact.option.driverRequired": { ko: "필요", en: "Required" },
   "contact.option.driverPreferred": { ko: "가능하면", en: "If possible" },
@@ -294,11 +312,14 @@ var I18N = {
   "contact.option.corporate": { ko: "기업", en: "Corporate" },
   "contact.option.institution": { ko: "기관", en: "Institution" },
   "contact.option.other": { ko: "기타", en: "Other" },
-  "contact.option.purposeAirport": { ko: "공항픽업", en: "Airport Pickup" },
-  "contact.option.purposeDriver": { ko: "전용기사", en: "Dedicated Driver" },
-  "contact.option.purposeBusiness": { ko: "출장", en: "Business Trip" },
-  "contact.option.purposeSchool": { ko: "교육방문", en: "School Visit" },
-  "contact.option.purposeFamily": { ko: "가족여행", en: "Family Travel" },
+  "contact.option.purposeAirport": { ko: "공항에서 호텔까지만 이동", en: "Just airport to hotel" },
+  "contact.option.purposeDriver": { ko: "하루 여러 미팅 이동", en: "Multiple meetings in one day" },
+  "contact.option.purposeBuyer": { ko: "해외 바이어 방문", en: "Visiting a buyer abroad" },
+  "contact.option.purposeSchool": { ko: "교육청·학교 연수", en: "School district / school visit" },
+  "contact.option.purposeExhibition": { ko: "전시회·컨퍼런스", en: "Trade show / conference" },
+  "contact.option.purposeMultiCity": { ko: "여러 도시 연속 출장", en: "Multi-city business trip" },
+  "contact.option.purposeFamily": { ko: "가족 여행", en: "Family trip" },
+  "contact.option.purposeGolf": { ko: "골프·행사 일정", en: "Golf / event schedule" },
   "contact.submit": { ko: "문의 보내기", en: "Send Inquiry" },
   "contact.privacyNote": { ko: "제출하신 정보는 문의 응대 목적으로만 사용됩니다.", en: "Information submitted is used only to respond to your inquiry." },
   "contact.refundNote": { ko: "확정(드라이버·차량 조율) 전에는 취소가 가능하며, 확정 이후에는 환불이 불가합니다.", en: "Cancellation is possible before confirmation. Once a driver and vehicle are confirmed, the booking is non-refundable." },
@@ -388,6 +409,7 @@ function applyLanguage(lang) {
     enBtn.setAttribute("aria-pressed", lang === "en" ? "true" : "false");
   }
 
+  updateRecommenderResult();
   saveLang(lang);
 }
 
@@ -452,6 +474,128 @@ function initFooterYear() {
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
+}
+
+/* ---- Itinerary quick-picker: sets contact form purpose + scrolls ---- */
+function initItineraryPicker() {
+  var grid = document.getElementById("itinerary-grid");
+  if (!grid) return;
+  var purposeSelect = document.getElementById("purpose");
+
+  grid.addEventListener("click", function (event) {
+    var chip = event.target.closest(".itinerary-chip");
+    if (!chip) return;
+
+    var chips = grid.querySelectorAll(".itinerary-chip");
+    for (var i = 0; i < chips.length; i++) {
+      chips[i].classList.remove("is-active");
+    }
+    chip.classList.add("is-active");
+
+    var purposeValue = chip.getAttribute("data-purpose");
+    if (purposeSelect && purposeValue) {
+      purposeSelect.value = purposeValue;
+    }
+
+    var contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+}
+
+/* ---- Vehicle recommender ---- */
+var recommenderState = { pax: null, luggage: null };
+
+function computeRecommendation(pax, luggage) {
+  if (pax === "8+") return "recommender.van";
+  if (pax === "6-7") return "recommender.minivan";
+  if (pax === "4-5") return "recommender.suvOrMinivan";
+  if (pax === "1-3") {
+    if (luggage === "heavy" || luggage === "golf") return "recommender.suv";
+    return "recommender.sedan";
+  }
+  return null;
+}
+
+function updateRecommenderResult() {
+  var resultBox = document.getElementById("recommender-result");
+  var resultValue = document.getElementById("recommender-result-value");
+  if (!resultBox || !resultValue) return;
+
+  var lang = document.documentElement.getAttribute("lang") === "en" ? "en" : "ko";
+
+  if (!recommenderState.pax || !recommenderState.luggage) {
+    resultBox.hidden = true;
+    return;
+  }
+
+  var key = computeRecommendation(recommenderState.pax, recommenderState.luggage);
+  if (key && I18N[key]) {
+    resultValue.textContent = I18N[key][lang];
+    resultBox.hidden = false;
+  }
+}
+
+function initVehicleRecommender() {
+  var paxGroup = document.getElementById("recommender-pax");
+  var luggageGroup = document.getElementById("recommender-luggage");
+  if (!paxGroup || !luggageGroup) return;
+
+  paxGroup.addEventListener("click", function (event) {
+    var btn = event.target.closest(".recommender-option");
+    if (!btn) return;
+    var buttons = paxGroup.querySelectorAll(".recommender-option");
+    for (var i = 0; i < buttons.length; i++) buttons[i].classList.remove("is-active");
+    btn.classList.add("is-active");
+    recommenderState.pax = btn.getAttribute("data-pax");
+    updateRecommenderResult();
+  });
+
+  luggageGroup.addEventListener("click", function (event) {
+    var btn = event.target.closest(".recommender-option");
+    if (!btn) return;
+    var buttons = luggageGroup.querySelectorAll(".recommender-option");
+    for (var i = 0; i < buttons.length; i++) buttons[i].classList.remove("is-active");
+    btn.classList.add("is-active");
+    recommenderState.luggage = btn.getAttribute("data-luggage");
+    updateRecommenderResult();
+  });
+}
+
+/* ---- City search filter ---- */
+function initCitySearch() {
+  var input = document.getElementById("city-search-input");
+  var regionsBox = document.getElementById("city-regions");
+  var noMatch = document.getElementById("city-no-match");
+  if (!input || !regionsBox) return;
+
+  input.addEventListener("input", function () {
+    var query = input.value.trim().toLowerCase();
+    var groups = regionsBox.querySelectorAll(".city-region-group");
+    var anyVisible = false;
+
+    for (var g = 0; g < groups.length; g++) {
+      var group = groups[g];
+      var chips = group.querySelectorAll(".city-chip");
+      var groupHasMatch = false;
+
+      for (var c = 0; c < chips.length; c++) {
+        var chip = chips[c];
+        var text = chip.textContent.trim().toLowerCase();
+        var matches = query === "" || text.indexOf(query) !== -1;
+        chip.classList.toggle("is-hidden", !matches);
+        if (matches) groupHasMatch = true;
+      }
+
+      group.classList.toggle("has-match", groupHasMatch);
+      if (groupHasMatch) anyVisible = true;
+    }
+
+    if (noMatch) {
+      noMatch.classList.toggle("is-visible", !anyVisible);
+    }
+  });
 }
 
 function setFieldError(form, fieldName, message) {
@@ -537,5 +681,8 @@ document.addEventListener("DOMContentLoaded", function () {
   initMobileNav();
   initKakaoLinks();
   initFooterYear();
+  initItineraryPicker();
+  initVehicleRecommender();
+  initCitySearch();
   initContactForm();
 });

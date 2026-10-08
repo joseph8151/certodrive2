@@ -3,18 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>체르토 드라이브 | 전 세계 한국어 드라이버 예약</title>
-<meta name="description" content="공항픽업, 시간제 차량, 출장, 장거리 이동까지. 해외에서도 한국어로 간편하게 차량과 드라이버를 예약하는 글로벌 모빌리티 서비스, 체르토 드라이브.">
+<title>체르토 드라이브 | 해외 이동, 현지 기사와 차량 연결</title>
+<meta name="description" content="공항 픽업부터 기업 출장, 바이어 의전, 교육기관 연수, 가족 일정까지. 해외 주요 도시에서 한국어로 상담하고 현지 기사와 차량을 연결하는 체르토 드라이브.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">본문 바로가기</a>
-
-<div class="checker-strip" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="container">
@@ -29,7 +27,7 @@
       <a href="#vehicles" data-i18n="nav.vehicles">차량</a>
       <a href="#process" data-i18n="nav.process">이용 과정</a>
       <a href="#business" data-i18n="nav.business">기업·기관</a>
-      <a href="#regions" data-i18n="nav.regions">지역</a>
+      <a href="#cities" data-i18n="nav.cities">도시</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
     </nav>
 
@@ -39,7 +37,7 @@
         <button type="button" id="lang-en" aria-pressed="false">EN</button>
       </div>
       <a class="header-kakao-link nav-cta-desktop" href="#kakao" data-kakao-link data-i18n="kakao.chat">카카오톡 상담</a>
-      <a class="btn btn-outline-paper nav-cta-desktop" href="#contact" data-i18n="nav.cta">문의하기</a>
+      <a class="btn btn-primary nav-cta-desktop" href="#contact" data-i18n="nav.cta">빠른 견적 요청</a>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
         <span></span>
       </button>
@@ -47,260 +45,197 @@
   </div>
 </header>
 
-<div class="checker-strip" aria-hidden="true"></div>
-
 <main id="main">
 
   <!-- HERO -->
-  <section class="hero section--tall" id="hero">
-    <div class="checker-strip checker-strip--vertical" aria-hidden="true"></div>
+  <section class="hero" id="hero">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-inner">
-          <span class="hero-eyebrow" data-i18n="hero.eyebrow">글로벌 한국어 드라이버 예약 중개</span>
+          <span class="hero-eyebrow" data-i18n="hero.eyebrow">글로벌 모빌리티 파트너</span>
           <h1 class="hero-title">
-            <span data-i18n="hero.headlineMain">전 세계</span>
-            <span class="accent" data-i18n="hero.headlineAccent">한국어 드라이버 예약</span>
+            <span data-i18n="hero.headlineMain">해외 이동이 필요한 순간,</span>
+            <span class="accent" data-i18n="hero.headlineAccent">현지 기사와 차량을 연결합니다.</span>
           </h1>
-          <p class="hero-sub" data-i18n="hero.sub">공항픽업부터 비즈니스 출장, 프라이빗 투어, 장거리 이동까지. 해외에서도 편안하게 한국어로 차량을 예약하세요.</p>
+          <p class="hero-sub" data-i18n="hero.sub">공항 픽업부터 기업 출장, 바이어 의전, 교육기관 연수, 가족 일정까지. 필요한 도시와 일정에 맞춰 차량과 드라이버를 확인해 드립니다.</p>
+          <p class="hero-tags" data-i18n="hero.tags">한국어 상담 · 해외 주요 도시 · 기업/기관 일정 대응</p>
           <div class="hero-actions">
-            <a class="btn btn-taxi" href="#contact" data-i18n="hero.ctaPrimary">빠른 견적 받기</a>
-            <a class="btn btn-taxi-outline" href="#services" data-i18n="hero.ctaSecondary">서비스 보기</a>
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.ctaPrimary">빠른 견적 요청</a>
+            <a class="btn btn-outline" href="#kakao" data-kakao-link data-i18n="kakao.chat">카카오톡 상담</a>
           </div>
-          <p class="hero-note" data-i18n="hero.note">시애틀, LA, 뉴욕 등 주요 한인 도시를 중심으로 매칭합니다.</p>
+          <p class="hero-note" data-i18n="hero.note">보통 1영업일 이내 회신</p>
         </div>
         <div class="hero-visual">
           <img src="assets/hero-illustration.svg" alt="" width="440" height="320" loading="eager">
         </div>
       </div>
     </div>
-    <div class="checker-strip" aria-hidden="true"></div>
   </section>
 
-  <!-- QUICK SERVICE PICKER -->
-  <section class="picker section--paper section--tight">
-    <div class="container">
-      <p class="picker-label" data-i18n="picker.label">필요한 서비스를 선택하세요</p>
-      <div class="picker-row">
-        <a class="picker-chip" href="#svc-airport" data-i18n="picker.airport">공항픽업</a>
-        <a class="picker-chip" href="#svc-hourly" data-i18n="picker.hourly">시간제 차량</a>
-        <a class="picker-chip" href="#svc-private" data-i18n="picker.private">프라이빗 투어</a>
-        <a class="picker-chip" href="#svc-longdistance" data-i18n="picker.longdistance">도시 간 이동</a>
-        <a class="picker-chip" href="#svc-corporate" data-i18n="picker.corporate">비즈니스 출장</a>
-        <a class="picker-chip" href="#svc-family" data-i18n="picker.group">단체 차량</a>
-      </div>
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container trust-row">
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z"/></svg>
+        <span data-i18n="trust.item1">해외 주요 도시 대응</span>
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.7 9.7 0 0 1-3.3-.6L4 21l1.1-3.9A8.3 8.3 0 0 1 3 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+        <span data-i18n="trust.item2">한국어 상담</span>
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l3 3v15H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+        <span data-i18n="trust.item3">기업·기관 견적 가능</span>
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-1a5 5 0 0 1 10 0v1M14 20v-.5a4 4 0 0 1 7-2.6"/></svg>
+        <span data-i18n="trust.item4">다일정 차량 조율</span>
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l1.5-5h11L19 17h2"/><path d="M6.5 12 8 7h8l1.5 5"/><circle cx="7.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/></svg>
+        <span data-i18n="trust.item5">SUV · 미니밴 · 밴</span>
+      </span>
     </div>
-  </section>
+  </div>
 
   <!-- SERVICES -->
-  <section id="services" class="section--paper">
+  <section id="services">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">01</span>
-        <h2 class="section-title" data-i18n="services.title">체르토 드라이브 서비스</h2>
-        <p class="section-subtitle" data-i18n="services.subtitle">단순 해외 한인택시 예약이 아닌, 필요한 순간에 필요한 차량을 연결하는 서비스입니다.</p>
+      <div class="section-head section-head--center">
+        <span class="eyebrow" data-i18n="services.eyebrow">SERVICES</span>
+        <h2 class="section-title" data-i18n="services.title">어떤 이동이 필요하신가요?</h2>
+        <p class="section-subtitle" data-i18n="services.subtitle">목적에 맞는 서비스를 선택하면 자세한 내용을 확인할 수 있습니다.</p>
       </div>
-      <div class="feature-list feature-list--4 feature-list--rich">
-        <div class="feature-item" id="svc-airport">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
-          </span>
-          <h3 data-i18n="services.svc1.name">공항 픽업 & 샌딩</h3>
-          <p data-i18n="services.svc1.desc">낯선 해외 공항에 도착한 순간부터 편안하게 이동하세요. 공항에서 호텔, 숙소, 회사, 행사장 등 원하는 목적지까지 차량 예약을 도와드립니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc1.bullet1">공항 도착 픽업</li>
-            <li data-i18n="services.svc1.bullet2">호텔 → 공항 샌딩</li>
-            <li data-i18n="services.svc1.bullet3">심야·이른 아침 이동 문의</li>
-            <li data-i18n="services.svc1.bullet4">가족 및 단체 이동, 짐 많은 고객 차량 상담</li>
+      <div class="svc-grid">
+        <details class="svc-card">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg></span>
+            <h3 data-i18n="svc.airport.name">공항 픽업</h3>
+            <p data-i18n="svc.airport.desc">도착 시간에 맞춰 공항에서 목적지까지 편안하게 이동합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="svc.airport.d1">항공편 지연에 맞춰 일정 조율</li>
+            <li data-i18n="svc.airport.d2">호텔·숙소·행사장까지 목적지 이동</li>
+            <li data-i18n="svc.airport.d3">짐이 많은 경우 SUV 상담 가능</li>
           </ul>
-          <a class="feature-link" href="#contact" data-i18n="services.svc1.cta">공항픽업 견적 받기</a>
-        </div>
+        </details>
 
-        <div class="feature-item" id="svc-hourly">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </span>
-          <h3 data-i18n="services.svc2.name">한국어 드라이버 시간제 예약</h3>
-          <p data-i18n="services.svc2.desc">여러 장소를 이동해야 한다면 시간제 차량 서비스를 이용할 수 있습니다. 출장, 쇼핑, 관광, 미팅 등 일정에 맞춰 차량과 드라이버 예약을 도와드립니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc2.bullet1">4시간 · 8시간 · 종일 · 맞춤 일정</li>
-            <li data-i18n="services.svc2.bullet2">여러 목적지 이동, 일정 중 차량 대기</li>
-            <li data-i18n="services.svc2.bullet3">호텔 출발 및 복귀</li>
-            <li data-i18n="services.svc2.bullet4">출장 및 여행 모두 이용 가능</li>
+        <details class="svc-card">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3"/></svg></span>
+            <h3 data-i18n="svc.business.name">기업 출장</h3>
+            <p data-i18n="svc.business.desc">공항부터 미팅, 숙소까지 출장 일정 전체 동선을 조율합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="svc.business.d1">여러 도시 연속 출장도 문의 가능</li>
+            <li data-i18n="svc.business.d2">세금계산서·견적서 발행</li>
+            <li data-i18n="svc.business.d3">임직원 다수 동시 차량 배정</li>
           </ul>
-          <a class="feature-link" href="#contact" data-i18n="services.svc2.cta">시간제 차량 문의</a>
-        </div>
+        </details>
 
-        <div class="feature-item" id="svc-longdistance">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-10 4 6 3-4 5 8"/><circle cx="9" cy="7" r="1.4" fill="currentColor" stroke="none"/><circle cx="20" cy="9" r="1.4" fill="currentColor" stroke="none"/></svg>
-          </span>
-          <h3 data-i18n="services.svc3.name">도시 간 장거리 이동</h3>
-          <p data-i18n="services.svc3.desc">기차나 항공편 대신 호텔에서 호텔까지 편안하게 이동하고 싶은 고객을 위한 서비스입니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc3.bullet1">예: 뉴욕 → 워싱턴 D.C., LA → 샌디에이고</li>
-            <li data-i18n="services.svc3.bullet2">예: 밀라노 → 베네치아, 로마 → 피렌체</li>
-            <li data-i18n="services.svc3.bullet3">예: 파리 → 브뤼셀, 도쿄 → 후지산 지역</li>
-            <li data-i18n="services.svc3.bullet4">위 노선은 예시이며, 이와 같은 도시 간 이동을 문의할 수 있습니다.</li>
+        <details class="svc-card">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12"/><path d="M14 21V5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v16"/><path d="M4 21h16"/><path d="M17 8h.01M17 11h.01M17 14h.01"/></svg></span>
+            <h3 data-i18n="svc.escort.name">바이어 의전</h3>
+            <p data-i18n="svc.escort.desc">바이어 방문, 전시회, 컨퍼런스 일정에 맞춰 차량을 배치합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="svc.escort.d1">공항 픽업부터 미팅 동행까지</li>
+            <li data-i18n="svc.escort.d2">통역 연계 가능 여부는 예약 전 확인</li>
+            <li data-i18n="svc.escort.d3">전시장·식사 장소 등 다구간 이동</li>
           </ul>
-          <a class="feature-link" href="#contact" data-i18n="services.svc3.cta">장거리 이동 견적 받기</a>
-        </div>
+        </details>
 
-        <div class="feature-item feature-item--premium" id="svc-corporate">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3"/></svg>
-          </span>
-          <span class="feature-badge" data-i18n="services.svc4.badge">프리미엄</span>
-          <h3 data-i18n="services.svc4.name">기업 출장 & 임원 수행</h3>
-          <p data-i18n="services.svc4.desc">해외 출장 중 중요한 미팅과 이동에 집중할 수 있도록 차량 예약을 지원합니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc4.bullet1">공항 → 호텔 → 회사, 비즈니스 미팅 이동</li>
-            <li data-i18n="services.svc4.bullet2">임원 수행 차량, 해외 지사 방문</li>
-            <li data-i18n="services.svc4.bullet3">출장 기간 전담 차량 문의</li>
-            <li data-i18n="services.svc4.bullet4">여러 임직원 동시 배정, 기업 행사 이동</li>
+        <details class="svc-card">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <h3 data-i18n="svc.dedicated.name">전용 기사</h3>
+            <p data-i18n="svc.dedicated.desc">하루 여러 곳을 이동하거나 여러 날 동안 전용으로 이용합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="svc.dedicated.d1">4시간·8시간·종일·맞춤 일정</li>
+            <li data-i18n="svc.dedicated.d2">하루 여러 미팅·장소 이동</li>
+            <li data-i18n="svc.dedicated.d3">출장과 여행 모두 이용 가능</li>
           </ul>
-          <p class="feature-note" data-i18n="services.svc4.note">기업·기관·출장팀을 위한 맞춤 차량 일정도 상담할 수 있습니다.</p>
-          <a class="feature-link" href="#contact" data-i18n="services.svc4.cta">기업 차량 상담</a>
-        </div>
+        </details>
 
-        <div class="feature-item" id="svc-exhibition">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/><path d="M9 12h6"/></svg>
-          </span>
-          <h3 data-i18n="services.svc5.name">전시회 & 비즈니스 차량</h3>
-          <p data-i18n="services.svc5.desc">해외 박람회, 전시회, 컨퍼런스, 바이어 미팅 등 복잡한 출장 일정에도 차량 이동을 한 번에 준비할 수 있습니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc5.bullet1">호텔 → 전시장</li>
-            <li data-i18n="services.svc5.bullet2">전시장 → 바이어 미팅</li>
-            <li data-i18n="services.svc5.bullet3">미팅 → 식사 장소</li>
-            <li data-i18n="services.svc5.bullet4">행사 종료 후 호텔 이동</li>
+        <details class="svc-card">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11.5V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.5"/><path d="M22 9v6"/></svg></span>
+            <h3 data-i18n="svc.edu.name">교육·연수</h3>
+            <p data-i18n="svc.edu.desc">교육청, 학교, 연수단의 단체 이동을 지원합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="svc.edu.d1">연수단, 자매학교 방문 등 지원</li>
+            <li data-i18n="svc.edu.d2">인원에 맞춰 SUV·미니밴 배정</li>
+            <li data-i18n="svc.edu.d3">참가 인원 기준 견적 안내</li>
           </ul>
-          <a class="feature-link" href="#contact" data-i18n="services.svc5.cta">출장 일정 상담</a>
-        </div>
+        </details>
 
-        <div class="feature-item feature-item--signature" id="svc-interpreter">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.7 9.7 0 0 1-3.3-.6L4 21l1.1-3.9A8.3 8.3 0 0 1 3 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
-          </span>
-          <h3 data-i18n="services.svc6.name">차량 + 한국어 통역 패키지</h3>
-          <p data-i18n="services.svc6.desc">차량 이동과 한국어 통역이 모두 필요한 해외 출장 고객을 위한 맞춤 서비스입니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc6.bullet1">공항픽업, 전용 차량</li>
-            <li data-i18n="services.svc6.bullet2">현지 비즈니스 이동, 바이어 미팅</li>
-            <li data-i18n="services.svc6.bullet3">한국어 통역, 전시회 방문</li>
-            <li data-i18n="services.svc6.bullet4">호텔 샌딩</li>
+        <details class="svc-card">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-1a5 5 0 0 1 10 0v1M14 20v-.5a4 4 0 0 1 7-2.6"/></svg></span>
+            <h3 data-i18n="svc.family.name">가족·단체 이동</h3>
+            <p data-i18n="svc.family.desc">가족 여행이나 소규모 단체 이동에 맞는 차량을 상담합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="svc.family.d1">유아 동반, 캐리어 많은 여행 상담</li>
+            <li data-i18n="svc.family.d2">한국에 있는 가족이 대신 예약 가능</li>
+            <li data-i18n="svc.family.d3">4인 이상 그룹은 미니밴 상담</li>
           </ul>
-          <p class="feature-note" data-i18n="services.svc6.note">통역 서비스는 지역 및 일정에 따라 제공 가능 여부를 예약 전 확인해야 합니다.</p>
-          <a class="feature-link" href="#contact" data-i18n="services.svc6.cta">차량 + 통역 상담</a>
-        </div>
-
-        <div class="feature-item" id="svc-family">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11"/><path d="M9 21v-7h6v7"/></svg>
-          </span>
-          <h3 data-i18n="services.svc7.name">가족 & 단체 미니밴</h3>
-          <p data-i18n="services.svc7.desc">아이와 함께하는 가족여행이나 여러 명이 함께 이동하는 여행이라면 인원과 짐에 맞는 차량을 상담할 수 있습니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc7.bullet1">가족여행, 부모님 해외여행</li>
-            <li data-i18n="services.svc7.bullet2">유아 동반 여행, 캐리어가 많은 여행</li>
-            <li data-i18n="services.svc7.bullet3">4~7인 그룹, 소규모 단체</li>
-          </ul>
-          <p class="feature-note" data-i18n="services.svc7.bullet4">한국에 있는 가족이 해외 부모님의 차량을 대신 예약할 수도 있습니다.</p>
-          <a class="feature-link" href="#contact" data-i18n="services.svc7.cta">가족 차량 상담</a>
-        </div>
-
-        <div class="feature-item" id="svc-private">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
-          </span>
-          <h3 data-i18n="services.svc8.name">프라이빗 투어 & 자유 일정 차량</h3>
-          <p data-i18n="services.svc8.desc">정해진 단체투어 대신 원하는 일정으로 도시를 여행하고 싶은 고객을 위한 차량 예약 서비스입니다.</p>
-          <ul class="feature-bullets">
-            <li data-i18n="services.svc8.bullet1">호텔 픽업, 관광지 이동</li>
-            <li data-i18n="services.svc8.bullet2">쇼핑, 레스토랑</li>
-            <li data-i18n="services.svc8.bullet3">근교 도시, 호텔 복귀</li>
-          </ul>
-          <a class="feature-link" href="#contact" data-i18n="services.svc8.cta">프라이빗 투어 상담</a>
-        </div>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- VEHICLES -->
-  <section id="vehicles" class="section--paper">
+  <!-- ITINERARY PICKER -->
+  <section class="section--sub section--tight" id="itinerary">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">02</span>
-        <h2 class="section-title" data-i18n="vehicles.title">어떤 차량이 필요하세요?</h2>
-        <p class="section-subtitle" data-i18n="vehicles.subtitle">일정과 인원에 맞는 차량 유형을 안내해 드립니다.</p>
+      <div class="section-head section-head--center">
+        <span class="eyebrow" data-i18n="itinerary.eyebrow">QUICK START</span>
+        <h2 class="section-title" data-i18n="itinerary.title">어떤 일정이신가요?</h2>
+        <p class="section-subtitle" data-i18n="itinerary.subtitle">해당하는 일정을 선택하면 문의 폼이 자동으로 채워집니다.</p>
       </div>
-      <div class="feature-list feature-list--5">
-        <div class="feature-item">
-          <span class="feature-icon">
-            <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M8 30l4-12h32l6 12M18 18l3-7h14l4 7"/><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
-          </span>
-          <h3 data-i18n="vehicles.sedan.name">세단</h3>
-          <p data-i18n="vehicles.sedan.desc">1~3인 이동에 적합</p>
-        </div>
-        <div class="feature-item">
-          <span class="feature-icon">
-            <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M6 30l3-14h10l4-6h18l6 8 3 12M14 16h30" /><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
-          </span>
-          <h3 data-i18n="vehicles.suv.name">SUV</h3>
-          <p data-i18n="vehicles.suv.desc">넉넉한 공간이 필요한 여행 및 출장</p>
-        </div>
-        <div class="feature-item">
-          <span class="feature-icon">
-            <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M5 30V16a4 4 0 0 1 4-4h38a6 6 0 0 1 6 6v12M15 12v18" /><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
-          </span>
-          <h3 data-i18n="vehicles.minivan.name">미니밴</h3>
-          <p data-i18n="vehicles.minivan.desc">가족 및 소규모 단체</p>
-        </div>
-        <div class="feature-item">
-          <span class="feature-icon">
-            <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M7 30l4-13h30l7 13M20 17l2-6h12l3 6" /><circle cx="17" cy="32" r="4"/><circle cx="47" cy="32" r="4"/></svg>
-          </span>
-          <h3 data-i18n="vehicles.premium.name">프리미엄 차량</h3>
-          <p data-i18n="vehicles.premium.desc">VIP 및 비즈니스 고객</p>
-        </div>
-        <div class="feature-item">
-          <span class="feature-icon">
-            <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 30h60M3 30V14a3 3 0 0 1 3-3h44a8 8 0 0 1 8 8v11" /><circle cx="15" cy="32" r="4"/><circle cx="47" cy="32" r="4"/></svg>
-          </span>
-          <h3 data-i18n="vehicles.van.name">밴 / 버스</h3>
-          <p data-i18n="vehicles.van.desc">기업·행사·단체 이동</p>
-        </div>
+      <div class="itinerary-grid" id="itinerary-grid">
+        <button type="button" class="itinerary-chip" data-purpose="airport_pickup">
+          <span data-i18n="itinerary.opt1">공항에서 호텔까지만 이동</span><span class="arrow">→</span>
+        </button>
+        <button type="button" class="itinerary-chip" data-purpose="dedicated_driver">
+          <span data-i18n="itinerary.opt2">하루 여러 미팅 이동</span><span class="arrow">→</span>
+        </button>
+        <button type="button" class="itinerary-chip" data-purpose="buyer_visit">
+          <span data-i18n="itinerary.opt3">해외 바이어 방문</span><span class="arrow">→</span>
+        </button>
+        <button type="button" class="itinerary-chip" data-purpose="school_visit">
+          <span data-i18n="itinerary.opt4">교육청·학교 연수</span><span class="arrow">→</span>
+        </button>
+        <button type="button" class="itinerary-chip" data-purpose="exhibition">
+          <span data-i18n="itinerary.opt5">전시회·컨퍼런스</span><span class="arrow">→</span>
+        </button>
+        <button type="button" class="itinerary-chip" data-purpose="multi_city">
+          <span data-i18n="itinerary.opt6">여러 도시 연속 출장</span><span class="arrow">→</span>
+        </button>
+        <button type="button" class="itinerary-chip" data-purpose="family_trip">
+          <span data-i18n="itinerary.opt7">가족 여행</span><span class="arrow">→</span>
+        </button>
+        <button type="button" class="itinerary-chip" data-purpose="golf_event">
+          <span data-i18n="itinerary.opt8">골프·행사 일정</span><span class="arrow">→</span>
+        </button>
       </div>
-      <p class="note-box" data-i18n="vehicles.disclaimer">요청 기준으로 현지에서 매칭하며, 동일 모델·색상을 보장하지 않습니다.</p>
-      <p class="note-box note-box--tight" data-i18n="vehicles.availabilityNote">지역 및 일정에 따라 이용 가능한 차량 종류가 다를 수 있습니다.</p>
-    </div>
-  </section>
-
-  <!-- RECOMMENDED FOR -->
-  <section id="recommended" class="section--paper section--tight">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">03</span>
-        <h2 class="section-title" data-i18n="recommended.title">이런 분들에게 추천합니다</h2>
-      </div>
-      <ul class="reco-list">
-        <li data-i18n="recommended.item1">해외 공항에서 한국어 가능한 이동 서비스를 찾는 분</li>
-        <li data-i18n="recommended.item2">출장 중 여러 장소를 이동해야 하는 분</li>
-        <li data-i18n="recommended.item3">부모님 해외여행 차량을 대신 예약하려는 분</li>
-        <li data-i18n="recommended.item4">아이와 함께 이동하는 가족</li>
-        <li data-i18n="recommended.item5">캐리어가 많아 일반 택시 이용이 불편한 분</li>
-        <li data-i18n="recommended.item6">전시회·박람회 출장 차량이 필요한 기업</li>
-        <li data-i18n="recommended.item7">기사와 함께 하루 동안 자유롭게 이동하고 싶은 분</li>
-        <li data-i18n="recommended.item8">도시 간 장거리 이동이 필요한 분</li>
-      </ul>
     </div>
   </section>
 
   <!-- PROCESS -->
-  <section id="process" class="section--paper">
+  <section id="process">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">04</span>
+        <span class="eyebrow">HOW IT WORKS</span>
         <h2 class="section-title" data-i18n="process.title">이용 과정</h2>
         <p class="section-subtitle" data-i18n="process.subtitle">간단한 다섯 단계로 진행됩니다.</p>
       </div>
@@ -335,64 +270,177 @@
   </section>
 
   <!-- BUSINESS -->
-  <section id="business" class="section--paper">
+  <section id="business" class="section--sub">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">05</span>
-        <h2 class="section-title" data-i18n="business.title">기업·기관 서비스</h2>
-      </div>
-      <div class="biz-intro">
-        <p data-i18n="business.bodyLine1">출장, 바이어 의전, 연수 프로그램의 차량과 기사를 지원합니다.</p>
-        <p data-i18n="business.bodyLine2">담당자 한 명이 문의부터 확정까지 응대합니다.</p>
-        <p data-i18n="business.bodyLine3">단체 인원과 다일정 이동도 함께 조율합니다.</p>
-      </div>
-      <ul class="biz-list">
-        <li class="biz-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span data-i18n="business.item1">세금계산서 및 견적서 발행</span>
-        </li>
-        <li class="biz-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span data-i18n="business.item2">다인원·다일정 동시 조율</span>
-        </li>
-        <li class="biz-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span data-i18n="business.item3">담당자와 한국어로 소통 가능</span>
-        </li>
-        <li class="biz-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span data-i18n="business.item4">인원에 맞춰 여러 대의 차량 배정</span>
-        </li>
-      </ul>
-      <div class="biz-not-provided">
-        <h4 data-i18n="business.notProvidedTitle">제공하지 않는 것</h4>
-        <ul>
-          <li data-i18n="business.notProvided1">실시간 기사 배정 앱 — 즉시 기사를 배정하는 앱 서비스는 제공하지 않습니다.</li>
-          <li data-i18n="business.notProvided2">미확인 지역 확정 예약 — 매칭 가능 여부를 확인하지 않은 지역의 예약은 바로 확정하지 않습니다.</li>
-        </ul>
-      </div>
-      <div class="business-cta">
-        <a class="btn btn-outline-ink" href="#contact" data-i18n="business.cta">기업·기관 문의하기</a>
+      <div class="business-grid">
+        <div>
+          <div class="section-head">
+            <span class="eyebrow" data-i18n="business.eyebrow">FOR ORGANIZATIONS</span>
+            <h2 class="section-title" data-i18n="business.title">기업과 기관의 해외 이동도 한 번에 조율합니다.</h2>
+          </div>
+          <div class="biz-intro">
+            <p data-i18n="business.bodyLine1">해외 출장, 외국인 바이어 방문, 교육청 및 학교 연수, 컨퍼런스, 공장 방문, 전시회까지 지원합니다.</p>
+            <p data-i18n="business.bodyLine2">담당자 한 명이 문의부터 확정까지 응대합니다.</p>
+            <p data-i18n="business.bodyLine3">다일정 출장과 여러 대 차량 배차도 함께 조율합니다.</p>
+          </div>
+          <ul class="biz-list">
+            <li class="biz-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span data-i18n="business.item1">세금계산서 및 견적서 발행</span>
+            </li>
+            <li class="biz-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span data-i18n="business.item2">다인원·다일정 동시 조율</span>
+            </li>
+            <li class="biz-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span data-i18n="business.item3">담당자와 한국어로 소통 가능</span>
+            </li>
+            <li class="biz-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span data-i18n="business.item4">인원에 맞춰 여러 대의 차량 배정</span>
+            </li>
+          </ul>
+          <div class="biz-not-provided">
+            <h4 data-i18n="business.notProvidedTitle">제공하지 않는 것</h4>
+            <ul>
+              <li data-i18n="business.notProvided1">실시간 기사 배정 앱 — 즉시 기사를 배정하는 앱 서비스는 제공하지 않습니다.</li>
+              <li data-i18n="business.notProvided2">미확인 지역 확정 예약 — 매칭 가능 여부를 확인하지 않은 지역의 예약은 바로 확정하지 않습니다.</li>
+            </ul>
+          </div>
+          <div class="business-cta">
+            <a class="btn btn-navy" href="#contact" data-i18n="business.cta">기업·기관 문의하기</a>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <h4 data-i18n="business.scheduleLabel">샘플 일정표</h4>
+          <div class="schedule-list">
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">08:30</span>
+              <span class="schedule-desc" data-i18n="business.schedule1">공항 픽업</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">10:00</span>
+              <span class="schedule-desc" data-i18n="business.schedule2">호텔</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">13:00</span>
+              <span class="schedule-desc" data-i18n="business.schedule3">기업 미팅</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">16:30</span>
+              <span class="schedule-desc" data-i18n="business.schedule4">공장 방문</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">19:00</span>
+              <span class="schedule-desc" data-i18n="business.schedule5">디너 미팅</span>
+            </div>
+          </div>
+          <p class="schedule-caption" data-i18n="business.scheduleCaption">한 일정 안에서 여러 구간을 조율할 수 있습니다.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CORPORATE BANNER -->
-  <section class="banner banner--ink">
+  <section class="banner banner--navy">
     <div class="container banner-inner">
       <div class="banner-copy">
         <h2 data-i18n="banner.corporate.title">Business Travel with Certo Drive</h2>
         <p data-i18n="banner.corporate.copy">해외 출장 차량부터 공항픽업, 전시회, 임원 수행, 통역 연계까지. 기업의 해외 이동을 한 번에 상담하세요.</p>
       </div>
-      <a class="btn btn-taxi-outline banner-cta" href="#contact" data-i18n="banner.corporate.cta">기업 전용 문의</a>
+      <a class="btn btn-ghost banner-cta" href="#contact" data-i18n="banner.corporate.cta">기업 전용 문의</a>
+    </div>
+  </section>
+
+  <!-- VEHICLES -->
+  <section id="vehicles">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="vehicles.eyebrow">VEHICLES</span>
+        <h2 class="section-title" data-i18n="vehicles.title">어떤 차량이 필요하세요?</h2>
+        <p class="section-subtitle" data-i18n="vehicles.subtitle">인원과 짐에 맞는 차량 유형을 안내해 드립니다.</p>
+      </div>
+      <div class="vehicle-grid">
+        <div class="vehicle-card">
+          <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M8 30l4-12h32l6 12M18 18l3-7h14l4 7"/><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
+          <h3 data-i18n="vehicles.sedan.name">세단</h3>
+          <ul class="vehicle-facts">
+            <li><strong data-i18n="vehicles.factPax">추천 인원</strong> <span data-i18n="vehicles.sedan.pax">1~3명</span></li>
+            <li><strong data-i18n="vehicles.factUse">추천 용도</strong> <span data-i18n="vehicles.sedan.use">공항 픽업, 시내 이동</span></li>
+            <li><strong data-i18n="vehicles.factLuggage">짐 기준</strong> <span data-i18n="vehicles.sedan.luggage">캐리어 1~2개</span></li>
+          </ul>
+        </div>
+        <div class="vehicle-card">
+          <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M6 30l3-14h10l4-6h18l6 8 3 12M14 16h30" /><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
+          <h3 data-i18n="vehicles.suv.name">SUV</h3>
+          <ul class="vehicle-facts">
+            <li><strong data-i18n="vehicles.factPax">추천 인원</strong> <span data-i18n="vehicles.suv.pax">1~4명</span></li>
+            <li><strong data-i18n="vehicles.factUse">추천 용도</strong> <span data-i18n="vehicles.suv.use">출장, 짐이 많은 이동</span></li>
+            <li><strong data-i18n="vehicles.factLuggage">짐 기준</strong> <span data-i18n="vehicles.suv.luggage">캐리어 2~3개 또는 골프백</span></li>
+          </ul>
+        </div>
+        <div class="vehicle-card">
+          <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h56M5 30V16a4 4 0 0 1 4-4h38a6 6 0 0 1 6 6v12M15 12v18" /><circle cx="16" cy="32" r="4"/><circle cx="48" cy="32" r="4"/></svg>
+          <h3 data-i18n="vehicles.minivan.name">미니밴</h3>
+          <ul class="vehicle-facts">
+            <li><strong data-i18n="vehicles.factPax">추천 인원</strong> <span data-i18n="vehicles.minivan.pax">4~7명</span></li>
+            <li><strong data-i18n="vehicles.factUse">추천 용도</strong> <span data-i18n="vehicles.minivan.use">가족, 그룹 이동</span></li>
+            <li><strong data-i18n="vehicles.factLuggage">짐 기준</strong> <span data-i18n="vehicles.minivan.luggage">캐리어 3~5개</span></li>
+          </ul>
+        </div>
+        <div class="vehicle-card">
+          <svg viewBox="0 0 64 40" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 30h60M3 30V14a3 3 0 0 1 3-3h44a8 8 0 0 1 8 8v11" /><circle cx="15" cy="32" r="4"/><circle cx="47" cy="32" r="4"/></svg>
+          <h3 data-i18n="vehicles.van.name">밴</h3>
+          <ul class="vehicle-facts">
+            <li><strong data-i18n="vehicles.factPax">추천 인원</strong> <span data-i18n="vehicles.van.pax">8명 이상</span></li>
+            <li><strong data-i18n="vehicles.factUse">추천 용도</strong> <span data-i18n="vehicles.van.use">단체, 행사 이동</span></li>
+            <li><strong data-i18n="vehicles.factLuggage">짐 기준</strong> <span data-i18n="vehicles.van.luggage">대형 수하물 다수</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note-box" data-i18n="vehicles.disclaimer">실제 차량 모델은 지역에 따라 달라질 수 있으며, 동일 모델을 보장하지 않습니다.</p>
+
+      <div class="recommender">
+        <h3 data-i18n="recommender.title">차량 추천</h3>
+        <div class="recommender-group">
+          <p class="recommender-label" data-i18n="recommender.paxLabel">인원</p>
+          <div class="recommender-row" id="recommender-pax" role="group" aria-label="인원 선택">
+            <button type="button" class="recommender-option" data-pax="1-3" data-i18n="recommender.pax1">1~3명</button>
+            <button type="button" class="recommender-option" data-pax="4-5" data-i18n="recommender.pax2">4~5명</button>
+            <button type="button" class="recommender-option" data-pax="6-7" data-i18n="recommender.pax3">6~7명</button>
+            <button type="button" class="recommender-option" data-pax="8+" data-i18n="recommender.pax4">8명+</button>
+          </div>
+        </div>
+        <div class="recommender-group">
+          <p class="recommender-label" data-i18n="recommender.luggageLabel">짐</p>
+          <div class="recommender-row" id="recommender-luggage" role="group" aria-label="짐 선택">
+            <button type="button" class="recommender-option" data-luggage="light" data-i18n="recommender.luggage1">적음</button>
+            <button type="button" class="recommender-option" data-luggage="normal" data-i18n="recommender.luggage2">보통</button>
+            <button type="button" class="recommender-option" data-luggage="heavy" data-i18n="recommender.luggage3">많음</button>
+            <button type="button" class="recommender-option" data-luggage="golf" data-i18n="recommender.luggage4">골프백/대형짐</button>
+          </div>
+        </div>
+        <div class="recommender-result" id="recommender-result" hidden>
+          <p class="recommender-result-label" data-i18n="recommender.resultLabel">추천 차량</p>
+          <p class="recommender-result-value" id="recommender-result-value">—</p>
+          <p class="recommender-result-note" data-i18n="recommender.resultNote">정확한 차량은 지역 및 짐 크기를 확인한 뒤 안내드립니다.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CASES -->
-  <section id="cases" class="section--paper">
+  <section id="cases" class="section--sub">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">06</span>
+        <span class="eyebrow" data-i18n="cases.eyebrow">EXAMPLE CASES</span>
         <h2 class="section-title" data-i18n="cases.title">이용 사례</h2>
         <p class="section-subtitle" data-i18n="cases.subtitle">실제 진행 방식을 보여드리는 예시입니다.</p>
         <p class="cases-disclaimer" data-i18n="cases.disclaimer">아래는 이해를 돕기 위한 가상 사례입니다.</p>
@@ -453,36 +501,81 @@
     </div>
   </section>
 
-  <!-- REGIONS -->
-  <section id="regions" class="section--paper section--tight">
+  <!-- CITY SEARCH -->
+  <section id="cities">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">07</span>
-        <h2 class="section-title" data-i18n="regions.title">지역</h2>
-        <p class="section-subtitle" data-i18n="regions.subtitle">한인 커뮤니티가 있는 도시를 우선으로 매칭하며, 그 외 지역은 문의 후 확인해 회신드립니다.</p>
+        <span class="eyebrow" data-i18n="cities.eyebrow">CITIES</span>
+        <h2 class="section-title" data-i18n="cities.title">이용 가능한 도시를 확인해보세요</h2>
+        <p class="section-subtitle" data-i18n="cities.subtitle">지역과 일정에 따라 가능 여부를 확인한 뒤 안내드립니다.</p>
       </div>
-      <p class="regions-cities" data-i18n="regions.cities">시애틀 · LA · 뉴욕 · 밴쿠버 · 토론토 · 시드니 · 런던</p>
-      <p class="regions-note" data-i18n="regions.note">목록에 없는 도시도 문의하시면 가능 여부를 확인해 회신드립니다.</p>
-      <img class="regions-illustration" src="assets/regions-skyline.svg" alt="" width="520" height="110" loading="lazy">
+
+      <div class="city-search-box">
+        <div class="city-search-input-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" id="city-search-input" data-i18n-placeholder="cities.placeholder" placeholder="도시 또는 공항명을 입력하세요">
+        </div>
+        <p class="city-search-example" data-i18n="cities.example">예: Frankfurt, Berlin, JFK, Dubai</p>
+      </div>
+
+      <div class="city-regions" id="city-regions">
+        <div class="city-region-group has-match" data-region="us">
+          <p class="city-region-name" data-i18n="cities.region.us">미국</p>
+          <div class="city-chip-row">
+            <span class="city-chip">뉴욕</span><span class="city-chip">LA</span><span class="city-chip">시애틀</span>
+            <span class="city-chip">시카고</span><span class="city-chip">보스턴</span><span class="city-chip">샌프란시스코</span>
+            <span class="city-chip">댈러스</span>
+          </div>
+        </div>
+        <div class="city-region-group has-match" data-region="ca">
+          <p class="city-region-name" data-i18n="cities.region.ca">캐나다</p>
+          <div class="city-chip-row">
+            <span class="city-chip">밴쿠버</span><span class="city-chip">토론토</span>
+          </div>
+        </div>
+        <div class="city-region-group has-match" data-region="eu">
+          <p class="city-region-name" data-i18n="cities.region.eu">유럽</p>
+          <div class="city-chip-row">
+            <span class="city-chip">런던</span><span class="city-chip">파리</span><span class="city-chip">프랑크푸르트</span>
+            <span class="city-chip">베를린</span><span class="city-chip">뮌헨</span><span class="city-chip">취리히</span>
+            <span class="city-chip">제네바</span><span class="city-chip">밀라노</span><span class="city-chip">로마</span>
+          </div>
+        </div>
+        <div class="city-region-group has-match" data-region="asia">
+          <p class="city-region-name" data-i18n="cities.region.asia">아시아</p>
+          <div class="city-chip-row">
+            <span class="city-chip">도쿄</span><span class="city-chip">오사카</span><span class="city-chip">싱가포르</span>
+            <span class="city-chip">홍콩</span><span class="city-chip">두바이</span><span class="city-chip">상하이</span>
+            <span class="city-chip">베이징</span>
+          </div>
+        </div>
+        <div class="city-region-group has-match" data-region="au">
+          <p class="city-region-name" data-i18n="cities.region.au">호주</p>
+          <div class="city-chip-row">
+            <span class="city-chip">시드니</span><span class="city-chip">멜버른</span>
+          </div>
+        </div>
+      </div>
+      <p class="city-no-match" id="city-no-match" data-i18n="cities.noMatch">검색 결과가 없습니다. 목록에 없는 도시도 문의해 주시면 가능 여부를 확인해 드립니다.</p>
     </div>
   </section>
 
   <!-- QUICK QUOTE BANNER -->
-  <section class="banner banner--paper">
+  <section class="banner banner--sky">
     <div class="container banner-inner">
       <div class="banner-copy">
         <h2 data-i18n="banner.quote.title">해외에서 이동이 필요할 때, 한국어로 간편하게.</h2>
         <p data-i18n="banner.quote.copy">공항픽업 한 번부터 며칠간의 출장 일정까지 Certo Drive가 필요한 차량을 연결해드립니다.</p>
       </div>
-      <a class="btn btn-outline-ink banner-cta" href="#contact" data-i18n="banner.quote.cta">빠른 견적 요청</a>
+      <a class="btn btn-navy banner-cta" href="#contact" data-i18n="banner.quote.cta">빠른 견적 요청</a>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section--paper section--tight">
+  <section id="faq" class="section--sub section--tight">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">08</span>
+        <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
         <h2 class="section-title" data-i18n="faq.title">자주 묻는 질문</h2>
       </div>
       <div class="faq-list">
@@ -536,7 +629,7 @@
         </details>
         <details class="faq-item">
           <summary data-i18n="faq.q13">예약 변경 및 취소 규정은 어떻게 되나요?</summary>
-          <p data-i18n="faq.a13">변경·취소 규정은 예약 확정 안내 시 함께 고지됩니다.</p>
+          <p data-i18n="faq.a13">확정(드라이버·차량 조율) 전에는 취소가 가능합니다. 확정 이후에는 환불이 불가하며, 세부 변경 규정은 예약 확정 안내 시 함께 고지됩니다.</p>
         </details>
         <details class="faq-item">
           <summary data-i18n="faq.q14">통행료·주차비 등의 추가 비용은 어떻게 되나요?</summary>
@@ -547,10 +640,10 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section--ink">
+  <section id="contact">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">09</span>
+        <span class="eyebrow" data-i18n="contact.eyebrow">CONTACT</span>
         <h2 class="section-title" data-i18n="contact.title">문의하기</h2>
         <p class="section-subtitle" data-i18n="contact.subtitle">아래 정보를 남겨주시면 확인 후 회신드립니다.</p>
       </div>
@@ -635,11 +728,10 @@
               <option value="sedan" data-i18n="contact.option.sedan">세단</option>
               <option value="suv" data-i18n="contact.option.suv">SUV</option>
               <option value="minivan" data-i18n="contact.option.minivan">미니밴</option>
-              <option value="premium" data-i18n="contact.option.premium">프리미엄 차량</option>
-              <option value="van" data-i18n="contact.option.van">밴 / 버스</option>
+              <option value="van" data-i18n="contact.option.van">밴</option>
               <option value="unknown" data-i18n="contact.option.unknown">모름</option>
             </select>
-            <span class="field-help" data-i18n="contact.help.vehicle">세단/SUV/미니밴/프리미엄/밴 중 선택해 주세요.</span>
+            <span class="field-help" data-i18n="contact.help.vehicle">세단/SUV/미니밴/밴 중 선택해 주세요.</span>
           </div>
 
           <div class="form-group">
@@ -656,11 +748,14 @@
             <label for="purpose" data-i18n="contact.label.purpose">용도<span class="opt" data-i18n="contact.optional">(선택)</span></label>
             <select id="purpose" name="purpose">
               <option value="" data-i18n="contact.option.select">선택해주세요</option>
-              <option value="airport_pickup" data-i18n="contact.option.purposeAirport">공항픽업</option>
-              <option value="dedicated_driver" data-i18n="contact.option.purposeDriver">전용기사</option>
-              <option value="business_trip" data-i18n="contact.option.purposeBusiness">출장</option>
-              <option value="school_visit" data-i18n="contact.option.purposeSchool">교육방문</option>
-              <option value="family_trip" data-i18n="contact.option.purposeFamily">가족여행</option>
+              <option value="airport_pickup" data-i18n="contact.option.purposeAirport">공항에서 호텔까지만 이동</option>
+              <option value="dedicated_driver" data-i18n="contact.option.purposeDriver">하루 여러 미팅 이동</option>
+              <option value="buyer_visit" data-i18n="contact.option.purposeBuyer">해외 바이어 방문</option>
+              <option value="school_visit" data-i18n="contact.option.purposeSchool">교육청·학교 연수</option>
+              <option value="exhibition" data-i18n="contact.option.purposeExhibition">전시회·컨퍼런스</option>
+              <option value="multi_city" data-i18n="contact.option.purposeMultiCity">여러 도시 연속 출장</option>
+              <option value="family_trip" data-i18n="contact.option.purposeFamily">가족 여행</option>
+              <option value="golf_event" data-i18n="contact.option.purposeGolf">골프·행사 일정</option>
               <option value="other" data-i18n="contact.option.other">기타</option>
             </select>
             <span class="field-help" data-i18n="contact.help.purpose">방문 목적에 맞게 선택해 주세요.</span>
@@ -692,7 +787,7 @@
         </div>
 
         <div class="form-footer">
-          <button type="submit" class="btn btn-ink btn-block" data-i18n="contact.submit">문의 보내기</button>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.submit">문의 보내기</button>
           <p class="refund-note" data-i18n="contact.refundNote">확정(드라이버·차량 조율) 전에는 취소가 가능하며, 확정 이후에는 환불이 불가합니다.</p>
           <p class="privacy-note" data-i18n="contact.privacyNote">제출하신 정보는 문의 응대 목적으로만 사용됩니다.</p>
         </div>
@@ -701,8 +796,6 @@
   </section>
 
 </main>
-
-<div class="checker-strip" aria-hidden="true"></div>
 
 <footer class="site-footer">
   <div class="container">
@@ -720,7 +813,7 @@
           <li><a href="#services" data-i18n="nav.services">서비스</a></li>
           <li><a href="#vehicles" data-i18n="nav.vehicles">차량</a></li>
           <li><a href="#process" data-i18n="nav.process">이용 과정</a></li>
-          <li><a href="#regions" data-i18n="nav.regions">지역</a></li>
+          <li><a href="#cities" data-i18n="nav.cities">도시</a></li>
           <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
           <li><a href="#contact" data-i18n="nav.contact">문의</a></li>
         </ul>
