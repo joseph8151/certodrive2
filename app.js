@@ -29,12 +29,9 @@ var I18N = {
 
   "kakao.chat": { ko: "카카오톡 상담", en: "Chat on KakaoTalk" },
 
-  "hero.eyebrow": { ko: "글로벌 모빌리티 파트너", en: "Global Mobility Partner" },
-  "hero.headlineMain": { ko: "해외 이동부터 현지 예약까지,", en: "From getting there to booking it," },
-  "hero.headlineAccent": { ko: "한 번에 준비합니다.", en: "we prepare it all at once." },
-  "hero.sub": { ko: "공항 픽업, 기사 포함 차량, 기업 출장부터 랜드마크와 레스토랑 예약대행까지. 해외 일정에 필요한 이동과 예약을 함께 조율합니다.", en: "From airport pickups, chauffeured vehicles, and business trips to landmark and restaurant reservation support. We coordinate the transport and bookings your trip abroad needs." },
-  "hero.tags": { ko: "한국어 상담 · 해외 주요 도시 · 기업·가족 일정 대응", en: "Korean-language support · Major cities abroad · Corporate & family scheduling" },
-  "hero.ctaPrimary": { ko: "차량 견적 요청", en: "Request a Vehicle Quote" },
+  "hero.headlineMain": { ko: "해외 일정에 차를 붙입니다.", en: "We put a car on your trip abroad." },
+  "hero.sub": { ko: "공항 픽업부터 기업 출장, 바이어 의전까지 한국어로 조율합니다. 랜드마크와 레스토랑 예약대행도 함께 진행합니다.", en: "From airport pickups to business trips and buyer escorts, coordinated in Korean. We also handle landmark and restaurant reservations." },
+  "hero.ctaPrimary": { ko: "견적 요청", en: "Request a Quote" },
   "hero.ctaReservation": { ko: "예약대행 문의", en: "Reservation Inquiry" },
   "hero.note": { ko: "보통 1영업일 이내 회신", en: "We usually reply within 1 business day" },
 
@@ -131,7 +128,7 @@ var I18N = {
   "svc.dedicated.d2": { ko: "하루 여러 미팅·장소 이동", en: "Multiple meetings or stops in one day" },
   "svc.dedicated.d3": { ko: "출장과 여행 모두 이용 가능", en: "For both business and leisure" },
 
-  "svc.edu.name": { ko: "교육·연수", en: "Education & Training Visits" },
+  "svc.edu.name": { ko: "교육 연수", en: "Education & Training Visits" },
   "svc.edu.desc": { ko: "교육청, 학교, 연수단의 단체 이동을 지원합니다.", en: "Group transport for school districts, schools, and training delegations." },
   "svc.edu.d1": { ko: "연수단, 자매학교 방문 등 지원", en: "Supports delegations and sister-school visits" },
   "svc.edu.d2": { ko: "인원에 맞춰 SUV·미니밴 배정", en: "SUV or minivan assigned to group size" },
