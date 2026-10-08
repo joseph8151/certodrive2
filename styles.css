@@ -15,11 +15,11 @@ button { cursor: pointer; }
 /* ---- Tokens ---- */
 :root {
   --navy: #1B2838;
-  --bg: #F4F1EB;
-  --bg-sub: #EFEAE0;
+  --bg: #FFFDF6;
+  --bg-sub: #FBF6E9;
   --text: #1C1C1C;
   --mute: #6B6558;
-  --line: #E4DFD6;
+  --line: #EAE1CC;
   --white: #FFFFFF;
   --danger: #A23B2E;
 
