@@ -226,8 +226,14 @@ section { padding: 72px 0; }
 }
 
 /* ---- Hero ---- */
-.hero { background: var(--bg); padding: 64px 0 56px; }
-.hero-grid { padding-bottom: 0; }
+.hero { background: #F4F1EB; padding: 64px 0 56px; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 0;
+}
 .hero-inner { max-width: 520px; text-align: left; }
 .hero-eyebrow { display: none; }
 .hero-title {
@@ -251,10 +257,20 @@ section { padding: 72px 0; }
 .hero-kakao-link:hover { color: var(--navy); }
 .hero-note { font-size: 0.84rem; color: var(--mute); }
 
-.hero-visual { display: none; }
+.hero-visual { display: block; }
+.hero-visual img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
 
 @media (max-width: 900px) {
-  .hero-grid { padding-bottom: 0; }
+  .hero-grid { grid-template-columns: 1fr; gap: 28px; padding-bottom: 0; }
+  .hero-visual { order: 2; }
+  .hero-inner { order: 1; }
+  .hero-visual img { height: 260px; }
 }
 
 /* ---- Trust bar (thin-line strip, no icons, no fill) ---- */
@@ -273,6 +289,25 @@ section { padding: 72px 0; }
 }
 .trust-item svg { display: none; }
 .trust-item:not(:first-child)::before { content: "·"; margin: 0 12px; color: var(--line); }
+
+/* ---- Photo row (no title/caption/button) ---- */
+.photo-row-wrap { padding: 28px 0 0; }
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.photo-row img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+@media (max-width: 760px) {
+  .photo-row { grid-template-columns: 1fr; }
+  .photo-row img:nth-child(2), .photo-row img:nth-child(3) { display: none; }
+}
 
 /* ---- Service list (flat, no icons, no cards) ---- */
 .svc-grid,
@@ -496,7 +531,6 @@ section { padding: 72px 0; }
   padding: 24px 22px;
   box-shadow: none;
 }
-.vehicle-card svg { width: 56px; height: 32px; margin-bottom: 14px; stroke: var(--navy); stroke-width: 1.4; }
 .vehicle-card h3 { font-size: 0.98rem; font-weight: 600; color: var(--text); margin-bottom: 10px; }
 .vehicle-facts { display: flex; flex-direction: column; gap: 6px; }
 .vehicle-facts li { font-size: 0.82rem; color: var(--mute); }
