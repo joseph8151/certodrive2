@@ -376,6 +376,58 @@ section { padding: 88px 0; }
   background: var(--blue);
 }
 
+/* reservation-group cards: same system, icon tint shifted slightly so the
+   two categories read as distinct without introducing a new hue */
+.svc-card--resv .svc-icon { background: #EAF1FB; }
+.svc-card--resv .svc-icon svg { stroke: var(--navy); }
+.svc-group-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--blue-deep);
+  margin: 0 0 16px;
+}
+.svc-group-label:not(:first-child) { margin-top: 44px; }
+.svc-group-subtitle { font-size: 0.88rem; color: var(--mute); margin: -10px 0 16px; }
+
+/* ---- Chooser: vehicle vs. reservation ---- */
+.chooser-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media (max-width: 760px) { .chooser-grid { grid-template-columns: 1fr; } }
+
+.chooser-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.chooser-card h3 { font-size: 1.2rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+.chooser-card--reservation { background: #F8FAFD; }
+.chooser-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; flex: 1; }
+.chooser-list li {
+  font-size: 0.92rem;
+  color: var(--text);
+  padding-left: 16px;
+  position: relative;
+}
+.chooser-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.chooser-card-cta { align-self: flex-start; }
+
 /* ---- Itinerary picker ---- */
 .itinerary-grid {
   display: grid;
@@ -629,6 +681,92 @@ section { padding: 88px 0; }
 .city-no-match { display: none; font-size: 0.9rem; color: var(--mute); padding: 20px 0; }
 .city-no-match.is-visible { display: block; }
 
+/* ---- Reservation detail cards (landmark / restaurant) ---- */
+.resv-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media (max-width: 800px) { .resv-detail-grid { grid-template-columns: 1fr; } }
+.resv-detail-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 30px 28px;
+}
+.resv-detail-card h3 { font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+.resv-cat-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.resv-cat-chip {
+  padding: 6px 13px;
+  background: var(--bg-sub);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+.resv-notes { display: flex; flex-direction: column; gap: 10px; }
+.resv-notes p {
+  font-size: 0.86rem;
+  color: var(--mute);
+  padding-left: 16px;
+  position: relative;
+}
+.resv-notes p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.resv-detail-cta { margin-top: 36px; text-align: center; }
+
+/* ---- Reservation cities (static chip list) ---- */
+.resv-cities-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+
+/* ---- Example / usage cards (reservations page) ---- */
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) { .examples-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .examples-grid { grid-template-columns: 1fr; } }
+.example-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+  box-shadow: var(--shadow-sm);
+}
+.example-card .case-num { font-size: 1.4rem; margin-bottom: 8px; display: block; }
+.example-card h3 { font-size: 1.02rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+.example-card p { font-size: 0.9rem; color: var(--mute); margin-bottom: 14px; }
+.example-card .example-caption {
+  font-size: 0.78rem;
+  color: var(--mute);
+  font-style: italic;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  margin-bottom: 0;
+}
+
+/* ---- Important notice box (reservations) ---- */
+.notice-box {
+  background: var(--bg-sub);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--navy);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 18px 22px;
+  font-size: 0.86rem;
+  color: var(--mute);
+  max-width: 900px;
+}
+
 /* ---- Cases: newspaper-column rows (recolored) ---- */
 .cases-disclaimer { font-size: 0.82rem; font-style: italic; color: var(--mute); margin-top: 10px; }
 .case-rows { border-top: 1px solid var(--line); margin-top: 28px; }
@@ -745,6 +883,75 @@ section { padding: 88px 0; }
   padding-left: 10px;
 }
 
+.contact-resv-note {
+  max-width: 820px;
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  background: var(--bg-sub);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--mute);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+.contact-resv-note a { font-weight: 700; color: var(--blue); }
+.contact-resv-note a:hover { color: var(--blue-deep); }
+
+/* ---- Inline form success / error states ---- */
+.form-state {
+  max-width: 820px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px;
+  text-align: center;
+}
+.form-state--success .form-state-icon { background: var(--sky); }
+.form-state--error .form-state-icon { background: #FBE7E4; }
+.form-state-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+.form-state-icon svg { width: 22px; height: 22px; }
+.form-state--success .form-state-icon svg { stroke: var(--blue-deep); }
+.form-state--error .form-state-icon svg { stroke: var(--danger); }
+.form-state h3 { font-size: 1.2rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+.form-state p { font-size: 0.94rem; color: var(--mute); margin-bottom: 6px; }
+.form-state-retry { margin-top: 16px; }
+
+/* ---- Reservation form: step labels + conditional fieldsets ---- */
+.resv-step-label {
+  grid-column: 1 / -1;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--blue-deep);
+  padding-top: 18px;
+  margin-top: 4px;
+  border-top: 1px solid var(--line);
+}
+.resv-step-label:first-child { padding-top: 0; margin-top: 0; border-top: none; }
+.resv-extra {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 20px;
+  padding: 16px;
+  background: var(--bg-sub);
+  border-radius: var(--radius-sm);
+}
+.resv-extra[hidden] { display: none; }
+@media (max-width: 640px) { .resv-extra { grid-template-columns: 1fr; } }
+
 /* ---- Footer ---- */
 .site-footer { background: var(--navy); color: rgba(255, 255, 255, 0.85); padding: 56px 0 26px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; margin-bottom: 36px; }
@@ -789,6 +996,30 @@ section { padding: 88px 0; }
 }
 .kakao-float:hover { background: var(--blue-deep); }
 .kakao-float svg { width: 24px; height: 24px; stroke: #fff; }
+
+/* ---- Mobile sticky quote bar ---- */
+.sticky-bar {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 450;
+  background: #fff;
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -4px 16px rgba(23, 50, 77, 0.08);
+  padding: 10px 12px;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+}
+.sticky-bar-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sticky-bar .btn { padding: 12px 10px; font-size: 0.86rem; }
+
+@media (max-width: 720px) {
+  .sticky-bar { display: block; }
+  body { padding-bottom: 66px; }
+  .kakao-float { bottom: 82px; width: 48px; height: 48px; }
+  .kakao-float svg { width: 20px; height: 20px; }
+}
 
 /* ---- Thanks page ---- */
 .thanks-main { min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 80px 20px; background: var(--bg-sub); }

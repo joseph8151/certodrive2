@@ -3,31 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>체르토 드라이브 | 해외 이동, 현지 기사와 차량 연결</title>
-<meta name="description" content="공항 픽업부터 기업 출장, 바이어 의전, 교육기관 연수, 가족 일정까지. 해외 주요 도시에서 한국어로 상담하고 현지 기사와 차량을 연결하는 체르토 드라이브.">
+<title>체르토 드라이브 | 해외 이동부터 현지 예약까지</title>
+<meta name="description" content="공항 픽업, 기사 포함 차량, 기업 출장부터 랜드마크·레스토랑 예약대행까지. 해외 일정에 필요한 이동과 예약을 함께 조율하는 체르토 드라이브.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">본문 바로가기</a>
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="#hero">
+    <a class="brand" href="/">
       <span class="brand-mark" aria-hidden="true"></span>
       <span class="brand-word">CERTO</span>
       <span class="brand-sub">체르토 드라이브</span>
     </a>
 
     <nav class="nav-menu" id="nav-menu" aria-label="주요 메뉴">
-      <a href="#services" data-i18n="nav.services">서비스</a>
-      <a href="#vehicles" data-i18n="nav.vehicles">차량</a>
-      <a href="#process" data-i18n="nav.process">이용 과정</a>
+      <a href="#services" data-i18n="nav.services">차량 서비스</a>
+      <a href="/reservations/" data-i18n="nav.reservations">예약대행</a>
       <a href="#business" data-i18n="nav.business">기업·기관</a>
-      <a href="#cities" data-i18n="nav.cities">도시</a>
+      <a href="#vehicles" data-i18n="nav.vehicles">차량</a>
+      <a href="#cities" data-i18n="nav.cities">지역</a>
+      <a href="#process" data-i18n="nav.process">이용방법</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
     </nav>
 
@@ -37,7 +38,7 @@
         <button type="button" id="lang-en" aria-pressed="false">EN</button>
       </div>
       <a class="header-kakao-link nav-cta-desktop" href="#kakao" data-kakao-link data-i18n="kakao.chat">카카오톡 상담</a>
-      <a class="btn btn-primary nav-cta-desktop" href="#contact" data-i18n="nav.cta">빠른 견적 요청</a>
+      <a class="btn btn-primary nav-cta-desktop" href="#contact" data-i18n="nav.cta">견적·예약 문의</a>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
         <span></span>
       </button>
@@ -54,19 +55,19 @@
         <div class="hero-inner">
           <span class="hero-eyebrow" data-i18n="hero.eyebrow">글로벌 모빌리티 파트너</span>
           <h1 class="hero-title">
-            <span data-i18n="hero.headlineMain">해외 이동이 필요한 순간,</span>
-            <span class="accent" data-i18n="hero.headlineAccent">현지 기사와 차량을 연결합니다.</span>
+            <span data-i18n="hero.headlineMain">해외 이동부터 현지 예약까지,</span>
+            <span class="accent" data-i18n="hero.headlineAccent">한 번에 준비합니다.</span>
           </h1>
-          <p class="hero-sub" data-i18n="hero.sub">공항 픽업부터 기업 출장, 바이어 의전, 교육기관 연수, 가족 일정까지. 필요한 도시와 일정에 맞춰 차량과 드라이버를 확인해 드립니다.</p>
-          <p class="hero-tags" data-i18n="hero.tags">한국어 상담 · 해외 주요 도시 · 기업/기관 일정 대응</p>
+          <p class="hero-sub" data-i18n="hero.sub">공항 픽업, 기사 포함 차량, 기업 출장부터 랜드마크와 레스토랑 예약대행까지. 해외 일정에 필요한 이동과 예약을 함께 조율합니다.</p>
+          <p class="hero-tags" data-i18n="hero.tags">한국어 상담 · 해외 주요 도시 · 기업·가족 일정 대응</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact" data-i18n="hero.ctaPrimary">빠른 견적 요청</a>
-            <a class="btn btn-outline" href="#kakao" data-kakao-link data-i18n="kakao.chat">카카오톡 상담</a>
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.ctaPrimary">차량 견적 요청</a>
+            <a class="btn btn-outline" href="/reservations/" data-i18n="hero.ctaReservation">예약대행 문의</a>
           </div>
           <p class="hero-note" data-i18n="hero.note">보통 1영업일 이내 회신</p>
         </div>
         <div class="hero-visual">
-          <img src="assets/hero-illustration.svg" alt="" width="440" height="320" loading="eager">
+          <img src="/assets/hero-illustration.svg" alt="" width="440" height="320" loading="eager">
         </div>
       </div>
     </div>
@@ -98,6 +99,41 @@
     </div>
   </div>
 
+  <!-- CHOOSER: vehicle vs reservation -->
+  <section class="section--tight" id="chooser">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <h2 class="section-title" data-i18n="chooser.title">차량만 필요한가요, 예약까지 필요한가요?</h2>
+        <p class="section-subtitle" data-i18n="chooser.subtitle">필요하신 쪽을 선택하면 해당 서비스로 바로 이동합니다.</p>
+      </div>
+      <div class="chooser-grid">
+        <div class="chooser-card">
+          <h3 data-i18n="chooser.vehicle.title">차량 서비스</h3>
+          <ul class="chooser-list">
+            <li data-i18n="chooser.vehicle.item1">공항 픽업</li>
+            <li data-i18n="chooser.vehicle.item2">기사 포함 차량</li>
+            <li data-i18n="chooser.vehicle.item3">기업 출장</li>
+            <li data-i18n="chooser.vehicle.item4">바이어 의전</li>
+            <li data-i18n="chooser.vehicle.item5">가족 이동</li>
+          </ul>
+          <a class="btn btn-primary chooser-card-cta" href="#services" data-i18n="chooser.vehicle.cta">차량 서비스 보기</a>
+        </div>
+        <div class="chooser-card chooser-card--reservation">
+          <h3 data-i18n="chooser.reservation.title">예약대행 서비스</h3>
+          <ul class="chooser-list">
+            <li data-i18n="chooser.reservation.item1">랜드마크</li>
+            <li data-i18n="chooser.reservation.item2">미술관</li>
+            <li data-i18n="chooser.reservation.item3">박물관</li>
+            <li data-i18n="chooser.reservation.item4">전망대</li>
+            <li data-i18n="chooser.reservation.item5">레스토랑</li>
+            <li data-i18n="chooser.reservation.item6">파인다이닝</li>
+          </ul>
+          <a class="btn btn-outline chooser-card-cta" href="/reservations/" data-i18n="chooser.reservation.cta">예약대행 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SERVICES -->
   <section id="services">
     <div class="container">
@@ -106,6 +142,8 @@
         <h2 class="section-title" data-i18n="services.title">어떤 이동이 필요하신가요?</h2>
         <p class="section-subtitle" data-i18n="services.subtitle">목적에 맞는 서비스를 선택하면 자세한 내용을 확인할 수 있습니다.</p>
       </div>
+
+      <h3 class="svc-group-label" data-i18n="servicesA.label">A. 차량 서비스</h3>
       <div class="svc-grid">
         <details class="svc-card">
           <summary>
@@ -188,6 +226,94 @@
             <li data-i18n="svc.family.d1">유아 동반, 캐리어 많은 여행 상담</li>
             <li data-i18n="svc.family.d2">한국에 있는 가족이 대신 예약 가능</li>
             <li data-i18n="svc.family.d3">4인 이상 그룹은 미니밴 상담</li>
+          </ul>
+        </details>
+      </div>
+
+      <h3 class="svc-group-label" data-i18n="servicesB.label">B. 현지 예약대행</h3>
+      <p class="svc-group-subtitle" data-i18n="servicesB.subtitle">직접 예약하기 번거로운 랜드마크·레스토랑을 대신 확인하고 예약해 드립니다.</p>
+      <div class="svc-grid">
+        <details class="svc-card svc-card--resv">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <h3 data-i18n="resvSvc.landmark.name">랜드마크 예약</h3>
+            <p data-i18n="resvSvc.landmark.desc">성당, 미술관, 전망대 등 인기 장소의 입장 예약 가능 여부를 확인합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="resvSvc.landmark.d1">원하는 날짜와 시간 기준으로 확인</li>
+            <li data-i18n="resvSvc.landmark.d2">공식 사이트 또는 제휴 경로로 진행</li>
+            <li data-i18n="resvSvc.landmark.d3">현지 운영 상황에 따라 가능 여부 상이</li>
+          </ul>
+        </details>
+
+        <details class="svc-card svc-card--resv">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 15l5-5 4 4 3-3 6 6"/><circle cx="8" cy="9" r="1.4"/></svg></span>
+            <h3 data-i18n="resvSvc.museum.name">미술관·박물관 예약</h3>
+            <p data-i18n="resvSvc.museum.desc">특별 전시, 타임슬롯 입장이 필요한 미술관과 박물관 예약을 확인합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="resvSvc.museum.d1">특별 전시 일정 확인</li>
+            <li data-i18n="resvSvc.museum.d2">가이드 투어 연계 가능 여부 확인</li>
+            <li data-i18n="resvSvc.museum.d3">타임슬롯 입장 기준으로 안내</li>
+          </ul>
+        </details>
+
+        <details class="svc-card svc-card--resv">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M12 3l6 4M12 3 6 7"/><rect x="5" y="15" width="14" height="6" rx="1"/></svg></span>
+            <h3 data-i18n="resvSvc.observation.name">전망대·관광지 예약</h3>
+            <p data-i18n="resvSvc.observation.desc">전망대, 궁전, 유적지 등 인기 관광지의 예약 가능 여부를 확인합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="resvSvc.observation.d1">혼잡 시간대 회피 일정 상담</li>
+            <li data-i18n="resvSvc.observation.d2">차량 이동과 함께 일정 조율 가능</li>
+            <li data-i18n="resvSvc.observation.d3">현지 정책에 따라 가능 여부 상이</li>
+          </ul>
+        </details>
+
+        <details class="svc-card svc-card--resv">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v7a3 3 0 0 0 6 0V3M9 10v11M17 3c-1.5 2-2 4-2 6a2 2 0 0 0 4 0c0-2-.5-4-2-6zM17 13v8"/></svg></span>
+            <h3 data-i18n="resvSvc.restaurant.name">레스토랑 예약</h3>
+            <p data-i18n="resvSvc.restaurant.desc">현지 인기 레스토랑, 기념일 식사 등의 예약 가능 여부를 확인합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="resvSvc.restaurant.d1">날짜·시간·인원 기준으로 확인</li>
+            <li data-i18n="resvSvc.restaurant.d2">레스토랑 미정 시 후보 정리 가능</li>
+            <li data-i18n="resvSvc.restaurant.d3">예약금·취소 규정은 사전 안내</li>
+          </ul>
+        </details>
+
+        <details class="svc-card svc-card--resv">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.2 6.8H21l-5.5 4 2.1 6.8L12 15.6l-5.6 4 2.1-6.8L3 8.8h6.8z"/></svg></span>
+            <h3 data-i18n="resvSvc.fine.name">파인다이닝 예약</h3>
+            <p data-i18n="resvSvc.fine.desc">미쉐린 레스토랑 등 예약이 까다로운 파인다이닝 예약을 확인합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="resvSvc.fine.d1">선결제·예약금 여부 사전 확인</li>
+            <li data-i18n="resvSvc.fine.d2">기념일·특별 요청 전달 가능</li>
+            <li data-i18n="resvSvc.fine.d3">가능 여부는 날짜에 따라 상이</li>
+          </ul>
+        </details>
+
+        <details class="svc-card svc-card--resv">
+          <summary>
+            <span class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-1a5 5 0 0 1 10 0v1M14 20v-.5a4 4 0 0 1 7-2.6"/></svg></span>
+            <h3 data-i18n="resvSvc.group.name">단체 식사 예약</h3>
+            <p data-i18n="resvSvc.group.desc">기업 디너, 바이어 식사 등 단체 인원 레스토랑 예약을 지원합니다.</p>
+            <span class="svc-more" data-i18n="svc.more">자세히 보기</span>
+          </summary>
+          <ul class="svc-detail">
+            <li data-i18n="resvSvc.group.d1">프라이빗 다이닝룸 가능 여부 확인</li>
+            <li data-i18n="resvSvc.group.d2">인원 변경 시 재확인 후 안내</li>
+            <li data-i18n="resvSvc.group.d3">차량 이동과 함께 조율 가능</li>
           </ul>
         </details>
       </div>
@@ -501,6 +627,109 @@
     </div>
   </section>
 
+  <!-- RESERVATION DETAIL -->
+  <section id="reservations" class="section--sub">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="resvDetail.eyebrow">LOCAL RESERVATIONS</span>
+        <h2 class="section-title" data-i18n="resvDetail.title">현지 예약이 필요한 일정도 함께 준비합니다</h2>
+        <p class="section-subtitle" data-i18n="resvDetail.desc">여행이나 출장 중 직접 예약하기 번거로운 랜드마크, 미술관, 박물관, 전망대, 레스토랑 등을 대신 확인하고 예약을 진행합니다. 단순 티켓 판매가 아니라, 현지 예약을 대신 확인하고 진행하는 서비스입니다.</p>
+      </div>
+      <div class="resv-detail-grid">
+        <div class="resv-detail-card">
+          <h3 data-i18n="resvDetail.landmark.title">랜드마크 예약대행</h3>
+          <div class="resv-cat-row">
+            <span class="resv-cat-chip" data-i18n="resvDetail.landmark.categories">성당 · 미술관 · 박물관 · 전망대 · 궁전 · 유적지 · 특별 전시 · 가이드 투어 · 타임슬롯 입장</span>
+          </div>
+          <div class="resv-notes">
+            <p data-i18n="resvDetail.landmark.note1">원하는 날짜와 시간을 보내주시면 예약 가능 여부를 확인합니다.</p>
+            <p data-i18n="resvDetail.landmark.note2">공식 사이트 또는 제휴 가능한 예약 경로를 확인한 뒤 안내합니다.</p>
+            <p data-i18n="resvDetail.landmark.note3">예약 가능 여부는 현지 운영 상황에 따라 달라질 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="resv-detail-card">
+          <h3 data-i18n="resvDetail.restaurant.title">레스토랑 예약대행</h3>
+          <div class="resv-cat-row">
+            <span class="resv-cat-chip" data-i18n="resvDetail.restaurant.categories">파인다이닝 · 미쉐린 레스토랑 · 현지 인기 레스토랑 · 기념일 식사 · 기업 디너 · 바이어 식사 · 단체 예약 · 프라이빗 다이닝</span>
+          </div>
+          <div class="resv-notes">
+            <p data-i18n="resvDetail.restaurant.note1">원하는 날짜, 시간, 인원, 레스토랑명을 보내주시면 예약 가능 여부를 확인합니다.</p>
+            <p data-i18n="resvDetail.restaurant.note2">원하는 레스토랑이 정해지지 않은 경우에는 지역, 분위기, 예산을 기준으로 후보를 정리할 수 있습니다.</p>
+            <p data-i18n="resvDetail.restaurant.note3">예약금, 취소 규정, 노쇼 정책이 있는 경우 사전에 안내해 드립니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="resv-detail-cta">
+        <a class="btn btn-primary" href="/reservations/" data-i18n="resvDetail.cta">예약대행 자세히 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION CITIES -->
+  <section id="reservation-cities" class="section--tight">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="resvCities.eyebrow">RESERVATION CITIES</span>
+        <h2 class="section-title" data-i18n="resvCities.title">예약대행 가능 지역</h2>
+        <p class="section-subtitle" data-i18n="resvCities.subtitle">현재 실제 운영 중이거나 대응 가능한 도시를 중심으로 안내합니다.</p>
+      </div>
+      <div class="resv-cities-row">
+        <span class="city-chip">도쿄</span><span class="city-chip">오사카</span><span class="city-chip">상하이</span>
+        <span class="city-chip">홍콩</span><span class="city-chip">싱가포르</span><span class="city-chip">밀라노</span>
+        <span class="city-chip">로마</span><span class="city-chip">피렌체</span><span class="city-chip">파리</span>
+        <span class="city-chip">바르셀로나</span><span class="city-chip">런던</span><span class="city-chip">베를린</span>
+        <span class="city-chip">비엔나</span><span class="city-chip">두바이</span>
+      </div>
+      <p class="regions-note" data-i18n="resvCities.note">도시와 장소에 따라 예약 가능 여부를 확인한 뒤 안내드립니다.</p>
+    </div>
+  </section>
+
+  <!-- COMBINED ITINERARY -->
+  <section id="combo" class="section--sub">
+    <div class="container">
+      <div class="business-grid">
+        <div>
+          <div class="section-head">
+            <span class="eyebrow" data-i18n="combo.eyebrow">ONE ITINERARY</span>
+            <h2 class="section-title" data-i18n="combo.title">한 일정으로 묶을 수 있습니다</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="combo.desc">공항 픽업과 식사 예약, 랜드마크 입장과 차량 이동을 하나의 일정으로 정리할 수 있습니다. 차량과 예약대행을 별도로 여러 곳에 문의하지 않아도 됩니다.</p>
+        </div>
+        <div class="schedule-card">
+          <h4 data-i18n="business.scheduleLabel">샘플 일정표</h4>
+          <div class="schedule-list">
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">14:00</span>
+              <span class="schedule-desc" data-i18n="combo.schedule1">공항 도착</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">15:30</span>
+              <span class="schedule-desc" data-i18n="combo.schedule2">호텔 체크인</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">17:00</span>
+              <span class="schedule-desc" data-i18n="combo.schedule3">랜드마크 입장</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">19:30</span>
+              <span class="schedule-desc" data-i18n="combo.schedule4">레스토랑 예약</span>
+            </div>
+            <div class="schedule-row">
+              <span class="schedule-dot" aria-hidden="true"></span>
+              <span class="schedule-time">21:30</span>
+              <span class="schedule-desc" data-i18n="combo.schedule5">호텔 이동</span>
+            </div>
+          </div>
+          <p class="schedule-caption" data-i18n="combo.caption">차량과 예약대행을 하나의 담당자가 함께 조율합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CITY SEARCH -->
   <section id="cities">
     <div class="container">
@@ -648,10 +877,16 @@
         <p class="section-subtitle" data-i18n="contact.subtitle">아래 정보를 남겨주시면 확인 후 회신드립니다.</p>
       </div>
       <p class="contact-form-note" data-i18n="contact.formNote">보통 1영업일 내 회신드립니다.</p>
+      <p class="contact-resv-note">
+        <span data-i18n="contact.resvNote">랜드마크·레스토랑 예약대행은 별도 문의 폼을 이용해 주세요.</span>
+        <a href="/reservations/#reservation-form" data-i18n="contact.resvLink">예약대행 문의 폼으로 이동 →</a>
+      </p>
 
       <form class="contact-form" id="contact-form" action="https://formspree.io/f/xkjnvdjr" method="POST" accept-charset="UTF-8" novalidate>
-        <input type="hidden" name="_subject" value="[체르토 드라이브] 신규 문의">
+        <input type="hidden" name="_subject" value="[CERTO DRIVE] 차량 견적 문의">
         <input type="hidden" name="_next" value="/thanks.html">
+        <input type="hidden" name="inquiry_type" value="drive">
+        <input type="hidden" name="brand" value="Certo Drive">
         <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <div class="form-grid">
@@ -792,6 +1027,16 @@
           <p class="privacy-note" data-i18n="contact.privacyNote">제출하신 정보는 문의 응대 목적으로만 사용됩니다.</p>
         </div>
       </form>
+
+      <div class="form-state form-state--success" id="contact-success" hidden>
+        <div class="form-state-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3 data-i18n="formState.successTitle">문의가 접수되었습니다.</h3>
+        <p data-i18n="formState.successBody">일정과 가능 여부를 확인한 뒤 이메일 또는 카카오톡으로 안내드리겠습니다.</p>
+      </div>
+      <div class="form-state form-state--error" id="contact-error" hidden>
+        <div class="form-state-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg></div>
+        <p data-i18n="formState.errorBody">전송 중 문제가 발생했습니다. 잠시 후 다시 시도하거나 카카오톡 상담을 이용해주세요.</p>
+      </div>
     </div>
   </section>
 
@@ -801,7 +1046,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="#hero">
+        <a class="brand" href="/">
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-word">CERTO</span>
         </a>
@@ -810,10 +1055,10 @@
       <div class="footer-col">
         <h4 data-i18n="footer.linksTitle">바로가기</h4>
         <ul>
-          <li><a href="#services" data-i18n="nav.services">서비스</a></li>
+          <li><a href="#services" data-i18n="nav.services">차량 서비스</a></li>
+          <li><a href="/reservations/" data-i18n="nav.reservations">예약대행</a></li>
           <li><a href="#vehicles" data-i18n="nav.vehicles">차량</a></li>
-          <li><a href="#process" data-i18n="nav.process">이용 과정</a></li>
-          <li><a href="#cities" data-i18n="nav.cities">도시</a></li>
+          <li><a href="#cities" data-i18n="nav.cities">지역</a></li>
           <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
           <li><a href="#contact" data-i18n="nav.contact">문의</a></li>
         </ul>
@@ -843,6 +1088,13 @@
   <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.7 9.7 0 0 1-3.3-.6L4 21l1.1-3.9A8.3 8.3 0 0 1 3 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
 </a>
 
-<script src="app.js"></script>
+<div class="sticky-bar">
+  <div class="sticky-bar-row">
+    <a class="btn btn-outline" href="#contact" data-i18n="stickyBar.drive">차량 문의</a>
+    <a class="btn btn-primary" href="/reservations/" data-i18n="stickyBar.reservation">예약대행</a>
+  </div>
+</div>
+
+<script src="/app.js"></script>
 </body>
 </html>

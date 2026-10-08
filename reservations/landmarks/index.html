@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>해외 랜드마크·미술관·박물관 예약대행 | 체르토 드라이브</title>
+<meta name="description" content="로마 콜로세움, 비엔나 쇤브룬 궁전, 두바이 부르즈 할리파, 런던 대영박물관 등 해외 랜드마크와 미술관, 박물관 입장 예약을 대신 확인하고 진행합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-word">CERTO</span>
+      <span class="brand-sub">체르토 드라이브</span>
+    </a>
+    <nav class="nav-menu" id="nav-menu" aria-label="주요 메뉴">
+      <a href="/#services" data-i18n="nav.services">차량 서비스</a>
+      <a href="/reservations/" data-i18n="nav.reservations">예약대행</a>
+      <a href="/#business" data-i18n="nav.business">기업·기관</a>
+      <a href="#landmark-faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" role="group" aria-label="언어 선택">
+        <button type="button" id="lang-ko" aria-pressed="true">KR</button>
+        <button type="button" id="lang-en" aria-pressed="false">EN</button>
+      </div>
+      <a class="header-kakao-link nav-cta-desktop" href="#kakao" data-kakao-link data-i18n="kakao.chat">카카오톡 상담</a>
+      <a class="btn btn-primary nav-cta-desktop" href="/reservations/?type=landmark#reservation-form" data-i18n="landmarkPage.cta">랜드마크 예약 문의하기</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- INTRO -->
+  <section class="hero" style="padding-bottom: 56px;">
+    <div class="container">
+      <div class="hero-inner" style="max-width: 760px;">
+        <span class="hero-eyebrow" data-i18n="resvDetail.eyebrow">LOCAL RESERVATIONS</span>
+        <h1 class="hero-title" data-i18n="landmarkPage.title">해외 랜드마크·미술관·박물관 예약대행</h1>
+        <p class="hero-sub" data-i18n="landmarkPage.sub">성당, 미술관, 박물관, 전망대, 궁전, 유적지까지. 입장권과 타임슬롯 예약을 대신 확인하고 진행합니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/reservations/?type=landmark#reservation-form" data-i18n="landmarkPage.cta">랜드마크 예약 문의하기</a>
+          <a class="btn btn-outline" href="/reservations/" data-i18n="resvSubpage.backCta">예약대행 전체 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICE -->
+  <section class="section--tight">
+    <div class="container">
+      <p class="notice-box" data-i18n="resvSubpage.notice">예약대행 서비스는 해당 장소의 공식 운영기관이 아닙니다. Certo Drive는 고객 요청에 따라 예약 가능 여부를 확인하고 예약 절차를 지원하는 대행 서비스입니다. 입장 정책, 운영시간, 예약 가능 여부, 취소 규정은 각 시설 또는 레스토랑 정책에 따라 달라질 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="section--sub">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="resvDetail.eyebrow">LOCAL RESERVATIONS</span>
+        <h2 class="section-title" data-i18n="landmarkPage.catTitle">예약대행 가능 장소 유형</h2>
+      </div>
+      <div class="vehicle-grid">
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat1.name">성당</h3>
+          <p data-i18n="landmarkPage.cat1.desc">두오모, 사그라다 파밀리아 등 입장 인원이 제한된 성당 예약을 확인합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat2.name">미술관</h3>
+          <p data-i18n="landmarkPage.cat2.desc">우피치, 루브르 등 특별 전시 시기에는 사전 예약이 특히 중요합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat3.name">박물관</h3>
+          <p data-i18n="landmarkPage.cat3.desc">역사·과학 박물관의 타임슬롯 입장과 특별 전시 일정을 확인합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat4.name">전망대</h3>
+          <p data-i18n="landmarkPage.cat4.desc">일몰 시간대 등 혼잡이 예상되는 전망대 입장을 사전 조율합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat5.name">궁전</h3>
+          <p data-i18n="landmarkPage.cat5.desc">쇤브룬 궁전 등 내부 투어가 있는 장소의 시간대별 예약을 확인합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat6.name">유적지</h3>
+          <p data-i18n="landmarkPage.cat6.desc">콜로세움 등 사전 예약이 없으면 장시간 대기가 발생하는 유적지를 확인합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat7.name">특별 전시</h3>
+          <p data-i18n="landmarkPage.cat7.desc">기간 한정 전시는 티켓이 조기 마감되는 경우가 많아 빠른 확인이 필요합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat8.name">가이드 투어</h3>
+          <p data-i18n="landmarkPage.cat8.desc">한국어 또는 영어 가이드 동행이 가능한 투어 여부를 확인합니다.</p>
+        </div>
+        <div class="vehicle-card">
+          <h3 data-i18n="landmarkPage.cat9.name">타임슬롯 입장</h3>
+          <p data-i18n="landmarkPage.cat9.desc">지정된 시간에만 입장 가능한 장소는 일정에 맞춰 시간대를 조율합니다.</p>
+        </div>
+      </div>
+      <div class="resv-notes">
+        <p data-i18n="resvDetail.landmark.note1">원하는 날짜와 시간을 보내주시면 예약 가능 여부를 확인합니다.</p>
+        <p data-i18n="resvDetail.landmark.note2">공식 사이트 또는 제휴 가능한 예약 경로를 확인한 뒤 안내합니다.</p>
+        <p data-i18n="resvDetail.landmark.note3">예약 가능 여부는 현지 운영 상황에 따라 달라질 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLES -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="resvPage.examples.eyebrow">EXAMPLES</span>
+        <h2 class="section-title" data-i18n="landmarkPage.examplesTitle">랜드마크 예약대행 이용 예시</h2>
+      </div>
+      <div class="examples-grid">
+        <div class="example-card">
+          <span class="case-num">01</span>
+          <h3 data-i18n="landmarkPage.ex1.city">로마</h3>
+          <p data-i18n="landmarkPage.ex1.desc">콜로세움 입장 예약 + 바티칸 박물관 가이드 투어</p>
+          <p class="example-caption" data-i18n="resvPage.examples.caption">실제 이용 방식 이해를 위한 예시입니다.</p>
+        </div>
+        <div class="example-card">
+          <span class="case-num">02</span>
+          <h3 data-i18n="landmarkPage.ex2.city">비엔나</h3>
+          <p data-i18n="landmarkPage.ex2.desc">쇤브룬 궁전 내부 투어 예약 + 차량 이동</p>
+          <p class="example-caption" data-i18n="resvPage.examples.caption">실제 이용 방식 이해를 위한 예시입니다.</p>
+        </div>
+        <div class="example-card">
+          <span class="case-num">03</span>
+          <h3 data-i18n="landmarkPage.ex3.city">두바이</h3>
+          <p data-i18n="landmarkPage.ex3.desc">부르즈 할리파 전망대 타임슬롯 예약</p>
+          <p class="example-caption" data-i18n="resvPage.examples.caption">실제 이용 방식 이해를 위한 예시입니다.</p>
+        </div>
+        <div class="example-card">
+          <span class="case-num">04</span>
+          <h3 data-i18n="landmarkPage.ex4.city">런던</h3>
+          <p data-i18n="landmarkPage.ex4.desc">런던탑 가이드 투어 + 대영박물관 특별 전시 예약</p>
+          <p class="example-caption" data-i18n="resvPage.examples.caption">실제 이용 방식 이해를 위한 예시입니다.</p>
+        </div>
+        <div class="example-card">
+          <span class="case-num">05</span>
+          <h3 data-i18n="landmarkPage.ex5.city">베를린</h3>
+          <p data-i18n="landmarkPage.ex5.desc">박물관섬 타임슬롯 입장 예약 2곳 연계</p>
+          <p class="example-caption" data-i18n="resvPage.examples.caption">실제 이용 방식 이해를 위한 예시입니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="landmark-faq" class="section--sub">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title" data-i18n="landmarkPage.faqTitle">랜드마크 예약대행 자주 묻는 질문</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary data-i18n="landmarkPage.faq.q1">단체 입장권도 예약할 수 있나요?</summary>
+          <p data-i18n="landmarkPage.faq.a1">가능합니다. 인원수와 희망 시간대를 알려주시면 단체 입장 가능 여부를 확인합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="landmarkPage.faq.q2">줄을 서지 않고 입장할 수 있나요?</summary>
+          <p data-i18n="landmarkPage.faq.a2">장소에 따라 우선 입장 또는 전용 입장 경로가 있는 경우 안내해 드립니다. 모든 장소에 해당하지는 않습니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="landmarkPage.faq.q3">한국어 가이드 투어도 가능한가요?</summary>
+          <p data-i18n="landmarkPage.faq.a3">장소와 일정에 따라 한국어 가능 가이드를 확인해 안내합니다. 가능 여부는 사전 확인이 필요합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="landmarkPage.faq.q4">공휴일에도 예약이 가능한가요?</summary>
+          <p data-i18n="landmarkPage.faq.a4">장소별 운영 일정에 따라 다릅니다. 휴무일인 경우 대체 일정을 함께 안내해 드립니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="landmarkPage.faq.q5">아동이나 학생 할인도 적용되나요?</summary>
+          <p data-i18n="landmarkPage.faq.a5">장소 정책에 따라 다릅니다. 동반 인원의 연령을 알려주시면 할인 적용 여부를 함께 확인합니다.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section--tight">
+    <div class="container" style="text-align:center;">
+      <a class="btn btn-primary" href="/reservations/?type=landmark#reservation-form" data-i18n="landmarkPage.cta">랜드마크 예약 문의하기</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-word">CERTO</span>
+        </a>
+        <p class="footer-about" data-i18n="footer.about">체르토 드라이브는 한국어 가능 드라이버와 차량을 연결하는 예약 중개 서비스입니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.linksTitle">바로가기</h4>
+        <ul>
+          <li><a href="/#services" data-i18n="nav.services">차량 서비스</a></li>
+          <li><a href="/reservations/" data-i18n="nav.reservations">예약대행</a></li>
+          <li><a href="/reservations/restaurants/" data-i18n="resvDetail.restaurant.title">레스토랑 예약대행</a></li>
+          <li><a href="/#cities" data-i18n="nav.cities">지역</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contactTitle">연락처</h4>
+        <ul>
+          <li><a href="mailto:hello@certodrive.com" data-email-link data-email-text>hello@certodrive.com</a></li>
+          <li><a href="tel:" data-phone-link data-phone-text>010-7748-4644</a></li>
+          <li><a href="#kakao" data-kakao-link data-i18n="kakao.chat">카카오톡 상담</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p data-i18n="footer.legal1">체르토 드라이브는 중개 서비스입니다.</p>
+      <p data-i18n="resvSubpage.notice">예약대행 서비스는 해당 장소의 공식 운영기관이 아닙니다. Certo Drive는 고객 요청에 따라 예약 가능 여부를 확인하고 예약 절차를 지원하는 대행 서비스입니다. 입장 정책, 운영시간, 예약 가능 여부, 취소 규정은 각 시설 또는 레스토랑 정책에 따라 달라질 수 있습니다.</p>
+      <p class="footer-biz">상호 체르토 드라이브 · 대표 김형기 · 사업자등록번호 654-60-00645 · 주소 서울특별시 서초구 강남대로8길 39-26, 2층 A9호(양재동)</p>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Certo Drive. <span data-i18n="footer.rights">모든 권리 보유</span></span>
+    </div>
+  </div>
+</footer>
+
+<a class="kakao-float" href="#kakao" data-kakao-link data-i18n-aria-label="kakao.chat" aria-label="카카오톡 상담">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.7 9.7 0 0 1-3.3-.6L4 21l1.1-3.9A8.3 8.3 0 0 1 3 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+</a>
+
+<div class="sticky-bar">
+  <div class="sticky-bar-row">
+    <a class="btn btn-outline" href="/#contact" data-i18n="stickyBar.drive">차량 문의</a>
+    <a class="btn btn-primary" href="/reservations/?type=landmark#reservation-form" data-i18n="stickyBar.reservation">예약대행</a>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
