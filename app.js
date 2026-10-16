@@ -15,7 +15,7 @@ var CONFIG = {
 /* ---- 2. 다국어 사전 (KR 기본 / EN 전환) ---- */
 var I18N = {
   "meta.title": { ko: "체르토 드라이브 | 해외 차량과 현지 예약을 한 번에", en: "Certo Drive | Vehicles & Local Reservations Abroad, in One Place" },
-  "meta.description": { ko: "공항 픽업과 기업 출장부터 랜드마크·레스토랑 예약대행까지. 해외 주요 도시에서 한국어로 상담하며 이동과 예약을 함께 준비하는 체르토 드라이브.", en: "From airport pickups and business trips to landmark and restaurant reservations. Certo Drive helps you prepare transport and bookings abroad, in Korean." },
+  "meta.description": { ko: "공항 픽업, 공항 샌딩, 기업 및 VIP 의전, 외국인 바이어 전담 차량, 데일리 기사 차량, 맞춤형 일일투어, 도시 간 이동까지. 국내외에서 제공하는 프리미엄 차량 및 기업 의전 서비스, 체르토 드라이브.", en: "Airport pickup, airport drop-off, business and VIP chauffeur service, dedicated transport for foreign buyers, daily chauffeur, custom day tours, and intercity transfers — premium vehicles and corporate escort service in Korea and abroad, from Certo Drive." },
 
   "nav.services": { ko: "차량 서비스", en: "Vehicle Services" },
   "nav.reservations": { ko: "예약대행", en: "Reservations" },
@@ -110,8 +110,8 @@ var I18N = {
   "svc.airport.d2": { ko: "심야·이른 아침 도착도 상담 가능", en: "Late-night and early-morning arrivals welcome" },
   "svc.airport.d3": { ko: "캐리어·골프백 등 짐이 많으면 SUV 상담", en: "Ask about an SUV for heavy luggage or golf bags" },
 
-  "svc.business.name": { ko: "기업 출장 · 임원 차량", en: "Corporate Travel & Executive Vehicles" },
-  "svc.business.desc": { ko: "해외 출장 중 공항, 호텔, 회사, 미팅 장소를 잇는 차량 일정을 준비합니다. 하루 여러 미팅이 있거나 일정이 며칠간 이어지는 경우에도 전체 동선을 기준으로 차량을 조율합니다.", en: "A vehicle schedule linking the airport, hotel, office, and meeting venues during a trip abroad. Multi-day trips and multiple meetings in a day are coordinated around the full route." },
+  "svc.business.name": { ko: "기업 및 VIP 차량 (Business & VIP Chauffeur)", en: "Business & VIP Chauffeur" },
+  "svc.business.desc": { ko: "해외 바이어 의전, 임원 이동, 행사·전시회 차량 등 해외 출장 중 공항, 호텔, 회사, 미팅 장소를 잇는 비즈니스 차량 일정을 준비합니다. 중요한 일정일수록 Premium 등급 기사 차량을 권해드립니다.", en: "For overseas buyer escorts, executive transport, and event vehicles — a schedule linking the airport, hotel, office, and meeting venues during a trip abroad. For high-stakes schedules, we recommend our Premium chauffeur tier." },
   "svc.business.d1": { ko: "공항 → 호텔 → 회사 등 다구간 이동", en: "Multi-stop routes: airport → hotel → office" },
   "svc.business.d2": { ko: "해외 바이어 일정 및 임원 차량 포함", en: "Covers buyer visits and executive transport" },
   "svc.business.d3": { ko: "다일정 출장, 여러 대 동시 배정 가능", en: "Multiple vehicles for multi-day trips" },
@@ -122,14 +122,14 @@ var I18N = {
   "svc.exhibition.d2": { ko: "하루 단위 또는 구간별 선택 가능", en: "Book by the day or by individual leg" },
   "svc.exhibition.d3": { ko: "통역이 함께 필요하면 별도 상담", en: "Ask separately if an interpreter is also needed" },
 
-  "svc.dedicated.name": { ko: "기사 포함 시간제 차량", en: "Chauffeured Hourly Vehicle" },
-  "svc.dedicated.desc": { ko: "출장이나 관광 중 여러 장소를 오가야 할 때 이용합니다. 4시간, 8시간, 종일 중 필요한 시간에 맞춰 기사와 차량을 배정합니다.", en: "For trips that move between several places in a day, whether business or leisure. A driver and vehicle are assigned for 4 hours, 8 hours, or a full day, as needed." },
+  "svc.dedicated.name": { ko: "데일리 차량 (Daily Chauffeur)", en: "Daily Chauffeur" },
+  "svc.dedicated.desc": { ko: "관광만을 위한 서비스가 아니라 출장, 쇼핑, 골프, 레스토랑 방문, 가족 일정, 병원 방문, 행사 참석 등 하루 동안 여러 장소를 오가야 할 때 이용하는 기사 포함 차량 서비스입니다. 4시간, 8시간, 종일 중 필요한 시간에 맞춰 기사와 차량을 배정합니다.", en: "Not just for sightseeing — a chauffeured vehicle for a day that moves between several places: business, shopping, golf, dining, family errands, medical visits, or an event. A driver and vehicle are assigned for 4 hours, 8 hours, or a full day, as needed." },
   "svc.dedicated.d1": { ko: "미팅이나 관광 중 대기 요청 가능", en: "The driver can wait during meetings or sightseeing" },
   "svc.dedicated.d2": { ko: "호텔 출발 및 복귀 포함", en: "Includes pickup and return at your hotel" },
   "svc.dedicated.d3": { ko: "출장과 여행 모두 이용 가능", en: "Works for both business trips and travel" },
 
-  "svc.intercity.name": { ko: "도시 간 장거리 이동", en: "Intercity Transfers" },
-  "svc.intercity.desc": { ko: "도시와 도시 사이를 차량으로 이동해야 하는 일정도 가능합니다. 공항이나 기차역을 거치지 않고 호텔, 회사, 숙소 사이를 바로 이동할 수 있습니다.", en: "For trips that need a vehicle between cities, not just within one. Travel directly between hotels, offices, and residences, without routing through an airport or train station." },
+  "svc.intercity.name": { ko: "도시 간 장거리 이동 (Intercity Transfer)", en: "Intercity Transfer" },
+  "svc.intercity.desc": { ko: "밴쿠버 → 시애틀, 상하이 → 쑤저우, 밀라노 → 코모 호수, 도쿄 → 인근 도시처럼 해외 도시 간 이동은 물론, 서울 → 지방 사업장·공장·호텔·골프장·행사장 같은 국내 장거리 이동도 가능합니다. 공항이나 기차역을 거치지 않고 호텔, 회사, 숙소 사이를 바로 이동할 수 있습니다.", en: "Vancouver → Seattle, Shanghai → Suzhou, Milan → Lake Como, Tokyo → nearby cities — and domestic routes too, such as Seoul to a regional office, factory, hotel, golf course, or event venue. Travel directly between hotels, offices, and residences, without routing through an airport or train station." },
   "svc.intercity.d1": { ko: "기차·항공편 대신 호텔 간 직행 이동", en: "A direct hotel-to-hotel ride, instead of a train or flight" },
   "svc.intercity.d2": { ko: "짐이 많은 구간 이동에 적합", en: "Suited to legs with a lot of luggage" },
   "svc.intercity.d3": { ko: "장거리 구간은 사전 가능 여부 확인", en: "Availability for longer routes is confirmed in advance" },
@@ -146,17 +146,162 @@ var I18N = {
   "svc.edu.d2": { ko: "인원에 맞춰 SUV·미니밴 배정", en: "SUV or minivan assigned to group size" },
   "svc.edu.d3": { ko: "참가 인원 기준 견적 안내", en: "Quotes based on participant count" },
 
+  "svc.airportDropoff.name": { ko: "공항 샌딩 (Airport Drop-off)", en: "Airport Drop-off" },
+  "svc.airportDropoff.desc": { ko: "호텔, 자택, 회사 등에서 출발해 공항까지 이동하는 공항 샌딩 서비스입니다. 출국 시간에 맞춰 여유 있게 픽업 시간을 잡아드립니다.", en: "From your hotel, residence, or office to the airport, timed with your departure in mind." },
+  "svc.airportDropoff.d1": { ko: "출국 항공편 시간에 맞춰 픽업 시간 조율", en: "Pickup time set around your departure flight" },
+  "svc.airportDropoff.d2": { ko: "호텔·자택·회사 등 어디서든 출발 가능", en: "Departs from your hotel, residence, or office" },
+  "svc.airportDropoff.d3": { ko: "짐이 많은 경우 SUV·밴 상담 가능", en: "Ask about an SUV or van for heavier luggage" },
+
+  "svc.p2p.name": { ko: "도시 내 단순 이동 (Point-to-Point Transfer)", en: "Point-to-Point Transfer" },
+  "svc.p2p.desc": { ko: "호텔 → 레스토랑, 호텔 → 미팅 장소, 회사 → 행사장, 호텔 → 쇼핑몰처럼 도시 내 한 장소에서 다른 장소로 바로 이동하는 서비스입니다.", en: "A direct ride between two points in the city — hotel to restaurant, hotel to a meeting, office to a venue, hotel to a shopping district." },
+  "svc.p2p.d1": { ko: "편도 이동도 요청 가능", en: "One-way transfers are available" },
+  "svc.p2p.d2": { ko: "저녁 약속, 미팅 등 단건 이동에 적합", en: "Suited to a single dinner, meeting, or appointment" },
+  "svc.p2p.d3": { ko: "당일 여러 건 요청 시 데일리 차량도 상담", en: "For several trips in one day, ask about Daily Chauffeur instead" },
+
+  "svc.tierLabel": { ko: "Standard · Premium 선택 가능", en: "Available in Standard and Premium" },
+
+  "svc.corporateVip.name": { ko: "해외 바이어·손님 전담 차량", en: "Corporate Buyer & VIP Guest Chauffeur" },
+  "svc.corporateVip.desc": { ko: "국내 기업의 총무팀, 인사팀, 비서실, 해외사업팀에서 외국인 바이어, 해외 본사 임원, 파트너사 관계자, VIP 손님의 방한 일정을 전담 차량과 기사로 지원하는 서비스입니다. 인천공항 픽업부터 본사 방문, 미팅, 식사, 서울 투어, 출국 샌딩까지 하나의 흐름으로 연결합니다.", en: "For Korean companies' general affairs, HR, executive office, or overseas business teams hosting foreign buyers, visiting headquarters executives, partner contacts, or VIP guests — a dedicated vehicle and chauffeur for the entire visit, from Incheon Airport pickup through headquarters visits, meetings, meals, a Seoul tour, and the departure drop-off." },
+  "svc.corporateVip.d1": { ko: "해외 본사 임원·바이어 방한, 실사팀 방문 등에 적합", en: "Suited to visiting executives, buyers, and due-diligence teams" },
+  "svc.corporateVip.d2": { ko: "공장·사업장 방문, 전시회 참석 일정 포함 가능", en: "Can include factory visits, site tours, and trade show attendance" },
+  "svc.corporateVip.d3": { ko: "담당자가 매번 차량을 다시 부르지 않도록 전 일정 전담 배정", en: "One dedicated assignment for the whole visit, so your team isn't rebooking a car for every leg" },
+
+  "premium.kicker": { ko: "GLOBAL CHAUFFEUR SERVICE", en: "GLOBAL CHAUFFEUR SERVICE" },
+  "premium.title": { ko: "프리미엄 기사 포함 차량", en: "Premium Chauffeur Service" },
+  "premium.subtitle": { ko: "Airport Transfers, Business Travel & Private Daily Chauffeur Worldwide", en: "Airport Transfers, Business Travel & Private Daily Chauffeur Worldwide" },
+  "premium.desc": { ko: "공항 픽업부터 기업 출장, VIP 의전, 해외 바이어 방한 일정, 데일리 차량, 맞춤형 일일투어까지. 상위 등급 차량과 전문 기사를 국내외 주요 도시에서 이용하실 수 있습니다.", en: "Upgrade your journey with premium vehicles and professional chauffeurs. Available for airport transfers, business travel, visiting foreign buyers, private tours, and customized daily transportation — in Korea and abroad." },
+  "premium.ctaRequest": { ko: "프리미엄 서비스 문의", en: "Request Premium Service" },
+  "premium.ctaView": { ko: "차량 등급 보기", en: "View Vehicle Classes" },
+  "premium.ctaQuote": { ko: "견적 요청", en: "Get a Quote" },
+
+  "tier.title": { ko: "Standard 또는 Premium, 필요에 맞게 선택하세요", en: "Choose Standard or Premium for Your Journey" },
+  "tier.subtitle": { ko: "공항 픽업, 샌딩, 시내 이동부터 비즈니스 출장, VIP 의전까지. 차량 등급만 다를 뿐 전문 기사 서비스는 동일하게 제공됩니다.", en: "From airport transfers and city rides to business travel and VIP escorts — both tiers are a professional chauffeur service, the vehicle class is what changes." },
+
+  "tier.standard.badge": { ko: "STANDARD", en: "STANDARD" },
+  "tier.standard.title": { ko: "Standard", en: "Standard" },
+  "tier.standard.desc": { ko: "공항 픽업, 공항 샌딩, 시내 이동, 출장, 데일리 차량 등 일상적인 이동에 사용하는 기본 등급의 기사 포함 차량 서비스입니다.", en: "A professional chauffeured vehicle service for everyday transportation — airport pickups, drop-offs, city transfers, business trips, and daily use." },
+  "tier.standard.v1": { ko: "일반 세단", en: "Sedan" },
+  "tier.standard.v2": { ko: "SUV", en: "SUV" },
+  "tier.standard.v3": { ko: "미니밴", en: "Minivan" },
+  "tier.standard.f1": { ko: "전문 기사 동행", en: "Professional driver" },
+  "tier.standard.f2": { ko: "일정에 맞춘 유연한 이용", en: "Flexible scheduling" },
+  "tier.standard.f3": { ko: "공항·시내·출장 전 구간 이용 가능", en: "Covers airport, city, and business transfers" },
+  "tier.standard.note": { ko: "도시, 인원, 짐의 양에 따라 실제 제공 차량은 달라질 수 있습니다.", en: "The actual vehicle provided may vary by city, party size, and luggage." },
+
+  "tier.premium.badge": { ko: "PREMIUM", en: "PREMIUM" },
+  "tier.premium.title": { ko: "Premium", en: "Premium" },
+  "tier.premium.desc": { ko: "기업 임원, VIP 고객, 중요한 손님, 허니문·기념일 등 특별한 일정에 어울리는 상위 등급 차량과 전문 기사 서비스입니다.", en: "A higher-class vehicle and professional chauffeur suited to executives, VIP guests, important clients, honeymoons, and anniversaries." },
+  "tier.premium.v1": { ko: "벤츠 S클래스급", en: "Mercedes-Benz S-Class or equivalent" },
+  "tier.premium.v2": { ko: "BMW 7시리즈급", en: "BMW 7 Series or equivalent" },
+  "tier.premium.v3": { ko: "제네시스 G90급", en: "Genesis G90 or equivalent" },
+  "tier.premium.v4": { ko: "렉서스 LS급", en: "Lexus LS or equivalent" },
+  "tier.premium.v5": { ko: "프리미엄 SUV", en: "Premium SUV" },
+  "tier.premium.v6": { ko: "프리미엄 미니밴 또는 VIP 밴", en: "Premium Minivan / VIP Van" },
+  "tier.premium.f1": { ko: "상위 등급 차량", en: "Higher-class vehicle" },
+  "tier.premium.f2": { ko: "전문 기사", en: "Professional chauffeur" },
+  "tier.premium.f3": { ko: "유연한 일정", en: "Flexible itinerary" },
+  "tier.premium.f4": { ko: "공항 미팅 서비스", en: "Airport meet & greet" },
+  "tier.premium.f5": { ko: "기업 및 VIP 이동", en: "Business and VIP transportation" },
+  "tier.premium.f6": { ko: "프라이빗 데일리 차량", en: "Private daily service" },
+  "tier.premium.f7": { ko: "출발지부터 목적지까지 직접 이동", en: "Door-to-door transportation" },
+  "tier.premium.f8": { ko: "고객 맞춤 일정", en: "Customized schedule" },
+  "tier.premium.f9": { ko: "외국인 방문객 전담 이동", en: "Dedicated transport for foreign visitors" },
+  "tier.premium.f10": { ko: "일정 변경 대응", en: "Responsive to itinerary changes" },
+  "tier.premium.f11": { ko: "기업 담당자와 사전 일정 조율", en: "Pre-coordinated with your company contact" },
+  "tier.premium.note": { ko: "위 차량은 동급 차량으로 배차될 수 있습니다. 지역별 차량 수급 상황에 따라 실제 차량은 달라질 수 있습니다.", en: "These vehicles may be substituted with an equivalent model. The actual vehicle provided depends on regional availability." },
+
+  "tier.special.title": { ko: "Maybach & Special Vehicles", en: "Maybach & Special Vehicles" },
+  "tier.special.desc": { ko: "마이바흐, 벤츠 스프린터, VIP 밴 및 일부 고급 차량은 특정 도시에서만 이용할 수 있습니다. 예약 전 현지 차량 수급 여부를 확인한 뒤 최종 확정됩니다.", en: "Maybach, Mercedes-Benz Sprinter, VIP Van, and select luxury vehicles are available in specific cities only. Reservations are confirmed after checking local availability." },
+
+  "tier.pricing.note": { ko: "프리미엄 서비스는 차량 등급, 지역, 운행 시간 및 현지 차량 수급 상황에 따라 요금이 달라집니다. 고객의 일정을 확인한 후 최종 요금을 안내드립니다.", en: "Premium Service is generally priced higher than Standard Service depending on vehicle class, city, operating time and availability. Final pricing is confirmed after itinerary review." },
+
+  "tier.daily.title": { ko: "프리미엄 데일리 차량", en: "Premium Daily Chauffeur" },
+  "tier.daily.standard.title": { ko: "Standard Daily Chauffeur", en: "Standard Daily Chauffeur" },
+  "tier.daily.standard.f1": { ko: "편안한 세단 / SUV / 미니밴", en: "Comfortable Sedan / SUV / Minivan" },
+  "tier.daily.standard.f2": { ko: "전문 기사", en: "Professional Driver" },
+  "tier.daily.standard.f3": { ko: "유연한 일정", en: "Flexible Schedule" },
+  "tier.daily.standard.f4": { ko: "공항 / 시내 / 데일리 이용 가능", en: "Airport / City / Daily Use" },
+  "tier.daily.premium.title": { ko: "Premium Daily Chauffeur", en: "Premium Daily Chauffeur" },
+  "tier.daily.premium.f1": { ko: "고급 세단 / 프리미엄 SUV / VIP 밴", en: "Luxury Sedan / Premium SUV / VIP Van" },
+  "tier.daily.premium.f2": { ko: "전문 기사", en: "Professional Chauffeur" },
+  "tier.daily.premium.f3": { ko: "상위 차량 등급", en: "Premium Vehicle Class" },
+  "tier.daily.premium.f4": { ko: "VIP 및 기업 출장에 적합", en: "VIP & Business Travel" },
+  "tier.daily.premium.f5": { ko: "맞춤형 데일리 일정", en: "Customized Daily Schedule" },
+  "tier.daily.desc": { ko: "공항 이동만 하는 서비스가 아니라 하루 동안 기사와 차량을 이용하면서 원하는 일정대로 이동할 수 있는 서비스입니다. 호텔 → 미팅 → 점심 → 쇼핑 → 관광 → 저녁 → 호텔처럼, 출장·가족여행·VIP 방문·골프·쇼핑·기념일 등 일정에 맞춰 자유롭게 구성할 수 있습니다.", en: "Not just airport transfers — the same vehicle and chauffeur for a full day, moving through the itinerary you choose: hotel → meeting → lunch → shopping → sightseeing → dinner → hotel. Suited to business trips, family travel, VIP visits, golf, shopping, and anniversaries." },
+
+  "tier.ctaRequest": { ko: "프리미엄 서비스 문의", en: "Request Premium Service" },
+  "tier.ctaQuote": { ko: "견적 요청", en: "Get a Quote" },
+
+  "corpVip.kicker": { ko: "FOR CORPORATE TEAMS", en: "FOR CORPORATE TEAMS" },
+  "corpVip.title": { ko: "외국인 바이어·해외 손님 전담 차량", en: "Corporate Buyer & VIP Guest Chauffeur" },
+  "corpVip.desc": { ko: "해외 바이어, 본사 임원, 파트너사 관계자의 한국 방문 일정을 공항 픽업부터 기업 방문, 식사, 맞춤 투어, 출국 샌딩까지 연결해드립니다. 총무팀, 인사팀, 비서실, 해외사업팀에서 일정만 전달하면 방문 목적과 인원에 맞춰 차량과 이동 동선을 구성할 수 있습니다.", en: "We connect a visiting buyer's, executive's, or partner's entire Korea itinerary — airport pickup, company visits, meals, a custom tour, and the departure drop-off. General affairs, HR, the executive office, or your overseas business team just shares the schedule; we build the route around the visit's purpose and headcount." },
+  "corpVip.ctaRequest": { ko: "기업 전담 차량 문의", en: "Request Corporate Chauffeur" },
+  "corpVip.ctaQuote": { ko: "바이어 일정 견적 요청", en: "Get a Visit Itinerary Quote" },
+  "corpVip.ctaConsult": { ko: "방한 일정 상담", en: "Consult on a Korea Visit" },
+  "corpVip.scheduleLabel": { ko: "예시 일정", en: "Example Itinerary" },
+  "corpVip.step1": { ko: "인천공항 픽업", en: "Incheon Airport pickup" },
+  "corpVip.step2": { ko: "호텔 이동", en: "Transfer to hotel" },
+  "corpVip.step3": { ko: "본사 또는 사업장 방문", en: "Visit to headquarters or site" },
+  "corpVip.step4": { ko: "식사 및 바이어 미팅", en: "Meal and buyer meeting" },
+  "corpVip.step5": { ko: "서울 주요 지역 투어 · 쇼핑", en: "Seoul sightseeing and shopping" },
+  "corpVip.step6": { ko: "호텔 복귀", en: "Return to hotel" },
+  "corpVip.step7": { ko: "출국일 공항 샌딩", en: "Airport drop-off on departure" },
+  "corpVip.scheduleCaption": { ko: "기업에서 필요한 일정에 맞춰 차량과 기사를 전담 배정합니다.", en: "A vehicle and chauffeur are dedicated to your visit for as long as the itinerary runs." },
+  "corpVip.standard.title": { ko: "Standard", en: "Standard" },
+  "corpVip.standard.desc": { ko: "기업 방문객의 공항 픽업, 회사 방문, 미팅, 식사, 관광 등의 일정을 편안하고 안정적으로 이동할 수 있도록 제공하는 기본 기업 차량 서비스입니다.", en: "A dependable corporate vehicle service for a visitor's airport pickup, office visits, meetings, meals, and sightseeing." },
+  "corpVip.premium.title": { ko: "Premium", en: "Premium" },
+  "corpVip.premium.desc": { ko: "해외 본사 임원, 주요 바이어, VIP 고객, 대표이사 손님 등 중요한 방문객을 위한 상위 등급 의전 차량 서비스입니다. 공항 도착 확인부터 일정 변경 대응, 공항 샌딩까지 하나의 일정으로 세심하게 관리합니다.", en: "A higher-class escort vehicle service for visiting executives, key buyers, VIP guests, and other important visitors — managed closely from arrival confirmation through schedule changes to the departure drop-off." },
+  "corpVip.premium.v4": { ko: "프리미엄 SUV", en: "Premium SUV" },
+  "corpVip.premium.v5": { ko: "VIP 밴", en: "VIP Van" },
+  "corpVip.premium.v6": { ko: "마이바흐 등 특수 차량 요청", en: "Maybach and other special-request vehicles" },
+
+  "corpForm.title": { ko: "기업 전담 차량 문의", en: "Corporate Chauffeur Inquiry" },
+  "corpForm.subtitle": { ko: "해외 바이어·손님의 방한 일정을 알려주시면 차량과 이동 동선을 구성해 안내드립니다.", en: "Tell us about your visitor's itinerary and we'll put together the vehicle and route." },
+  "corpForm.step1": { ko: "STEP 1 · 담당자 및 방문객 정보", en: "STEP 1 · Contact & Visitor Details" },
+  "corpForm.label.companyName": { ko: "회사명", en: "Company Name" },
+  "corpForm.label.department": { ko: "담당 부서", en: "Department" },
+  "corpForm.label.contactName": { ko: "담당자명", en: "Contact Person" },
+  "corpForm.label.contactPhone": { ko: "연락처", en: "Contact Phone" },
+  "corpForm.label.visitorNationality": { ko: "방문객 국적", en: "Visitor Nationality" },
+  "corpForm.label.visitorCount": { ko: "방문 인원", en: "Number of Visitors" },
+  "corpForm.label.visitPurpose": { ko: "방문 목적", en: "Purpose of Visit" },
+  "corpForm.option.purposeBuyer": { ko: "해외 바이어 방문", en: "Overseas buyer visit" },
+  "corpForm.option.purposeHq": { ko: "해외 본사 임원 방한", en: "Headquarters executive visit" },
+  "corpForm.option.purposeClient": { ko: "외국인 고객사 방문", en: "Foreign client visit" },
+  "corpForm.option.purposePartner": { ko: "해외 파트너 미팅", en: "Overseas partner meeting" },
+  "corpForm.option.purposeTech": { ko: "기술진 또는 실사팀 방문", en: "Technical or due-diligence team visit" },
+  "corpForm.option.purposeEvent": { ko: "기업 행사 및 전시회 참석", en: "Corporate event or trade show" },
+  "corpForm.option.purposeSite": { ko: "공장 및 사업장 방문", en: "Factory or site visit" },
+  "corpForm.step2": { ko: "STEP 2 · 일정 정보", en: "STEP 2 · Schedule Details" },
+  "corpForm.label.arrivalDate": { ko: "입국 날짜", en: "Arrival Date" },
+  "corpForm.label.departureDate": { ko: "출국 날짜", en: "Departure Date" },
+  "corpForm.label.visitorFlight": { ko: "항공편", en: "Flight Number" },
+  "corpForm.label.hotel": { ko: "숙소", en: "Hotel" },
+  "corpForm.label.visitLocation": { ko: "회사 또는 방문 장소", en: "Company / Visit Location" },
+  "corpForm.label.vehicleClass": { ko: "필요 차량 등급", en: "Required Vehicle Class" },
+  "corpForm.step3": { ko: "STEP 3 · 필요 서비스", en: "STEP 3 · Services Needed" },
+  "corpForm.label.dailyUse": { ko: "데일리 이용 필요", en: "Daily Use Needed" },
+  "corpForm.label.tourNeeded": { ko: "투어 일정 필요", en: "Tour Needed" },
+  "corpForm.label.airportPickupNeeded": { ko: "공항 픽업 필요", en: "Airport Pickup Needed" },
+  "corpForm.label.airportDropoffNeeded": { ko: "공항 샌딩 필요", en: "Airport Drop-off Needed" },
+  "corpForm.label.fullItinerary": { ko: "전체 일정 입력", en: "Full Itinerary" },
+  "corpForm.help.fullItinerary": { ko: "여러 날짜의 일정이 있다면 아래 형식처럼 자유롭게 적어주세요.", en: "If the visit spans several days, feel free to write it out day by day." },
+  "corpForm.placeholder.fullItinerary": { ko: "1일차\n인천공항 → 호텔\n\n2일차\n호텔 → 본사 → 점심 → 바이어 미팅 → 호텔\n\n3일차\n호텔 → 공장 방문 → 서울 투어 → 저녁 → 호텔\n\n4일차\n호텔 → 인천공항", en: "Day 1\nIncheon Airport → Hotel\n\nDay 2\nHotel → HQ → Lunch → Buyer meeting → Hotel\n\nDay 3\nHotel → Factory visit → Seoul tour → Dinner → Hotel\n\nDay 4\nHotel → Incheon Airport" },
+  "corpForm.label.notes": { ko: "추가 요청사항", en: "Additional Requests" },
+  "corpForm.submit": { ko: "기업 전담 차량 문의 보내기", en: "Send Corporate Inquiry" },
+
   "svc.family.name": { ko: "가족 · 소규모 단체 차량", en: "Family & Small Group Travel" },
   "svc.family.desc": { ko: "아이와 함께하는 가족여행이나 여러 명이 함께 이동하는 일정은 인원뿐 아니라 짐의 크기와 개수까지 확인해 차량을 정합니다. 부모님의 해외 일정도 한국에서 대신 문의할 수 있습니다.", en: "For family trips with children or a small group traveling together, the vehicle is chosen by luggage size and count, not just headcount. Family in Korea can also inquire on a parent's behalf." },
   "svc.family.d1": { ko: "유아 동반, 카시트 요청 가능", en: "Traveling with an infant? A car seat can be requested" },
   "svc.family.d2": { ko: "4~7인 소규모 그룹은 미니밴 상담", en: "Ask about a minivan for groups of 4–7" },
   "svc.family.d3": { ko: "한국에 있는 가족이 대신 예약 가능", en: "Family in Korea can book on your behalf" },
 
-  "svc.freeTour.name": { ko: "자유 일정 차량", en: "Open-Itinerary Vehicle" },
-  "svc.freeTour.desc": { ko: "정해진 단체 일정이 아니라 원하는 장소를 차량으로 이동하고 싶은 경우에 이용합니다. 호텔 출발, 관광지 이동, 쇼핑, 레스토랑, 근교 일정 등을 원하는 순서로 구성할 수 있습니다.", en: "For moving between the places you choose, rather than a fixed group tour. Hotel pickup, sightseeing, shopping, dining, and day trips can be arranged in whatever order suits you." },
+  "svc.freeTour.name": { ko: "맞춤형 일일투어 (Custom Daily Tour)", en: "Custom Daily Tour" },
+  "svc.freeTour.desc": { ko: "정해진 패키지 관광상품이 아니라 원하는 장소와 시간을 조합하는 프라이빗 투어 차량 서비스입니다. 호텔 출발 → 관광지 → 점심 → 쇼핑 → 카페 → 저녁 → 호텔처럼, 원하시는 순서 그대로 일정을 구성할 수 있습니다.", en: "Not a fixed package tour, but a private itinerary built around the places and times you choose — hotel → sightseeing → lunch → shopping → café → dinner → hotel, arranged exactly the way you want it." },
   "svc.freeTour.d1": { ko: "가이드 투어가 아닌 차량 이동 서비스", en: "A vehicle transport service, not a guided tour" },
   "svc.freeTour.d2": { ko: "원하는 장소를 순서대로 구성 가능", en: "Stops arranged in the order you choose" },
   "svc.freeTour.d3": { ko: "레스토랑 예약은 예약대행과 함께 진행 가능", en: "Restaurant reservations can be added through our reservation service" },
+  "svc.freeTour.d4": { ko: "출장 중 짬을 내 서울을 둘러보고 싶은 외국인 바이어·손님께도 연결해드립니다. 여행사 패키지가 아닌, 기업 일정에 맞춘 자유 일정으로 진행됩니다.", en: "Also available for visiting foreign buyers and guests who want to see Seoul between business meetings — not a travel-agency package, but a free-form schedule built around your company's own itinerary." },
 
   "resvDetail.eyebrow": { ko: "LOCAL RESERVATIONS", en: "LOCAL RESERVATIONS" },
   "resvDetail.title": { ko: "현지 예약이 필요한 일정도 함께 준비합니다", en: "We Also Prepare the Local Reservations Your Trip Needs" },
@@ -527,6 +672,41 @@ var I18N = {
   "contact.help.luggageCount": { ko: "캐리어·대형 짐 개수를 적어주세요.", en: "Let us know how many suitcases or large items." },
   "contact.help.destination": { ko: "도착 후 이동하실 장소를 적어주세요.", en: "Enter where you're headed after pickup." },
   "contact.help.flight": { ko: "공항 픽업인 경우 항공편을 적어주세요.", en: "For airport pickups, enter your flight number." },
+
+  "contact.label.serviceType": { ko: "서비스 종류", en: "Service Type" },
+  "contact.help.serviceType": { ko: "필요하신 서비스를 선택해 주세요.", en: "Choose the service you need." },
+  "contact.option.svcAirportPickup": { ko: "Airport Pickup (공항 픽업)", en: "Airport Pickup" },
+  "contact.option.svcAirportDropoff": { ko: "Airport Drop-off (공항 샌딩)", en: "Airport Drop-off" },
+  "contact.option.svcP2p": { ko: "Point-to-Point Transfer (시내 이동)", en: "Point-to-Point Transfer" },
+  "contact.option.svcDaily": { ko: "Daily Chauffeur (데일리 차량)", en: "Daily Chauffeur" },
+  "contact.option.svcCustomTour": { ko: "Custom Daily Tour (맞춤형 일일투어)", en: "Custom Daily Tour" },
+  "contact.option.svcBusiness": { ko: "Business & VIP Chauffeur", en: "Business & VIP Chauffeur" },
+  "contact.option.svcIntercity": { ko: "Intercity Transfer (도시 간 이동)", en: "Intercity Transfer" },
+  "contact.option.svcOther": { ko: "기타", en: "Other" },
+
+  "contact.label.vehicleClass": { ko: "차량 등급", en: "Vehicle Class" },
+  "contact.help.vehicleClass": { ko: "Standard 또는 Premium 중 선택해 주세요.", en: "Choose Standard or Premium." },
+  "contact.option.classStandard": { ko: "Standard", en: "Standard" },
+  "contact.option.classPremium": { ko: "Premium", en: "Premium" },
+
+  "contact.label.preferredVehicle": { ko: "희망 차종", en: "Preferred Vehicle" },
+  "contact.help.preferredVehicle": { ko: "차량 모델은 현지 수급 상황에 따라 변경될 수 있습니다.", en: "The vehicle model may change depending on local availability." },
+  "contact.option.vehSClass": { ko: "Mercedes-Benz S-Class", en: "Mercedes-Benz S-Class" },
+  "contact.option.veh7Series": { ko: "BMW 7 Series", en: "BMW 7 Series" },
+  "contact.option.vehG90": { ko: "Genesis G90", en: "Genesis G90" },
+  "contact.option.vehMaybach": { ko: "Maybach", en: "Maybach" },
+  "contact.option.vehSprinter": { ko: "Mercedes-Benz Sprinter", en: "Mercedes-Benz Sprinter" },
+  "contact.option.vehPremiumSuv": { ko: "Premium SUV", en: "Premium SUV" },
+  "contact.option.vehPremiumVan": { ko: "Premium Van", en: "Premium Van" },
+  "contact.option.vehNoPreference": { ko: "No Preference (상관없음)", en: "No Preference" },
+
+  "contact.label.pickupTime": { ko: "픽업 시간", en: "Pickup Time" },
+  "contact.label.dailyHours": { ko: "데일리 이용 시간", en: "Daily Use Hours" },
+  "contact.help.dailyHours": { ko: "데일리 차량 또는 맞춤형 투어인 경우 입력해 주세요.", en: "Fill in for Daily Chauffeur or Custom Daily Tour requests." },
+  "contact.option.hours4": { ko: "4시간", en: "4 hours" },
+  "contact.option.hours8": { ko: "8시간", en: "8 hours" },
+  "contact.option.hoursFull": { ko: "종일", en: "Full day" },
+  "contact.option.hoursCustom": { ko: "맞춤 일정", en: "Custom" },
   "contact.optional": { ko: "(선택)", en: "(optional)" },
   "contact.placeholder.name": { ko: "홍길동", en: "Jane Doe" },
   "contact.placeholder.city": { ko: "예: 미국 시애틀", en: "e.g. Seattle, USA" },
@@ -678,7 +858,7 @@ var I18N = {
   "error.passengers": { ko: "인원을 1명 이상 입력해주세요.", en: "Please enter at least 1 passenger." },
   "error.dateOrder": { ko: "종료일은 시작일 이후여야 합니다.", en: "The end date must be on or after the start date." },
 
-  "footer.about": { ko: "체르토 드라이브는 해외 차량과 현지 예약을 연결하는 예약대행 서비스입니다.", en: "Certo Drive is a reservation agency connecting vehicles and local bookings abroad." },
+  "footer.about": { ko: "체르토 드라이브는 공항 픽업, 공항 샌딩, 출장 차량, 기업 및 VIP 의전, 외국인 바이어 방한 전담 차량, 해외 손님 픽업 및 투어, 데일리 기사 차량, 맞춤형 일일투어, 도시 간 이동, 프리미엄 차량을 국내외에서 제공하는 글로벌 프라이빗 차량 및 기업 의전 서비스 브랜드입니다.", en: "Certo Drive is a global private chauffeur and corporate escort service brand, providing airport pickup, airport drop-off, business travel, corporate and VIP chauffeur service, dedicated transport for visiting foreign buyers, guest pickup and touring, daily chauffeur service, custom day tours, intercity transfers, and premium vehicles — in Korea and abroad." },
   "footer.linksTitle": { ko: "바로가기", en: "Quick Links" },
   "footer.contactTitle": { ko: "연락처", en: "Contact" },
   "footer.legal1": { ko: "체르토 드라이브는 중개 서비스입니다.", en: "Certo Drive is a booking intermediary service." },
@@ -1090,6 +1270,56 @@ function initContactForm() {
   });
 }
 
+/* ---- Vehicle class (Standard / Premium) picker, shared by the contact form and the corporate form ---- */
+function initVehicleClassPicker(groupId, inputId) {
+  var group = document.getElementById(groupId);
+  var hiddenInput = document.getElementById(inputId);
+  if (!group || !hiddenInput) return;
+
+  group.addEventListener("click", function (event) {
+    var btn = event.target.closest(".recommender-option");
+    if (!btn) return;
+    var buttons = group.querySelectorAll(".recommender-option");
+    for (var i = 0; i < buttons.length; i++) buttons[i].classList.remove("is-active");
+    btn.classList.add("is-active");
+    hiddenInput.value = btn.getAttribute("data-class") || "";
+  });
+}
+
+/* ---- Corporate foreign-visitor escort inquiry form ---- */
+function initCorporateForm() {
+  var form = document.getElementById("corporate-form-el");
+  if (!form) return;
+
+  form.setAttribute("action", "https://formspree.io/f/" + CONFIG.DRIVE_FORM_ID);
+
+  attachAjaxSubmit({
+    form: form,
+    requiredFields: [
+      "company_name",
+      "department",
+      "contact_name",
+      "contact_phone",
+      "email",
+      "visitor_nationality",
+      "visitor_count",
+      "arrival_date",
+      "departure_date"
+    ],
+    extraValidate: function (f, lang) {
+      var emailField = f.querySelector('[name="email"]');
+      if (emailField && emailField.value.trim() && !driveEmailPattern.test(emailField.value.trim())) {
+        setFieldError(f, "email", I18N["error.email"][lang]);
+        return { hasError: true, firstInvalid: emailField };
+      }
+      setFieldError(f, "email", "");
+      return { hasError: false };
+    },
+    successEl: document.getElementById("corporate-success"),
+    errorEl: document.getElementById("corporate-error")
+  });
+}
+
 /* ---- Reservation inquiry form (/reservations) ---- */
 function initReservationTypePicker() {
   var group = document.getElementById("resv-type-group");
@@ -1156,6 +1386,9 @@ document.addEventListener("DOMContentLoaded", function () {
   initVehicleRecommender();
   initCitySearch();
   initContactForm();
+  initVehicleClassPicker("vehicle-class-group", "vehicle_class");
+  initCorporateForm();
+  initVehicleClassPicker("corp-vehicle-class-group", "corp_vehicle_class");
   initReservationTypePicker();
   initReservationForm();
 });
