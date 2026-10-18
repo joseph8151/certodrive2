@@ -290,13 +290,144 @@ var I18N = {
   "corpForm.label.notes": { ko: "추가 요청사항", en: "Additional Requests" },
   "corpForm.submit": { ko: "기업 전담 차량 문의 보내기", en: "Send Corporate Inquiry" },
 
+  "nav.privateTour": { ko: "프라이빗 투어", en: "Private Tour" },
+
+  "svc.freeTour.link": { ko: "프라이빗 투어 자세히 보기 →", en: "See Private Tour details →" },
+
+  "tour.kicker": { ko: "PRIVATE TOUR", en: "PRIVATE TOUR" },
+  "tour.title": { ko: "내 일정대로 움직이는 프라이빗 투어", en: "A Private Tour That Moves on Your Schedule" },
+  "tour.subtitle": { ko: "맞춤형 일일투어 · 기사 포함 전용 차량", en: "Custom Daily Tour · Chauffeured Private Vehicle" },
+  "tour.desc": { ko: "정해진 코스 대신 원하는 장소와 시간을 직접 선택하세요. 호텔 픽업부터 관광, 쇼핑, 식사, 근교 이동, 저녁 일정까지 기사 포함 차량으로 하루를 자유롭게 구성할 수 있습니다.", en: "Choose your own places and timing instead of a fixed course. From hotel pickup to sightseeing, shopping, meals, a trip out of town, and dinner — build your day freely with a chauffeured vehicle." },
+  "tour.lead": { ko: "프라이빗 투어는 정해진 패키지 코스를 따라가는 단체 관광이 아니라, 고객이 원하는 장소와 일정에 맞춰 전용 차량과 기사를 이용하는 맞춤형 일일투어입니다. 호텔 출발 → 관광지 → 점심 → 쇼핑 → 카페 → 근교 이동 → 저녁 → 호텔 복귀처럼, 원하시는 순서 그대로 하루 동선을 구성해 드립니다. 핵심은 고객이 원하는 장소를 전용 차량과 기사로 연결해드리는 프라이빗 이동 서비스라는 점입니다.", en: "A private tour isn't a group tour following a fixed package course — it's a custom daily tour using a dedicated vehicle and chauffeur, built around the places and schedule you choose. Hotel → sightseeing → lunch → shopping → café → a trip out of town → dinner → back to the hotel, arranged in whatever order you want. At its core, it's a private transport service that connects the places you want to go, with a dedicated vehicle and driver." },
+  "tour.ctaConsult": { ko: "프라이빗 투어 상담", en: "Consult on a Private Tour" },
+  "tour.ctaQuote": { ko: "맞춤 일정 견적 받기", en: "Get a Custom Itinerary Quote" },
+
+  "tour.h1.title": { ko: "원하는 일정", en: "Your Own Itinerary" },
+  "tour.h1.desc": { ko: "관광지, 식당, 쇼핑, 카페, 근교 등 자유롭게 구성", en: "Sightseeing, dining, shopping, cafés, day trips — arranged freely" },
+  "tour.h2.title": { ko: "전용 차량", en: "A Dedicated Vehicle" },
+  "tour.h2.desc": { ko: "일정이 진행되는 동안 기사와 차량을 전용으로 이용", en: "The same vehicle and chauffeur for the whole day" },
+  "tour.h3.title": { ko: "시간 선택", en: "Choose Your Hours" },
+  "tour.h3.desc": { ko: "4시간부터 종일까지 일정에 맞게 선택", en: "From 4 hours to a full day, as your schedule needs" },
+  "tour.h4.title": { ko: "차량 등급", en: "Vehicle Class" },
+  "tour.h4.desc": { ko: "Standard 또는 Premium 중 선택", en: "Choose Standard or Premium" },
+
+  "tour.usecaseLabel": { ko: "이런 일정에 이용하실 수 있습니다", en: "Suited to journeys like these" },
+  "tour.use1": { ko: "가족여행", en: "Family trips" },
+  "tour.use2": { ko: "부모님 동반 여행", en: "Traveling with parents" },
+  "tour.use3": { ko: "커플 여행", en: "Couples' trips" },
+  "tour.use4": { ko: "허니문", en: "Honeymoons" },
+  "tour.use5": { ko: "쇼핑 일정", en: "Shopping itineraries" },
+  "tour.use6": { ko: "골프 일정", en: "Golf outings" },
+  "tour.use7": { ko: "출장 중 하루 자유 일정", en: "A free day during a business trip" },
+  "tour.use8": { ko: "외국인 바이어 및 VIP 투어", en: "Tours for foreign buyers and VIPs" },
+  "tour.use9": { ko: "해외 손님 서울 및 국내 투어", en: "Seoul and domestic tours for overseas guests" },
+  "tour.use10": { ko: "레스토랑과 관광을 함께 넣은 일정", en: "Itineraries combining dining and sightseeing" },
+  "tour.use11": { ko: "여러 장소를 하루 동안 이동하는 일정", en: "A day covering several locations" },
+  "tour.use12": { ko: "근교 포함 일일 일정", en: "Day trips including nearby areas" },
+
+  "tour.hoursLabel": { ko: "이용 시간", en: "Available Hours" },
+  "tour.hours4": { ko: "4시간", en: "4 hours" },
+  "tour.hours6": { ko: "6시간", en: "6 hours" },
+  "tour.hours8": { ko: "8시간", en: "8 hours" },
+  "tour.hours10": { ko: "10시간", en: "10 hours" },
+  "tour.hoursFull": { ko: "종일", en: "Full day" },
+  "tour.hoursCustom": { ko: "맞춤 시간", en: "Custom hours" },
+  "tour.hoursNote": { ko: "이용 시간은 지역과 일정에 따라 달라질 수 있어, 실제 예약은 상담 후 확정됩니다.", en: "Available hours can vary by city and schedule — the final booking is confirmed after a consultation." },
+
+  "tour.examplesTitle": { ko: "이용 예시", en: "Example Itineraries" },
+  "tour.examplesNote": { ko: "위 일정은 예시이며, 원하시는 장소로 자유롭게 변경하실 수 있습니다.", en: "These are example itineraries — every stop can be changed to the places you want." },
+  "tour.ex.seattle.city": { ko: "시애틀", en: "Seattle" },
+  "tour.ex.seattle.route": { ko: "호텔 → 시내 관광 → 점심 → 쇼핑 → 전망 포인트 → 호텔", en: "Hotel → City sightseeing → Lunch → Shopping → Viewpoint → Hotel" },
+  "tour.ex.shanghai.city": { ko: "상하이", en: "Shanghai" },
+  "tour.ex.shanghai.route": { ko: "호텔 → 구도심 → 점심 → 쇼핑 → 야경 → 호텔", en: "Hotel → Old town → Lunch → Shopping → Night view → Hotel" },
+  "tour.ex.milan.city": { ko: "밀라노", en: "Milan" },
+  "tour.ex.milan.route": { ko: "호텔 → 시내 → 쇼룸 → 점심 → 근교 → 저녁", en: "Hotel → City center → Showroom → Lunch → Nearby town → Dinner" },
+  "tour.ex.tokyo.city": { ko: "도쿄", en: "Tokyo" },
+  "tour.ex.tokyo.route": { ko: "호텔 → 관광 → 쇼핑 → 카페 → 저녁 → 호텔", en: "Hotel → Sightseeing → Shopping → Café → Dinner → Hotel" },
+  "tour.ex.seoul.city": { ko: "서울", en: "Seoul" },
+  "tour.ex.seoul.route": { ko: "호텔 → 경복궁 → 점심 → 쇼핑 → 한강 → 저녁 → 호텔", en: "Hotel → Gyeongbokgung → Lunch → Shopping → Han River → Dinner → Hotel" },
+
+  "tour.corpTitle": { ko: "해외 바이어·VIP 손님과도 자연스럽게 연결됩니다", en: "Connects Naturally with Visiting Buyers and VIP Guests" },
+  "tour.corpDesc1": { ko: "외국인 바이어가 한국을 방문했을 때, 기업 일정이 없는 날 서울이나 근교를 둘러보는 외국인 바이어 투어 전담 차량 서비스로도 이용하실 수 있습니다.", en: "For a visiting foreign buyer, this also works as a dedicated tour on a day without company meetings, covering Seoul or nearby areas." },
+  "tour.corpDesc2": { ko: "해외 본사 임원이 방한했을 때는 미팅 이후 식사, 문화 일정, 관광을 연결하는 프리미엄 차량 서비스로 준비해 드립니다. 여행사 패키지가 아닌, 기업의 일정에 맞춘 자유 일정으로 진행됩니다.", en: "For a visiting executive from an overseas headquarters, we connect meals, cultural visits, and sightseeing after meetings into one premium chauffeured schedule — not a travel-agency package, but a free-form itinerary built around your company's own schedule." },
+  "tour.corpLink": { ko: "기업 전담 차량 서비스 자세히 보기 →", en: "See the corporate chauffeur service →" },
+
+  "tourForm.title": { ko: "프라이빗 투어 상담", en: "Private Tour Consultation" },
+  "tourForm.subtitle": { ko: "원하는 지역과 일정만 알려주세요. 방문 장소가 아직 정해지지 않았어도 괜찮습니다. 인원, 이용 시간, 차량 등급을 기준으로 상담 후 맞춤 일정을 안내드립니다.", en: "Just tell us the region and schedule you have in mind — it's fine if the places aren't decided yet. Based on your party size, hours, and vehicle class, we'll follow up with a custom itinerary." },
+  "tourForm.step1": { ko: "STEP 1 · 기본 정보", en: "STEP 1 · Basic Information" },
+  "tourForm.step2": { ko: "STEP 2 · 일정과 요청사항", en: "STEP 2 · Itinerary & Requests" },
+
+  "tourForm.label.phone": { ko: "연락처", en: "Phone" },
+  "tourForm.label.country": { ko: "이용 국가", en: "Country" },
+  "tourForm.label.city": { ko: "이용 도시", en: "City" },
+  "tourForm.label.date": { ko: "이용 날짜", en: "Date" },
+  "tourForm.label.startTime": { ko: "이용 시작 시간", en: "Start Time" },
+  "tourForm.label.duration": { ko: "예상 이용 시간", en: "Expected Duration" },
+  "tourForm.option.durationUnset": { ko: "아직 정하지 않음", en: "Not decided yet" },
+  "tourForm.label.passengers": { ko: "탑승 인원", en: "Passengers" },
+  "tourForm.label.children": { ko: "어린이 동반 여부", en: "Traveling with Children" },
+  "tourForm.option.yes": { ko: "예", en: "Yes" },
+  "tourForm.option.no": { ko: "아니요", en: "No" },
+  "tourForm.label.luggage": { ko: "짐 개수", en: "Luggage" },
+  "tourForm.label.vehicleClass": { ko: "차량 등급", en: "Vehicle Class" },
+  "tourForm.option.classUndecided": { ko: "상담 후 결정", en: "Decide after consultation" },
+  "tourForm.label.preferredVehicle": { ko: "희망 차량", en: "Preferred Vehicle" },
+  "tourForm.option.vehSedan": { ko: "세단", en: "Sedan" },
+  "tourForm.option.vehSuv": { ko: "SUV", en: "SUV" },
+  "tourForm.option.vehMinivan": { ko: "미니밴", en: "Minivan" },
+  "tourForm.option.vehPremiumSedan": { ko: "프리미엄 세단", en: "Premium Sedan" },
+  "tourForm.option.vehPremiumSuv": { ko: "프리미엄 SUV", en: "Premium SUV" },
+  "tourForm.option.vehVipVan": { ko: "VIP 밴", en: "VIP Van" },
+  "tourForm.option.vehMaybachSpecial": { ko: "마이바흐 또는 특수 차량", en: "Maybach or Special Vehicle" },
+  "tourForm.option.vehNoPreference": { ko: "상관없음", en: "No Preference" },
+
+  "tourForm.label.startLocation": { ko: "출발 장소", en: "Start Location" },
+  "tourForm.label.endLocation": { ko: "종료 장소", en: "End Location" },
+  "tourForm.option.endHotel": { ko: "호텔 복귀", en: "Return to Hotel" },
+  "tourForm.option.endOther": { ko: "다른 장소", en: "A Different Location" },
+  "tourForm.option.endUnset": { ko: "아직 미정", en: "Not Decided Yet" },
+  "tourForm.label.itinerary": { ko: "원하는 일정 또는 방문 장소", en: "Preferred Itinerary or Places to Visit" },
+  "tourForm.help.itinerary": { ko: "가고 싶은 장소나 대략적인 일정을 적어주세요. 예: 호텔 출발 → 관광 → 점심 → 쇼핑 → 야경 → 호텔. 아직 장소가 정해지지 않았다면 '추천 필요'라고 적어주셔도 됩니다.", en: "Tell us the places or a rough itinerary. e.g. Hotel → Sightseeing → Lunch → Shopping → Night view → Hotel. If nothing is decided yet, just write \"please recommend.\"" },
+  "tourForm.label.purpose": { ko: "여행 목적", en: "Purpose of Trip" },
+  "tourForm.option.purposeFamily": { ko: "가족여행", en: "Family trip" },
+  "tourForm.option.purposeCouple": { ko: "커플/허니문", en: "Couple / Honeymoon" },
+  "tourForm.option.purposeSightseeing": { ko: "관광", en: "Sightseeing" },
+  "tourForm.option.purposeShopping": { ko: "쇼핑", en: "Shopping" },
+  "tourForm.option.purposeBusinessFree": { ko: "출장 중 자유 일정", en: "Free day during business trip" },
+  "tourForm.option.purposeVip": { ko: "VIP/바이어", en: "VIP / Buyer" },
+  "tourForm.option.purposeGolf": { ko: "골프", en: "Golf" },
+  "tourForm.option.purposeOther": { ko: "기타", en: "Other" },
+
+  "tourForm.extrasLabel": { ko: "추가 요청사항", en: "Additional Requests" },
+  "tourForm.extra.carSeat": { ko: "유아 카시트", en: "Infant car seat" },
+  "tourForm.extra.wheelchair": { ko: "휠체어", en: "Wheelchair" },
+  "tourForm.extra.golfBag": { ko: "골프백", en: "Golf bag" },
+  "tourForm.extra.largeLuggage": { ko: "대형 캐리어", en: "Large luggage" },
+  "tourForm.extra.lobbyPickup": { ko: "호텔 로비 픽업", en: "Hotel lobby pickup" },
+  "tourForm.extra.koreanDriver": { ko: "한국어 가능 기사 요청", en: "Korean-speaking driver requested" },
+  "tourForm.extra.englishDriver": { ko: "영어 가능 기사 요청", en: "English-speaking driver requested" },
+  "tourForm.help.driverLanguage": { ko: "기사 언어는 지역별로 제공 가능 여부가 다를 수 있어 사전 확인이 필요합니다.", en: "Driver language availability can vary by region and needs to be confirmed in advance." },
+  "tourForm.label.notes": { ko: "기타 요청사항", en: "Other Requests" },
+
+  "tourForm.premiumTitle": { ko: "프리미엄 선택 시 추가 정보", en: "Additional Details for Premium" },
+  "tourForm.label.premiumVehicle": { ko: "희망 차량 등급", en: "Preferred Vehicle Class" },
+  "tourForm.label.vipEscort": { ko: "VIP 의전 필요 여부", en: "VIP Escort Needed" },
+  "tourForm.label.airportCombo": { ko: "공항 픽업 또는 샌딩 함께 이용 여부", en: "Combine with Airport Pickup/Drop-off" },
+  "tourForm.label.waitNeeded": { ko: "레스토랑 및 일정 대기 필요 여부", en: "Waiting at Restaurants/Stops Needed" },
+  "tourForm.label.multiDay": { ko: "여러 날짜 이용 여부", en: "Multiple Days Needed" },
+  "tourForm.label.multiDayItinerary": { ko: "전체 일정 입력", en: "Full Multi-Day Itinerary" },
+  "tourForm.placeholder.multiDayItinerary": { ko: "1일차\n인천공항 → 호텔\n\n2일차\n호텔 → 미팅 → 점심 → 서울 투어 → 저녁 → 호텔\n\n3일차\n호텔 → 골프장 → 저녁 → 호텔\n\n4일차\n호텔 → 인천공항", en: "Day 1\nIncheon Airport → Hotel\n\nDay 2\nHotel → Meeting → Lunch → Seoul tour → Dinner → Hotel\n\nDay 3\nHotel → Golf course → Dinner → Hotel\n\nDay 4\nHotel → Incheon Airport" },
+
+  "tourForm.pricingNote": { ko: "프라이빗 투어는 일정과 차량에 따라 요금이 달라집니다. 입력하신 내용을 확인한 뒤 이용 가능 차량과 최종 견적을 안내드립니다.", en: "Private Tour pricing varies by itinerary and vehicle class. We'll confirm available vehicles and a final quote after reviewing your request." },
+  "tourForm.submit": { ko: "맞춤 일정 상담받기", en: "Get a Custom Itinerary Consultation" },
+
   "svc.family.name": { ko: "가족 · 소규모 단체 차량", en: "Family & Small Group Travel" },
   "svc.family.desc": { ko: "아이와 함께하는 가족여행이나 여러 명이 함께 이동하는 일정은 인원뿐 아니라 짐의 크기와 개수까지 확인해 차량을 정합니다. 부모님의 해외 일정도 한국에서 대신 문의할 수 있습니다.", en: "For family trips with children or a small group traveling together, the vehicle is chosen by luggage size and count, not just headcount. Family in Korea can also inquire on a parent's behalf." },
   "svc.family.d1": { ko: "유아 동반, 카시트 요청 가능", en: "Traveling with an infant? A car seat can be requested" },
   "svc.family.d2": { ko: "4~7인 소규모 그룹은 미니밴 상담", en: "Ask about a minivan for groups of 4–7" },
   "svc.family.d3": { ko: "한국에 있는 가족이 대신 예약 가능", en: "Family in Korea can book on your behalf" },
 
-  "svc.freeTour.name": { ko: "맞춤형 일일투어 (Custom Daily Tour)", en: "Custom Daily Tour" },
+  "svc.freeTour.name": { ko: "프라이빗 투어 (맞춤형 일일투어)", en: "Private Tour (Custom Daily Tour)" },
   "svc.freeTour.desc": { ko: "정해진 패키지 관광상품이 아니라 원하는 장소와 시간을 조합하는 프라이빗 투어 차량 서비스입니다. 호텔 출발 → 관광지 → 점심 → 쇼핑 → 카페 → 저녁 → 호텔처럼, 원하시는 순서 그대로 일정을 구성할 수 있습니다.", en: "Not a fixed package tour, but a private itinerary built around the places and times you choose — hotel → sightseeing → lunch → shopping → café → dinner → hotel, arranged exactly the way you want it." },
   "svc.freeTour.d1": { ko: "가이드 투어가 아닌 차량 이동 서비스", en: "A vehicle transport service, not a guided tour" },
   "svc.freeTour.d2": { ko: "원하는 장소를 순서대로 구성 가능", en: "Stops arranged in the order you choose" },
@@ -1320,6 +1451,58 @@ function initCorporateForm() {
   });
 }
 
+/* ---- Private Tour consultation form ---- */
+function initTourForm() {
+  var form = document.getElementById("tour-form-el");
+  if (!form) return;
+
+  var classGroup = document.getElementById("tour-vehicle-class-group");
+  var premiumExtra = document.getElementById("tour-premium-extra");
+  var premiumVehicleGroup = document.getElementById("tour-premium-vehicle-group");
+  var premiumChecks = document.getElementById("tour-premium-checks");
+  var multiDayBlock = document.getElementById("tour-multi-day-block");
+  var multiDayCheckbox = document.getElementById("tour_multi_day_checkbox");
+
+  function setPremiumVisible(isPremium) {
+    if (premiumExtra) premiumExtra.hidden = !isPremium;
+    if (premiumVehicleGroup) premiumVehicleGroup.hidden = !isPremium;
+    if (premiumChecks) premiumChecks.hidden = !isPremium;
+    if (!isPremium && multiDayBlock) multiDayBlock.hidden = true;
+  }
+
+  if (classGroup) {
+    classGroup.addEventListener("click", function (event) {
+      var btn = event.target.closest(".recommender-option");
+      if (!btn) return;
+      setPremiumVisible(btn.getAttribute("data-class") === "premium");
+    });
+  }
+
+  if (multiDayCheckbox && multiDayBlock) {
+    multiDayCheckbox.addEventListener("change", function () {
+      multiDayBlock.hidden = !multiDayCheckbox.checked;
+    });
+  }
+
+  form.setAttribute("action", "https://formspree.io/f/" + CONFIG.DRIVE_FORM_ID);
+
+  attachAjaxSubmit({
+    form: form,
+    requiredFields: ["name", "phone", "email", "country", "city", "date", "passengers"],
+    extraValidate: function (f, lang) {
+      var emailField = f.querySelector('[name="email"]');
+      if (emailField && emailField.value.trim() && !driveEmailPattern.test(emailField.value.trim())) {
+        setFieldError(f, "email", I18N["error.email"][lang]);
+        return { hasError: true, firstInvalid: emailField };
+      }
+      setFieldError(f, "email", "");
+      return { hasError: false };
+    },
+    successEl: document.getElementById("tour-success"),
+    errorEl: document.getElementById("tour-error")
+  });
+}
+
 /* ---- Reservation inquiry form (/reservations) ---- */
 function initReservationTypePicker() {
   var group = document.getElementById("resv-type-group");
@@ -1389,6 +1572,8 @@ document.addEventListener("DOMContentLoaded", function () {
   initVehicleClassPicker("vehicle-class-group", "vehicle_class");
   initCorporateForm();
   initVehicleClassPicker("corp-vehicle-class-group", "corp_vehicle_class");
+  initTourForm();
+  initVehicleClassPicker("tour-vehicle-class-group", "tour_vehicle_class");
   initReservationTypePicker();
   initReservationForm();
 });
