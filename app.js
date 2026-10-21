@@ -5,7 +5,7 @@
 /* ---- 1. CONFIG: 배포 시 이 값만 바꾸면 됩니다 ---- */
 var CONFIG = {
   DRIVE_FORM_ID: "xkjnvdjr", // 차량 문의 Formspree 폼 ID (https://formspree.io/f/여기값)
-  RESERVATION_FORM_ID: "YOUR_RESERVATION_FORM_ID", // 예약대행 문의 Formspree 폼 ID — 실제 값으로 교체
+  RESERVATION_FORM_ID: "xkjnvdjr", // 예약대행 문의 Formspree 폼 ID (차량 문의와 동일한 폼 사용)
   CONTACT_EMAIL: "certo@certo.kr",
   KAKAO_URL: "https://pf.kakao.com/_QwxdxhX",
   PHONE_DISPLAY: "010-7748-4644",
@@ -1147,6 +1147,7 @@ var I18N = {
   "footer.about": { ko: "체르토 드라이브는 공항픽업 및 샌딩, 기업 출장 및 외국인 바이어 의전, 프라이빗 일일투어, 여러 날의 장기 전담 차량, 도시 간 장거리 이동, 골프 차량, 기업 행사 및 VIP 행사 차량, 프리미엄 차량 및 의전을 국내외에서 제공하는 글로벌 기사 포함 차량 브랜드입니다.", en: "Certo Drive is a global chauffeured vehicle brand providing airport pickup and drop-off, business travel and foreign buyer escort, private daily tours, multi-day long-term dedicated vehicles, intercity transfers, golf vehicles, corporate and VIP event vehicles, and premium vehicles and escort service — in Korea and abroad." },
   "footer.linksTitle": { ko: "바로가기", en: "Quick Links" },
   "footer.contactTitle": { ko: "연락처", en: "Contact" },
+  "footer.emergencyLabel": { ko: "긴급 연락처", en: "Emergency Contact" },
   "footer.legal1": { ko: "체르토 드라이브는 중개 서비스입니다.", en: "Certo Drive is a booking intermediary service." },
   "footer.legal2": { ko: "차량 운행은 현지 파트너가 진행하며, 랜드마크·레스토랑 예약은 각 시설의 운영 정책과 예약 가능 여부에 따라 진행됩니다.", en: "Vehicle trips are carried out by a local partner, and landmark or restaurant reservations follow each venue's own policy and availability." },
   "footer.legal3": { ko: "문의 시점의 가능 여부는 확정이 아니며, 조건 확인 후 확정됩니다.", en: "Availability at the time of inquiry is not a confirmation; it is finalized after review." },

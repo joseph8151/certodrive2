@@ -38,19 +38,19 @@ git push -u origin main
 
 ## 3. Formspree 폼 연결
 
-사이트에는 **서로 다른 두 개의 Formspree 폼**이 연결됩니다 — 차량 견적 문의(홈페이지 `#contact`)와 예약대행 문의(`/reservations/#reservation-form`)는 섞이지 않고 별도 폼으로 전송됩니다.
+현재는 차량 견적 문의(홈페이지 `#contact`, `#corporate-form`, `#private-tour-form`)와 예약대행 문의(`/reservations/#reservation-form`)가 **같은 Formspree 폼**(`xkjnvdjr`)으로 전송됩니다. 폼마다 `_subject`/`inquiry_type` 히든 필드가 달라서 Formspree 받은편지함에서는 제목으로 구분됩니다. 문의 종류별로 받는 사람이나 알림을 분리하고 싶다면 아래처럼 두 번째 폼을 만들어 분리할 수 있습니다.
 
-1. [formspree.io](https://formspree.io) 에서 계정을 만들고, 차량 문의용 폼과 예약대행 문의용 폼을 각각 생성해 **Form ID**를 확인합니다.
-2. `app.js` 상단의 `CONFIG`에서 두 값을 교체합니다.
+1. [formspree.io](https://formspree.io) 에서 예약대행 문의용 폼을 새로 생성해 **Form ID**를 확인합니다.
+2. `app.js` 상단의 `CONFIG`에서 `RESERVATION_FORM_ID` 값을 교체합니다.
    ```js
    var CONFIG = {
      DRIVE_FORM_ID: "xkjnvdjr",              // 차량 견적 문의 폼 ID (연결 완료)
-     RESERVATION_FORM_ID: "YOUR_RESERVATION_FORM_ID", // 예약대행 문의 폼 ID — 반드시 실제 값으로 교체
+     RESERVATION_FORM_ID: "xkjnvdjr",        // 현재는 차량 문의와 동일한 폼 — 분리하려면 새 Form ID로 교체
      ...
    };
    ```
    두 폼 모두 JS가 `action` 속성을 런타임에 `https://formspree.io/f/<ID>`로 설정하므로, `app.js`의 값만 바꾸면 `index.html`과 `reservations/index.html`의 폼에 동시에 반영됩니다.
-3. Formspree 대시보드에서 두 폼 각각의 인증 이메일을 확인하고 활성화합니다.
+3. Formspree 대시보드에서 폼의 인증 이메일을 확인하고 활성화합니다.
 4. 폼 제출은 AJAX(`fetch`)로 처리되어 사이트 안에서 성공/실패 메시지를 바로 보여줍니다. `_next` 히든 필드(`/thanks.html`)는 JS가 꺼진 환경을 위한 fallback으로 남아 있습니다.
 
 ## 4. thanks.html 리다이렉트 확인
@@ -60,7 +60,7 @@ git push -u origin main
 ## 5. 바꿔야 하는 값 체크리스트
 
 - [x] `app.js` → `CONFIG.DRIVE_FORM_ID` : `xkjnvdjr`로 연결 완료 (차량 견적 문의)
-- [ ] `app.js` → `CONFIG.RESERVATION_FORM_ID` : 예약대행 문의용 실제 Formspree Form ID로 교체 필요 (현재 `YOUR_RESERVATION_FORM_ID` placeholder)
+- [x] `app.js` → `CONFIG.RESERVATION_FORM_ID` : `xkjnvdjr`로 활성화 완료 (현재는 차량 문의와 같은 폼 공유, 분리하려면 새 Form ID로 교체)
 - [x] `app.js` → `CONFIG.CONTACT_EMAIL` : `certo@certo.kr`
 - [x] `app.js` → `CONFIG.KAKAO_URL` : 카카오톡 채널 링크 연결 완료
 - [ ] `robots.txt` → `Sitemap` 줄의 도메인을 실제 배포 도메인으로 교체 (사이트맵 미제공 시 이 줄 삭제 가능)

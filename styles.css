@@ -156,21 +156,22 @@ section[id] { scroll-margin-top: 100px; }
   .brand-sub { display: none; }
 }
 
-.nav-menu { display: flex; align-items: center; gap: 24px; }
+.nav-menu { display: flex; align-items: center; gap: 14px; }
 .nav-menu a {
   color: var(--text);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 500;
   padding-bottom: 3px;
   border-bottom: 1px solid transparent;
+  white-space: nowrap;
 }
 .nav-menu a:hover { border-bottom-color: var(--ink); }
 
 .header-actions { display: flex; align-items: center; gap: 14px; }
 
-.header-kakao-link { font-size: 0.84rem; color: var(--mute); font-weight: 500; border-bottom: 1px solid transparent; }
+.header-kakao-link { font-size: 0.84rem; color: var(--mute); font-weight: 500; border-bottom: 1px solid transparent; white-space: nowrap; }
 .header-kakao-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
-@media (max-width: 560px) { .header-kakao-link { display: none; } }
+@media (max-width: 560px), (min-width: 1181px) { .header-kakao-link { display: none; } }
 
 .lang-toggle {
   display: flex;
@@ -208,7 +209,7 @@ section[id] { scroll-margin-top: 100px; }
 .nav-toggle span::before { position: absolute; top: -6px; }
 .nav-toggle span::after { position: absolute; top: 6px; }
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .nav-menu {
     position: absolute;
     top: 100%;
@@ -223,7 +224,7 @@ section[id] { scroll-margin-top: 100px; }
     border-bottom: 1px solid var(--line);
   }
   .nav-menu.is-open { display: flex; }
-  .nav-menu a { padding: 10px 0; width: 100%; border-bottom: none; }
+  .nav-menu a { padding: 10px 0; width: 100%; border-bottom: none; font-size: 0.92rem; }
   .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
   .header-actions .nav-cta-desktop { display: none; }
 }
@@ -1075,6 +1076,7 @@ section[id] { scroll-margin-top: 100px; }
 .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
 .footer-col a { font-size: 0.86rem; color: rgba(255, 248, 242, 0.68); }
 .footer-col a:hover { color: #F0A07A; }
+.footer-emergency-label { font-size: 0.74rem; color: rgba(255, 248, 242, 0.46); margin-right: 4px; }
 
 .footer-legal { border-top: 1px solid rgba(255, 248, 242, 0.14); padding-top: 18px; margin-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
 .footer-legal p { font-size: 0.76rem; color: rgba(255, 248, 242, 0.48); }
