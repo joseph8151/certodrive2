@@ -6,7 +6,7 @@
 var CONFIG = {
   DRIVE_FORM_ID: "xkjnvdjr", // 차량 문의 Formspree 폼 ID (https://formspree.io/f/여기값)
   RESERVATION_FORM_ID: "YOUR_RESERVATION_FORM_ID", // 예약대행 문의 Formspree 폼 ID — 실제 값으로 교체
-  CONTACT_EMAIL: "hello@certodrive.com",
+  CONTACT_EMAIL: "certo@certo.kr",
   KAKAO_URL: "https://pf.kakao.com/_QwxdxhX",
   PHONE_DISPLAY: "010-7748-4644",
   PHONE_TEL: "+821077484644"

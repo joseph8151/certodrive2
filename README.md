@@ -61,7 +61,7 @@ git push -u origin main
 
 - [x] `app.js` → `CONFIG.DRIVE_FORM_ID` : `xkjnvdjr`로 연결 완료 (차량 견적 문의)
 - [ ] `app.js` → `CONFIG.RESERVATION_FORM_ID` : 예약대행 문의용 실제 Formspree Form ID로 교체 필요 (현재 `YOUR_RESERVATION_FORM_ID` placeholder)
-- [x] `app.js` → `CONFIG.CONTACT_EMAIL` : `hello@certodrive.com`
+- [x] `app.js` → `CONFIG.CONTACT_EMAIL` : `certo@certo.kr`
 - [x] `app.js` → `CONFIG.KAKAO_URL` : 카카오톡 채널 링크 연결 완료
 - [ ] `robots.txt` → `Sitemap` 줄의 도메인을 실제 배포 도메인으로 교체 (사이트맵 미제공 시 이 줄 삭제 가능)
 - [ ] Formspree 대시보드에서 배포 도메인을 두 폼 모두 Allowed domains에 등록
