@@ -1558,6 +1558,13 @@ function initContactForm() {
 }
 
 /* ---- Main contact form: service-type picker driving conditional field blocks ---- */
+function setConditionalBlockActive(block, active) {
+  if (!block) return;
+  block.hidden = !active;
+  var fields = block.querySelectorAll("input, select, textarea");
+  for (var i = 0; i < fields.length; i++) fields[i].disabled = !active;
+}
+
 function initContactServicePicker() {
   var group = document.getElementById("contact-service-group");
   var hiddenInput = document.getElementById("contact_service");
@@ -1576,6 +1583,12 @@ function initContactServicePicker() {
   };
   var allBlockIds = ["cf-extra-airport", "cf-extra-business", "cf-extra-tour", "cf-extra-longterm", "cf-extra-intercity", "cf-extra-golf", "cf-extra-event", "cf-extra-premium"];
 
+  // All conditional blocks start hidden: disable their fields so empty,
+  // irrelevant fields aren't included in the submitted form data.
+  for (var k = 0; k < allBlockIds.length; k++) {
+    setConditionalBlockActive(document.getElementById(allBlockIds[k]), false);
+  }
+
   function selectService(btn) {
     if (!btn) return;
     var buttons = group.querySelectorAll(".recommender-option");
@@ -1588,7 +1601,7 @@ function initContactServicePicker() {
     var activeBlockId = blockByService[value];
     for (var j = 0; j < allBlockIds.length; j++) {
       var block = document.getElementById(allBlockIds[j]);
-      if (block) block.hidden = allBlockIds[j] !== activeBlockId;
+      setConditionalBlockActive(block, allBlockIds[j] === activeBlockId);
     }
   }
 
@@ -1669,10 +1682,11 @@ function initTourForm() {
 
   function setPremiumVisible(isPremium) {
     if (premiumExtra) premiumExtra.hidden = !isPremium;
-    if (premiumVehicleGroup) premiumVehicleGroup.hidden = !isPremium;
-    if (premiumChecks) premiumChecks.hidden = !isPremium;
-    if (!isPremium && multiDayBlock) multiDayBlock.hidden = true;
+    setConditionalBlockActive(premiumVehicleGroup, isPremium);
+    setConditionalBlockActive(premiumChecks, isPremium);
+    if (!isPremium) setConditionalBlockActive(multiDayBlock, false);
   }
+  setPremiumVisible(false);
 
   if (classGroup) {
     classGroup.addEventListener("click", function (event) {
@@ -1684,7 +1698,7 @@ function initTourForm() {
 
   if (multiDayCheckbox && multiDayBlock) {
     multiDayCheckbox.addEventListener("change", function () {
-      multiDayBlock.hidden = !multiDayCheckbox.checked;
+      setConditionalBlockActive(multiDayBlock, multiDayCheckbox.checked);
     });
   }
 
@@ -1715,6 +1729,9 @@ function initReservationTypePicker() {
   var landmarkExtra = document.getElementById("resv-extra-landmark");
   if (!group || !hiddenInput) return;
 
+  setConditionalBlockActive(restaurantExtra, false);
+  setConditionalBlockActive(landmarkExtra, false);
+
   function selectType(btn) {
     if (!btn) return;
     var buttons = group.querySelectorAll(".recommender-option");
@@ -1724,8 +1741,8 @@ function initReservationTypePicker() {
     hiddenInput.value = btn.getAttribute("data-value") || "";
     var fieldGroup = btn.getAttribute("data-group");
 
-    if (restaurantExtra) restaurantExtra.hidden = fieldGroup !== "restaurant";
-    if (landmarkExtra) landmarkExtra.hidden = fieldGroup !== "landmark";
+    setConditionalBlockActive(restaurantExtra, fieldGroup === "restaurant");
+    setConditionalBlockActive(landmarkExtra, fieldGroup === "landmark");
   }
 
   group.addEventListener("click", function (event) {
