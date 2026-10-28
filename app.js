@@ -1208,11 +1208,14 @@ function applyLanguage(lang) {
     }
   }
 
-  var titleEntry = I18N["meta.title"];
+  // Pages other than the homepage set window.PAGE_META (title/description per
+  // language) before app.js loads, so their own SEO title and meta description
+  // aren't clobbered by the homepage's.
+  var titleEntry = (window.PAGE_META && window.PAGE_META.title) || I18N["meta.title"];
   if (titleEntry) {
     document.title = titleEntry[lang];
   }
-  var descEntry = I18N["meta.description"];
+  var descEntry = (window.PAGE_META && window.PAGE_META.description) || I18N["meta.description"];
   var descTag = document.querySelector('meta[name="description"]');
   if (descTag && descEntry) {
     descTag.setAttribute("content", descEntry[lang]);
