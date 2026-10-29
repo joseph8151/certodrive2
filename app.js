@@ -14,8 +14,8 @@ var CONFIG = {
 
 /* ---- 2. 다국어 사전 (KR 기본 / EN 전환) ---- */
 var I18N = {
-  "meta.title": { ko: "체르토 드라이브 | 해외 차량과 현지 예약을 한 번에", en: "Certo Drive | Vehicles & Local Reservations Abroad, in One Place" },
-  "meta.description": { ko: "공항픽업·샌딩, 출장·기업의전, 프라이빗투어, 장기 전담, 도시 간 이동, 골프·행사 차량까지. 국내외에서 제공하는 프리미엄 기사 포함 차량 서비스, 체르토 드라이브.", en: "Airport pickup & drop-off, business & corporate escort, private tours, long-term dedicated service, intercity transfers, and golf & event vehicles — a premium chauffeured car service in Korea and abroad, from Certo Drive." },
+  "meta.title": { ko: "체르토 드라이브 | 해외 한인택시·공항픽업·기사 포함 차량·VIP 의전", en: "Certo Drive | Global Airport Pickup, Korean-Speaking Driver & VIP Escort" },
+  "meta.description": { ko: "체르토 드라이브는 전 세계 주요 도시의 공항픽업, 기사 포함 차량, 기업 출장 및 VIP 의전, 프라이빗 일일투어와 현지 예약대행을 지원합니다. 한국어 상담으로 맞춤 견적을 문의하세요.", en: "Certo Drive supports airport pickup, chauffeured vehicles, business travel and VIP escort, private daily tours, and local reservation agency services in major cities worldwide. Get a custom quote with Korean-language support." },
 
   "nav.services": { ko: "차량 서비스", en: "Vehicle Services" },
   "nav.reservations": { ko: "예약대행", en: "Reservations" },
