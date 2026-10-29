@@ -884,6 +884,27 @@ var I18N = {
   "cities.region.eu": { ko: "유럽", en: "Europe" },
   "cities.region.asia": { ko: "아시아", en: "Asia" },
   "cities.region.au": { ko: "호주", en: "Australia" },
+  "cities.country.uk": { ko: "영국", en: "United Kingdom" },
+  "cities.country.fr": { ko: "프랑스", en: "France" },
+  "cities.country.de": { ko: "독일", en: "Germany" },
+  "cities.country.ch": { ko: "스위스", en: "Switzerland" },
+  "cities.country.it": { ko: "이탈리아", en: "Italy" },
+  "cities.country.es": { ko: "스페인", en: "Spain" },
+  "cities.country.at": { ko: "오스트리아", en: "Austria" },
+  "cities.country.nl": { ko: "네덜란드", en: "Netherlands" },
+  "cities.country.be": { ko: "벨기에", en: "Belgium" },
+  "cities.country.dk": { ko: "덴마크", en: "Denmark" },
+  "cities.country.se": { ko: "스웨덴", en: "Sweden" },
+  "cities.country.cz": { ko: "체코", en: "Czech Republic" },
+  "cities.country.ie": { ko: "아일랜드", en: "Ireland" },
+  "cities.country.pl": { ko: "폴란드", en: "Poland" },
+  "cities.country.hu": { ko: "헝가리", en: "Hungary" },
+  "cities.country.gr": { ko: "그리스", en: "Greece" },
+  "cities.country.jp": { ko: "일본", en: "Japan" },
+  "cities.country.sg": { ko: "싱가포르", en: "Singapore" },
+  "cities.country.hk": { ko: "홍콩", en: "Hong Kong" },
+  "cities.country.ae": { ko: "아랍에미리트", en: "United Arab Emirates" },
+  "cities.country.cn": { ko: "중국", en: "China" },
   "cities.noMatch": { ko: "검색 결과가 없습니다. 목록에 없는 도시도 문의해 주시면 가능 여부를 확인해 드립니다.", en: "No matches found. Even if your city isn't listed, contact us and we'll confirm availability." },
 
   "faq.eyebrow": { ko: "FAQ", en: "FAQ" },
@@ -1403,15 +1424,33 @@ function initCitySearch() {
 
     for (var g = 0; g < groups.length; g++) {
       var group = groups[g];
-      var chips = group.querySelectorAll(".city-chip");
+      var countryGroups = group.querySelectorAll(".city-country-group");
       var groupHasMatch = false;
 
-      for (var c = 0; c < chips.length; c++) {
-        var chip = chips[c];
-        var text = chip.textContent.trim().toLowerCase();
-        var matches = query === "" || text.indexOf(query) !== -1;
-        chip.classList.toggle("is-hidden", !matches);
-        if (matches) groupHasMatch = true;
+      if (countryGroups.length) {
+        for (var cg = 0; cg < countryGroups.length; cg++) {
+          var countryGroup = countryGroups[cg];
+          var countryChips = countryGroup.querySelectorAll(".city-chip");
+          var countryHasMatch = false;
+          for (var cc = 0; cc < countryChips.length; cc++) {
+            var ccChip = countryChips[cc];
+            var ccText = ccChip.textContent.trim().toLowerCase();
+            var ccMatches = query === "" || ccText.indexOf(query) !== -1;
+            ccChip.classList.toggle("is-hidden", !ccMatches);
+            if (ccMatches) countryHasMatch = true;
+          }
+          countryGroup.classList.toggle("is-empty", !countryHasMatch);
+          if (countryHasMatch) groupHasMatch = true;
+        }
+      } else {
+        var chips = group.querySelectorAll(".city-chip");
+        for (var c = 0; c < chips.length; c++) {
+          var chip = chips[c];
+          var text = chip.textContent.trim().toLowerCase();
+          var matches = query === "" || text.indexOf(query) !== -1;
+          chip.classList.toggle("is-hidden", !matches);
+          if (matches) groupHasMatch = true;
+        }
       }
 
       group.classList.toggle("has-match", groupHasMatch);

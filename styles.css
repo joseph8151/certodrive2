@@ -779,6 +779,10 @@ section[id] { scroll-margin-top: 100px; }
 .city-region-group { display: none; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .city-region-group.has-match { display: block; }
 .city-region-name { font-size: 0.78rem; font-weight: 600; color: var(--text); margin-bottom: 10px; letter-spacing: 0.01em; }
+.city-country-group { margin-bottom: 10px; }
+.city-country-group:last-child { margin-bottom: 0; }
+.city-country-group.is-empty { display: none; }
+.city-country-name { font-size: 0.74rem; font-weight: 500; color: var(--mute); margin: 0 0 2px 0; }
 .city-chip-row { display: block; line-height: 2; }
 .city-chip {
   display: inline;
