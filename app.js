@@ -1156,7 +1156,14 @@ var I18N = {
   "thanks.eyebrow": { ko: "접수 완료", en: "Inquiry Received" },
   "thanks.title": { ko: "문의가 접수되었습니다", en: "Your Inquiry Has Been Received" },
   "thanks.body": { ko: "확인 후 이메일 또는 카카오톡으로 회신드립니다.", en: "We'll reply by email or KakaoTalk after review." },
-  "thanks.back": { ko: "홈으로 돌아가기", en: "Back to Home" }
+  "thanks.back": { ko: "홈으로 돌아가기", en: "Back to Home" },
+
+  "notFound.eyebrow": { ko: "404", en: "404" },
+  "notFound.title": { ko: "페이지를 찾을 수 없습니다", en: "Page Not Found" },
+  "notFound.body": { ko: "요청하신 페이지가 삭제되었거나 주소가 변경되었을 수 있습니다. 아래에서 원하시는 서비스를 찾아보세요.", en: "The page you requested may have been removed or moved. Find what you're looking for below." },
+  "notFound.home": { ko: "홈으로 돌아가기", en: "Back to Home" },
+  "notFound.cities": { ko: "도시별 서비스 보기", en: "Browse Cities" },
+  "notFound.contact": { ko: "견적 문의하기", en: "Request a Quote" }
 };
 
 var LANG_KEY = "certodrive_lang";
