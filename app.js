@@ -15,7 +15,7 @@ var CONFIG = {
 /* ---- 2. 다국어 사전 (KR 기본 / EN 전환) ---- */
 var I18N = {
   "meta.title": { ko: "체르토 드라이브 | 해외 한인택시·공항픽업·기사 포함 차량·VIP 의전", en: "Certo Drive | Global Airport Pickup, Korean-Speaking Driver & VIP Escort" },
-  "meta.description": { ko: "체르토 드라이브는 전 세계 주요 도시의 공항픽업, 기사 포함 차량, 기업 출장 및 VIP 의전, 프라이빗 일일투어와 현지 예약대행을 지원합니다. 한국어 상담으로 맞춤 견적을 문의하세요.", en: "Certo Drive supports airport pickup, chauffeured vehicles, business travel and VIP escort, private daily tours, and local reservation agency services in major cities worldwide. Get a custom quote with Korean-language support." },
+  "meta.description": { ko: "체르토 드라이브는 전 세계 주요 도시의 공항픽업, 기사 포함 차량부터 외국인관광 의전차량, VIP 벤츠·스프린터 의전, 기업 출장과 프라이빗 투어, 현지 예약대행까지 지원합니다. 한국어 상담으로 맞춤 견적을 문의하세요.", en: "Certo Drive supports airport pickup, chauffeured vehicles, VIP Mercedes-Benz and Sprinter escort for foreign tour groups, business travel, private tours, and local reservation agency services in major cities worldwide. Get a custom quote with Korean-language support." },
 
   "nav.services": { ko: "차량 서비스", en: "Vehicle Services" },
   "nav.reservations": { ko: "예약대행", en: "Reservations" },
@@ -244,6 +244,7 @@ var I18N = {
   "corpVip.subtitle": { ko: "출장·기업의전 — 기업 출장부터 외국인 바이어·임원 의전까지", en: "Business & Corporate Escort — From Business Travel to Foreign Buyer and Executive Escort" },
   "corpVip.desc": { ko: "해외 바이어, 본사 임원, 파트너사 관계자의 한국 방문 일정을 공항 픽업부터 기업 방문, 식사, 맞춤 투어, 출국 샌딩까지 연결해드립니다. 총무팀, 인사팀, 비서실, 해외사업팀, 영업팀에서 일정만 전달하면 방문 목적과 인원에 맞춰 차량과 이동 동선을 구성할 수 있습니다.", en: "We connect a visiting buyer's, executive's, or partner's entire Korea itinerary — airport pickup, company visits, meals, a custom tour, and the departure drop-off. General affairs, HR, the executive office, overseas business, or sales teams just share the schedule; we build the route around the visit's purpose and headcount." },
   "corpVip.desc2": { ko: "해외 손님 의전뿐 아니라 임직원의 일반 기업 출장 차량도 함께 이용하실 수 있습니다. 단순히 기사를 배차하는 서비스가 아니라, 고객사의 전체 방한 또는 출장 일정을 하나의 차량 일정으로 연결해 운영하는 서비스입니다.", en: "Beyond escorting overseas guests, this also covers everyday corporate business travel for your own staff. It isn't simply dispatching a driver — it's running your company's entire visit or business trip as one connected vehicle schedule." },
+  "corpVip.desc3": { ko: "기업 바이어 의전뿐 아니라 여행사·MICE 단체의 외국인관광 의전차량으로도 이용하실 수 있습니다. 벤츠 S클래스급부터 벤츠 스프린터까지, 인원과 일정에 맞춰 외국인관광 VIP 벤츠 의전 차량을 구성하고 스프린터 외국인관광 견적도 바로 안내해드립니다.", en: "Beyond corporate buyers, this is also available as a VIP escort vehicle for inbound tour agencies and MICE groups — from a Mercedes-Benz S-Class to a Mercedes-Benz Sprinter, sized to your group and itinerary, with a quote provided right away." },
   "corpVip.tagsLabel": { ko: "포함 내용", en: "What's Included" },
   "corpVip.tag1": { ko: "외국인 바이어 픽업", en: "Foreign buyer pickup" },
   "corpVip.tag2": { ko: "해외 본사 임원 의전", en: "Overseas HQ executive escort" },
@@ -256,6 +257,9 @@ var I18N = {
   "corpVip.tag9": { ko: "호텔 이동", en: "Hotel transfers" },
   "corpVip.tag10": { ko: "출국일 공항 샌딩", en: "Departure-day airport drop-off" },
   "corpVip.tag11": { ko: "여러 날짜 일정 관리", en: "Multi-day schedule management" },
+  "corpVip.tag12": { ko: "외국인관광 의전차량", en: "Foreign tour group escort vehicle" },
+  "corpVip.tag13": { ko: "외국인관광 VIP 벤츠 의전", en: "VIP Mercedes-Benz escort for foreign tour groups" },
+  "corpVip.tag14": { ko: "스프린터 외국인관광 견적", en: "Mercedes-Benz Sprinter quote for foreign tour groups" },
   "corpVip.ctaRequest": { ko: "기업 전담 차량 문의", en: "Request Corporate Chauffeur" },
   "corpVip.ctaQuote": { ko: "바이어 일정 견적 요청", en: "Get a Visit Itinerary Quote" },
   "corpVip.ctaConsult": { ko: "방한 일정 상담", en: "Consult on a Korea Visit" },
@@ -274,6 +278,7 @@ var I18N = {
   "corpVip.premium.desc": { ko: "해외 본사 임원, 주요 바이어, VIP 고객, 대표이사 손님 등 중요한 방문객을 위한 상위 등급 의전 차량 서비스입니다. 공항 도착 확인부터 일정 변경 대응, 공항 샌딩까지 하나의 일정으로 세심하게 관리합니다.", en: "A higher-class escort vehicle service for visiting executives, key buyers, VIP guests, and other important visitors — managed closely from arrival confirmation through schedule changes to the departure drop-off." },
   "corpVip.premium.v4": { ko: "프리미엄 SUV", en: "Premium SUV" },
   "corpVip.premium.v5": { ko: "VIP 밴", en: "VIP Van" },
+  "corpVip.premium.v6a": { ko: "벤츠 스프린터(단체 의전용)", en: "Mercedes-Benz Sprinter (group escort)" },
   "corpVip.premium.v6": { ko: "마이바흐 등 특수 차량 요청", en: "Maybach and other special-request vehicles" },
 
   "corpForm.title": { ko: "기업 전담 차량 문의", en: "Corporate Chauffeur Inquiry" },
