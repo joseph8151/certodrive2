@@ -40,7 +40,7 @@ var I18N = {
   "hero.sub": { ko: "원하는 일정대로 이용하는 국내외 기사 포함 전용 차량 서비스입니다. 공항에서의 하루 일정부터 여러 날에 걸친 장기 전담까지, 한국어로 편하게 준비하세요.", en: "A chauffeured private vehicle service you use on your own schedule, in Korea and abroad — from a single airport transfer to a long-term, multi-day dedicated itinerary, all prepared in Korean." },
   "hero.ctaPrimary": { ko: "차량 견적 요청", en: "Request a Vehicle Quote" },
   "hero.ctaReservation": { ko: "예약대행 문의", en: "Reservation Inquiry" },
-  "hero.note": { ko: "보통 1영업일 이내 회신", en: "We usually reply within 1 business day" },
+  "hero.note": { ko: "카카오톡 상담은 즉시 가능 · 견적 문의는 보통 1영업일 이내 회신", en: "KakaoTalk chat is available instantly · quote requests usually get a reply within 1 business day" },
 
   "trust.item1": { ko: "해외 주요 도시 대응", en: "Coverage in major cities abroad" },
   "trust.item2": { ko: "한국어 상담", en: "Korean-language support" },
