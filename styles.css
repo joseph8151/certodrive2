@@ -526,6 +526,36 @@ section[id] { scroll-margin-top: 100px; }
 .service-tier-row { display: flex; flex-wrap: wrap; gap: 10px; }
 .service-tier-row .recommender-option { min-width: 110px; }
 
+/* ---- Trust strip: operating stats ---- */
+.trust-strip { background: var(--bg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.trust-strip-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 22px 0;
+}
+.trust-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6px 28px;
+  border-left: 1px solid var(--line);
+}
+.trust-stat:first-child { border-left: none; }
+.trust-stat-num { font-size: 1.3rem; font-weight: 800; color: var(--ink); line-height: 1.2; }
+.trust-stat-label { font-size: 0.78rem; color: var(--mute); margin-top: 3px; }
+@media (max-width: 640px) {
+  .trust-stat { padding: 6px 14px; }
+  .trust-stat-num { font-size: 1.1rem; }
+  .trust-stat-label { font-size: 0.7rem; }
+}
+@media (max-width: 420px) {
+  .trust-strip-inner { gap: 6px 0; }
+  .trust-stat { flex: 1 0 45%; border-left: none; padding: 10px 8px; }
+}
+
 /* ---- Chooser: vehicle vs. reservation ---- */
 .chooser-grid {
   display: grid;
