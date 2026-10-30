@@ -825,7 +825,7 @@ var I18N = {
   "vehicles.suv.luggage": { ko: "캐리어 2~3개 또는 골프백", en: "2–3 suitcases or golf bags" },
   "vehicles.minivan.name": { ko: "미니밴", en: "Minivan" },
   "vehicles.minivan.pax": { ko: "4~7명", en: "4–7 people" },
-  "vehicles.minivan.use": { ko: "가족 및 소규모 단체", en: "Families and small groups" },
+  "vehicles.minivan.use": { ko: "가족 및 소규모 단체, 기업 픽업 차량(미니벤)", en: "Families and small groups, corporate pickup (minivan)" },
   "vehicles.minivan.luggage": { ko: "캐리어 3~5개", en: "3–5 suitcases" },
   "vehicles.premium.name": { ko: "프리미엄 차량", en: "Premium Vehicle" },
   "vehicles.premium.pax": { ko: "1~3명", en: "1–3 people" },
@@ -833,7 +833,7 @@ var I18N = {
   "vehicles.premium.luggage": { ko: "캐리어 1~2개", en: "1–2 suitcases" },
   "vehicles.van.name": { ko: "밴 / 버스", en: "Van / Bus" },
   "vehicles.van.pax": { ko: "8명 이상", en: "8+ people" },
-  "vehicles.van.use": { ko: "기업 행사 및 단체 이동", en: "Corporate events and group transport" },
+  "vehicles.van.use": { ko: "기업 행사 및 단체 이동, 기업 출장 차량(미니버스)", en: "Corporate events and group transport (minibus)" },
   "vehicles.van.luggage": { ko: "대형 수하물 다수", en: "Multiple large items" },
   "vehicles.disclaimer": { ko: "지역과 일정에 따라 실제 제공 차량은 달라질 수 있습니다. 차량 모델과 색상은 지정이 어려울 수 있으며, 예약 전 가능한 차량 유형을 안내합니다.", en: "The vehicle actually provided can vary by region and schedule. A specific model or color can't always be guaranteed, so we confirm the available vehicle type before booking." },
 
