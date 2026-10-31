@@ -47,8 +47,6 @@ var I18N = {
   "trust.stat2.label": { ko: "예약 처리", en: "Bookings Handled" },
   "trust.stat3.num": { ko: "66개 도시", en: "66 Cities" },
   "trust.stat3.label": { ko: "서비스 지역", en: "Service Areas" },
-  "trust.stat4.num": { ko: "100%", en: "100%" },
-  "trust.stat4.label": { ko: "한국어 상담", en: "Korean-Language Support" },
 
   "trust.item1": { ko: "해외 주요 도시 대응", en: "Coverage in major cities abroad" },
   "trust.item2": { ko: "한국어 상담", en: "Korean-language support" },

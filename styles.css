@@ -527,33 +527,38 @@ section[id] { scroll-margin-top: 100px; }
 .service-tier-row .recommender-option { min-width: 110px; }
 
 /* ---- Trust strip: operating stats ---- */
-.trust-strip { background: var(--bg-sub); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.trust-strip { background: var(--prem-bg); }
 .trust-strip-inner {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 0;
-  padding: 22px 0;
+  padding: 30px 0;
 }
 .trust-stat {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 6px 28px;
-  border-left: 1px solid var(--line);
+  gap: 14px;
+  padding: 0 36px;
 }
-.trust-stat:first-child { border-left: none; }
-.trust-stat-num { font-size: 1.3rem; font-weight: 800; color: var(--ink); line-height: 1.2; }
-.trust-stat-label { font-size: 0.78rem; color: var(--mute); margin-top: 3px; }
-@media (max-width: 640px) {
-  .trust-stat { padding: 6px 14px; }
-  .trust-stat-num { font-size: 1.1rem; }
-  .trust-stat-label { font-size: 0.7rem; }
+.trust-stat svg {
+  width: 26px;
+  height: 26px;
+  stroke: #E7A98C;
+  stroke-width: 1.6;
+  flex-shrink: 0;
 }
-@media (max-width: 420px) {
-  .trust-strip-inner { gap: 6px 0; }
-  .trust-stat { flex: 1 0 45%; border-left: none; padding: 10px 8px; }
+.trust-stat-num { display: block; font-size: 1.3rem; font-weight: 800; color: var(--prem-ivory); line-height: 1.25; letter-spacing: -0.01em; }
+.trust-stat-label { display: block; font-size: 0.76rem; color: var(--prem-mute); margin-top: 1px; }
+.trust-stat-divider { width: 1px; height: 34px; background: var(--prem-line); flex-shrink: 0; }
+@media (max-width: 760px) {
+  .trust-strip-inner { flex-wrap: wrap; gap: 18px 0; padding: 26px 0; }
+  .trust-stat { padding: 0 18px; }
+  .trust-stat-divider { display: none; }
+}
+@media (max-width: 480px) {
+  .trust-strip-inner { flex-direction: column; align-items: stretch; gap: 16px; }
+  .trust-stat { justify-content: center; padding: 0; }
 }
 
 /* ---- Chooser: vehicle vs. reservation ---- */
