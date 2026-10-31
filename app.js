@@ -898,6 +898,11 @@ var I18N = {
   "cities.region.eu": { ko: "유럽", en: "Europe" },
   "cities.region.asia": { ko: "아시아", en: "Asia" },
   "cities.region.oceania": { ko: "오세아니아", en: "Oceania" },
+  "cities.region.us.count": { ko: "19개 도시", en: "19 Cities" },
+  "cities.region.ca.count": { ko: "2개 도시", en: "2 Cities" },
+  "cities.region.eu.count": { ko: "25개 도시", en: "25 Cities" },
+  "cities.region.asia.count": { ko: "16개 도시", en: "16 Cities" },
+  "cities.region.oceania.count": { ko: "4개 도시", en: "4 Cities" },
   "cities.country.uk": { ko: "영국", en: "United Kingdom" },
   "cities.country.fr": { ko: "프랑스", en: "France" },
   "cities.country.de": { ko: "독일", en: "Germany" },
@@ -1482,6 +1487,9 @@ function initCitySearch() {
 
       group.classList.toggle("has-match", groupHasMatch);
       if (groupHasMatch) anyVisible = true;
+      if (query !== "" && groupHasMatch && "open" in group) {
+        group.open = true;
+      }
     }
 
     if (noMatch) {
