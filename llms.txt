@@ -1,0 +1,46 @@
+# Certo Drive (체르토 드라이브)
+
+> Certo Drive is a Korean-language chauffeured vehicle and local-reservation brokerage operating in 66 cities across North America, Europe, Asia, and Oceania. Core services: airport pickup/drop-off, corporate business-trip and foreign VIP buyer escort vehicles, private daily tours, multi-day long-term dedicated vehicles, intercity transfers, golf and event vehicles, and local reservation assistance (restaurants, landmarks, museums). Inquiries and booking are handled in Korean, with English-speaking drivers available on request for non-Korean-speaking guests.
+
+Certo Drive (상호: 체르토 드라이브) is in its 3rd year of operation and handles 150+ bookings per month. It is a brokerage, not a ride-hailing app: vehicles are dispatched through vetted local partners in each city, and a quote request typically receives a reply within 1 business day. KakaoTalk chat is available for instant, real-time inquiries. Vehicle classes include sedan, SUV, minivan (미니밴/미니벤), premium (Mercedes-Benz S-Class, BMW 7 Series, Genesis G90 class and above), and van/minibus (밴/미니버스) for groups of 8+.
+
+## Core Services
+
+- [Airport Pickup & Drop-off](https://www.certodrive.com/#airport): Flight-tracked airport pickup and drop-off with name/company placard meeting, available at major international and domestic airports including Incheon and Gimpo in Korea.
+- [Corporate & VIP Escort](https://www.certodrive.com/#corporate-vip): Dedicated vehicles for foreign buyers, visiting executives, and partner contacts visiting Korea — airport pickup through company visits, meals, tours, and departure. Also available for tour agencies and MICE groups (Mercedes-Benz S-Class up to Sprinter), with English-speaking drivers on request.
+- [Private Tour](https://www.certodrive.com/#private-tour): Custom daily private tours with a chauffeured vehicle, built around the traveler's own itinerary rather than a fixed package.
+- [Long-Term Dedicated Vehicle](https://www.certodrive.com/#long-term): The same vehicle and driver assigned to a traveler's entire multi-day schedule, from arrival to departure.
+- [Intercity Transfer](https://www.certodrive.com/#intercity): Direct point-to-point travel between cities (e.g. Vancouver → Seattle, Tokyo → nearby cities, Seoul → regional offices) without routing through an airport or train station.
+- [Golf & Event Vehicles](https://www.certodrive.com/#golf-events): Vehicles sized for golf bags and groups, plus multi-vehicle dispatch for corporate events, exhibitions, and conferences.
+- [Local Reservation Agency](https://www.certodrive.com/#cities): Booking assistance for landmarks, museums, observation decks, and restaurants (including fine dining), coordinated together with vehicle transfers into one itinerary.
+
+## Service Cities (66 total)
+
+- North America: 19 US cities (New York, Los Angeles, Seattle, Chicago, Boston, San Francisco, Dallas, Washington D.C., Atlanta, Houston, Austin, Las Vegas, Miami, San Diego, Honolulu, Philadelphia, Denver, Orlando, Detroit) + 2 Canadian cities (Vancouver, Toronto)
+- Europe: 25 cities across the UK, France, Germany, Switzerland, Italy, Spain, Austria, Netherlands, Belgium, Denmark, Sweden, Czech Republic, Ireland, Poland, Hungary, and Greece (London, Paris, Frankfurt, Berlin, Munich, Zurich, Geneva, Milan, Rome, Florence, Venice, Barcelona, Madrid, Vienna, Amsterdam, Brussels, Dusseldorf, Copenhagen, Stockholm, Prague, Dublin, Warsaw, Budapest, Hamburg, Athens)
+- Asia: 16 cities across Japan, Singapore, Hong Kong, UAE, China, Taiwan, Thailand, and Vietnam (Tokyo, Osaka, Kyoto, Nagoya, Fukuoka, Sapporo, Singapore, Hong Kong, Dubai, Shanghai, Beijing, Taipei, Bangkok, Hanoi, Ho Chi Minh City, Da Nang)
+- Oceania: 4 cities (Sydney, Melbourne, Brisbane, Auckland)
+
+Each city has its own dedicated page at `https://www.certodrive.com/cities/<slug>/` (e.g. `/cities/new-york/`, `/cities/london/`, `/cities/tokyo/`) with local airport information, example routes, and FAQs. A city not listed can still be inquired about; availability is confirmed before booking. Full list: [sitemap.xml](https://www.certodrive.com/sitemap.xml)
+
+## Other Pages
+
+- [Vehicle Classes](https://www.certodrive.com/#vehicles): Sedan, SUV, minivan, premium, van/minibus — matched to party size and luggage.
+- [FAQ](https://www.certodrive.com/#faq): 22 common questions covering driver language, booking process, luggage, car seats, intercity travel, corporate invoicing, reservation-only requests, and cancellation terms.
+- [Reservation Agency Detail](https://www.certodrive.com/reservations/): Local landmark and reservation booking service detail.
+
+## Contact
+
+- Website: https://www.certodrive.com
+- Email: certo@certo.kr
+- Emergency contact: 010-7748-4644
+- KakaoTalk: instant chat available via the site's KakaoTalk button
+
+## Business Registration
+
+- 상호 (Business name): 체르토 드라이브 (Certo Drive)
+- 대표 (Representative): 김형기
+- 사업자등록번호 (Business registration number): 654-60-00645
+- 주소 (Address): 서울특별시 서초구 강남대로8길 39-26, 2층 A9호(양재동), Seoul, South Korea
+
+Certo Drive is a brokerage service. Vehicle operation is carried out by local partners, and landmark/restaurant reservations are subject to each venue's own policies and availability. Availability stated at the time of inquiry is not final until confirmed.
