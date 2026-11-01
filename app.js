@@ -19,6 +19,7 @@ var I18N = {
 
   "nav.services": { ko: "차량 서비스", en: "Vehicle Services" },
   "nav.reservations": { ko: "예약대행", en: "Reservations" },
+  "nav.koreaInbound": { ko: "외국인 한국 방문 서비스 (영문)", en: "Visiting Korea? (English)" },
   "nav.vehicles": { ko: "차량", en: "Vehicles" },
   "nav.process": { ko: "이용방법", en: "How It Works" },
   "nav.business": { ko: "기업·기관", en: "For Organizations" },

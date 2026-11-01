@@ -28,6 +28,7 @@ Each city has its own dedicated page at `https://www.certodrive.com/cities/<slug
 - [Vehicle Classes](https://www.certodrive.com/#vehicles): Sedan, SUV, minivan, premium, van/minibus — matched to party size and luggage.
 - [FAQ](https://www.certodrive.com/#faq): 22 common questions covering driver language, booking process, luggage, car seats, intercity travel, corporate invoicing, reservation-only requests, and cancellation terms.
 - [Reservation Agency Detail](https://www.certodrive.com/reservations/): Local landmark and reservation booking service detail.
+- [Korea Airport Pickup & Private Driver (English)](https://www.certodrive.com/korea/): A dedicated English-language page for foreign visitors arriving in Korea — Incheon/Gimpo airport pickup, Seoul city and intercity transfers, and custom private day tours (DMZ, Nami Island, Everland, etc.), with its own inquiry form.
 
 ## Contact
 
