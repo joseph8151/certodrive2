@@ -984,7 +984,7 @@ var I18N = {
   "contact.title": { ko: "문의하기", en: "Contact Us" },
   "contact.subtitle": { ko: "아래 정보를 남겨주시면 확인 후 회신드립니다.", en: "Leave your details below and we'll get back to you." },
   "contact.formNote": { ko: "보통 1영업일 내 회신드립니다.", en: "We usually respond within 1 business day." },
-  "contact.callLabel": { ko: "전화로 바로 문의하고 싶으신가요?", en: "Prefer to call us directly?" },
+  "contact.callLabel": { ko: "전화·문자 상담 가능 · 연중무휴 365일 운영", en: "Call or text us — open every day, 365 days a year" },
   "contact.label.name": { ko: "이름", en: "Name" },
   "contact.label.organization": { ko: "소속 (기관/회사명)", en: "Organization" },
   "contact.label.email": { ko: "이메일", en: "Email" },
