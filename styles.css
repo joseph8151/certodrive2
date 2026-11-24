@@ -259,6 +259,8 @@ section[id] { scroll-margin-top: 100px; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-bottom: 10px; }
 .hero-kakao-link { font-size: 0.9rem; color: var(--text); font-weight: 500; border-bottom: 1px solid var(--ink); }
 .hero-kakao-link:hover { color: var(--ink); }
+.hero-kakao-link.has-icon { display: inline-flex; align-items: center; gap: 6px; }
+.hero-kakao-link.has-icon svg { width: 16px; height: 16px; stroke: currentColor; flex-shrink: 0; }
 .hero-note { font-size: 0.84rem; color: var(--mute); }
 
 .hero-visual { display: block; }
@@ -1053,6 +1055,23 @@ section[id] { scroll-margin-top: 100px; }
 .field-help { font-size: 0.76rem; color: var(--mute); }
 
 .contact-form-note { font-size: 0.84rem; color: var(--mute); margin-bottom: 22px; font-weight: 400; }
+.contact-call-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-sub);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  max-width: 640px;
+}
+.contact-call-box svg { width: 26px; height: 26px; stroke: var(--ink); flex-shrink: 0; }
+.contact-call-text { flex: 1 1 auto; min-width: 180px; }
+.contact-call-label { font-size: 0.82rem; color: var(--mute); margin-bottom: 2px; }
+.contact-call-number { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+.contact-call-number:hover { color: var(--ink); }
 
 .hp-field { position: absolute; left: -9999px; top: -9999px; }
 
@@ -1176,7 +1195,9 @@ section[id] { scroll-margin-top: 100px; }
   padding-bottom: calc(10px + env(safe-area-inset-bottom));
 }
 .sticky-bar-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sticky-bar-row.cols-3 { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
 .sticky-bar .btn { padding: 12px 10px; font-size: 0.86rem; }
+.sticky-bar-row.cols-3 .btn { padding: 12px 4px; font-size: 0.78rem; }
 
 @media (max-width: 720px) {
   .sticky-bar { display: block; }

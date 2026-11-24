@@ -727,6 +727,7 @@ var I18N = {
   "combo.schedule5": { ko: "호텔 이동", en: "Return to hotel" },
   "combo.caption": { ko: "차량과 예약대행을 하나의 담당자가 함께 조율합니다.", en: "One contact coordinates both the vehicle and the reservations." },
 
+  "stickyBar.call": { ko: "전화하기", en: "Call Us" },
   "stickyBar.drive": { ko: "차량 문의", en: "Vehicle Inquiry" },
   "stickyBar.reservation": { ko: "예약대행", en: "Reservations" },
 
@@ -983,6 +984,7 @@ var I18N = {
   "contact.title": { ko: "문의하기", en: "Contact Us" },
   "contact.subtitle": { ko: "아래 정보를 남겨주시면 확인 후 회신드립니다.", en: "Leave your details below and we'll get back to you." },
   "contact.formNote": { ko: "보통 1영업일 내 회신드립니다.", en: "We usually respond within 1 business day." },
+  "contact.callLabel": { ko: "전화로 바로 문의하고 싶으신가요?", en: "Prefer to call us directly?" },
   "contact.label.name": { ko: "이름", en: "Name" },
   "contact.label.organization": { ko: "소속 (기관/회사명)", en: "Organization" },
   "contact.label.email": { ko: "이메일", en: "Email" },
@@ -1201,7 +1203,7 @@ var I18N = {
   "footer.about": { ko: "체르토 드라이브는 공항픽업 및 샌딩, 기업 출장 및 외국인 바이어 의전, 프라이빗 일일투어, 여러 날의 장기 전담 차량, 도시 간 장거리 이동, 골프 차량, 기업 행사 및 VIP 행사 차량, 프리미엄 차량 및 의전을 국내외에서 제공하는 글로벌 기사 포함 차량 브랜드입니다.", en: "Certo Drive is a global chauffeured vehicle brand providing airport pickup and drop-off, business travel and foreign buyer escort, private daily tours, multi-day long-term dedicated vehicles, intercity transfers, golf vehicles, corporate and VIP event vehicles, and premium vehicles and escort service — in Korea and abroad." },
   "footer.linksTitle": { ko: "바로가기", en: "Quick Links" },
   "footer.contactTitle": { ko: "연락처", en: "Contact" },
-  "footer.emergencyLabel": { ko: "긴급 연락처", en: "Emergency Contact" },
+  "footer.emergencyLabel": { ko: "전화 문의", en: "Call Us" },
   "footer.legal1": { ko: "체르토 드라이브는 중개 서비스입니다.", en: "Certo Drive is a booking intermediary service." },
   "footer.legal2": { ko: "차량 운행은 현지 파트너가 진행하며, 랜드마크·레스토랑 예약은 각 시설의 운영 정책과 예약 가능 여부에 따라 진행됩니다.", en: "Vehicle trips are carried out by a local partner, and landmark or restaurant reservations follow each venue's own policy and availability." },
   "footer.legal3": { ko: "문의 시점의 가능 여부는 확정이 아니며, 조건 확인 후 확정됩니다.", en: "Availability at the time of inquiry is not a confirmation; it is finalized after review." },
